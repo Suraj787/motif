@@ -1,12 +1,12 @@
-# Non-Goals, Interface Intelligence OS
+# Non-Goals, Motif
 
-Defining what IIOS **is not** is as important as defining what it is. These boundaries keep
+Defining what Motif **is not** is as important as defining what it is. These boundaries keep
 the project honest and focused, and they prevent it from being mistaken for the simpler
 things it is often confused with.
 
 ---
 
-## IIOS is *not merely*…
+## Motif is *not merely*…
 
 - **…an animation bundle.** It does not ship a pile of motion to sprinkle on a page. It
   decides whether motion is warranted at all, and refuses motion that hurts usability,
@@ -23,7 +23,7 @@ things it is often confused with.
   judgment, completeness, assurance, and governance layer *around* generation. It happily
   cooperates with generators (v0, Stitch, Figma Make) rather than replacing them.
 - **…an accessibility scanner.** It uses axe-core-class scanning, but accessibility is one
-  enforced dimension within a larger system, and IIOS is honest that automated checks cover
+  enforced dimension within a larger system, and Motif is honest that automated checks cover
   only part of the problem.
 - **…a test runner.** It uses Playwright/Storybook patterns for execution; it supplies the
   *what to assert*, not a new runner.
@@ -32,16 +32,16 @@ things it is often confused with.
 
 ---
 
-## Things IIOS deliberately does **not** try to do
+## Things Motif deliberately does **not** try to do
 
 1. **Guarantee third-party code is safe.** It reduces supply-chain risk substantially but
    cannot eliminate it. **Human review remains required.**
 2. **Claim full WCAG compliance from automation.** Automated checks catch only part of
-   accessibility issues; IIOS reports coverage honestly and flags the rest for humans.
+   accessibility issues; Motif reports coverage honestly and flags the rest for humans.
 3. **Replace human designers or reviewers.** It augments judgment and enforces floors; it
    does not make taste, brand, or product strategy decisions for the team.
 4. **Bundle licence-encumbered code to look complete.** Unknown/restricted licences become
-   `reference-only`; IIOS would rather re-implement a concept than ship a violation.
+   `reference-only`; Motif would rather re-implement a concept than ship a violation.
 5. **Maximise source count.** It rejects "thousands of sources" theatre in favour of a
    small verified core plus a catalogued candidate set (see
    [research methodology](../research/research-methodology.md)).
@@ -60,6 +60,6 @@ things it is often confused with.
 
 - Native mobile (iOS/Android) UI generation, web and web-app first.
 - Visual design *rendering* (it is not a canvas/editor); it reasons and emits code/specs.
-- Hosting, billing, or a SaaS control plane, IIOS is the open layer, not a service.
+- Hosting, billing, or a SaaS control plane, Motif is the open layer, not a service.
 
 These may be revisited on the [roadmap](./roadmap.md), but they are explicitly not promised.

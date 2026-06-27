@@ -1,4 +1,4 @@
-# Roadmap, Interface Intelligence OS
+# Roadmap, Motif
 
 > Honest, capability-matrix-driven. Each release lists what is **implemented**,
 > **experimental**, or **planned**. Status reflects `PROJECT_STATUS.md`, `PHASE_STATUS.md`,
@@ -6,11 +6,11 @@
 
 ```mermaid
 timeline
-  title IIOS releases
+  title Motif releases
   v0.1.0 (Motif) : Secure interaction foundation : DONE / on main
-  v0.2.0 (this release) : Interface Intelligence layer : foundations for 6 engines
+  v2.0.0 (this release) : Interface Intelligence layer : foundations for 6 engines
   v0.3.0 : Compilation + Assurance : fidelity ladder, state engine, evidence
-  v1.0.0 : Stable Interface Intelligence OS : matured, broadly verified, benchmarked
+  v1.0.0 : Stable Motif : matured, broadly verified, benchmarked
 ```
 
 ---
@@ -28,10 +28,10 @@ Intelligence Engine + Secure Component Supply Chain.
 - 7 JSON Schemas; `make check` gate; CI, **implemented**
 - Released and tagged (v0.1.0, v1.0.0); public repo. (`main` stays shippable as Motif.)
 
-## v0.2.0, Interface Intelligence layer (**this release**), foundations
+## v2.0.0, Interface Intelligence layer (**this release**), foundations
 
 Goal per ADR 0003: build *functioning foundations* for the five new engines, evolving in
-place on the `interface-intelligence-os` branch. Honest mix of statuses:
+place on the `motif` branch. Honest mix of statuses:
 
 | Work | Target status this release |
 |------|-----------------------------|
@@ -55,7 +55,7 @@ place on the `interface-intelligence-os` branch. Honest mix of statuses:
 | Adversarial + security evals (extend foundation) | partial |
 | Capability matrix + honest README/docs | **implemented** (in progress) |
 
-Definition of done for v0.2.0: each new engine has a real, validated foundation; the
+Definition of done for v2.0.0: each new engine has a real, validated foundation; the
 capability matrix is the source of truth; `make check` stays green; nothing is overclaimed.
 
 ## v0.3.0, Compilation + Assurance, **planned**
@@ -71,7 +71,7 @@ Turn foundations into enforced pipelines.
 - **Decision ledger + drift/debt** wired into the governance loop.
 - **InterfaceBench** runnable with a published rubric.
 
-## v1.0.0, Stable Interface Intelligence OS, **planned**
+## v1.0.0, Stable Motif, **planned**
 
 - All six engines matured and integrated; the `ii` CLI is the primary, stable interface.
 - Source landscape broadly verified (core ledger grown within the 15-25 band; candidates

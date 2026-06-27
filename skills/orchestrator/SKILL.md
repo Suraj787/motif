@@ -1,6 +1,6 @@
 ---
 name: orchestrator
-description: Use when any interface task begins and you need a single entry point that defers to the Interface Intelligence OS root orchestrator and its mandatory 18-step workflow.
+description: Use when any interface task begins and you need a single entry point that defers to the Motif root orchestrator and its mandatory 18-step workflow.
 ---
 
 # Orchestrator (thin entry)
@@ -15,7 +15,7 @@ to the authoritative root.
 
 ## What it does
 
-- Defers to the root `SKILL.md` (`interface-intelligence-os`).
+- Defers to the root `SKILL.md` (`motif`).
 - Runs the mandatory 18-step workflow and enforces the hard-rule never-list.
 - Loads engine knowledge selectively and delegates to the specialist skills.
 

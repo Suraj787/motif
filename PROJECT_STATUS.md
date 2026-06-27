@@ -1,12 +1,12 @@
-# Project status, Interface Intelligence OS
+# Project status, Motif
 
 Live tracker for the evolution from Motif (secure interaction foundation, v1.0.0) into
-Interface Intelligence OS. Branch: `interface-intelligence-os`. Target: **v0.2.0**.
+Motif. On a feature branch (to merge into `main`). Target: **v2.0.0**.
 
 Legend: done | partial | planned
 
 ## Current phase
-v0.2.0 foundation complete on the `interface-intelligence-os` branch. make check green (75 + 20 self-checks). Awaiting human decision on publication (merge+rename vs new repo).
+v2.0.0 foundation complete on the `motif` branch. make check green (75 + 20 self-checks). Awaiting human decision on publication (merge+rename vs new repo).
 
 ## Foundation carried over (from Motif v1.0.0, already validated)
 - Secure source supply chain, 5 scanners, security policies, done
@@ -16,7 +16,7 @@ v0.2.0 foundation complete on the `interface-intelligence-os` branch. make check
 - Adapters and clean-room implementations (browser-native, Vue, Frappe-Vue, React, Svelte), done
 - `make check` gate, CI, schemas (7), done
 
-## v0.2.0 work
+## v2.0.0 work
 | Area | Status | Notes |
 |------|:------:|-------|
 | Migration ADR + gap analysis | done | ADR 0003, docs/reviews/gap-analysis.md |
@@ -49,7 +49,7 @@ v0.2.0 foundation complete on the `interface-intelligence-os` branch. make check
 - None. Publication (repo rename vs new repo) deferred to human confirmation at release.
 
 ## Last successful commit
-v1.0.0 (eb7a689) on main; v0.2.0 evolution committed on the branch.
+v1.0.0 (eb7a689) on main; v2.0.0 evolution committed on the branch.
 
 ## Recommended next action
 Scaffold the new engine directories, author schemas + curated data, build the `ii` CLI,

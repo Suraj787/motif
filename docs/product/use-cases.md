@@ -1,6 +1,6 @@
-# Use Cases, Interface Intelligence OS
+# Use Cases, Motif
 
-Concrete scenarios IIOS is built to handle. Each names the engines involved and the
+Concrete scenarios Motif is built to handle. Each names the engines involved and the
 honest status of the capability (**implemented** / **experimental** / **planned**), per the
 project capability matrix. Today, only the secure interaction foundation is fully
 implemented; the rest are partial/experimental/planned and labelled accordingly.
@@ -35,7 +35,7 @@ implemented; the rest are partial/experimental/planned and labelled accordingly.
 *"Use that fancy animated card from <site>."*
 
 - Secure supply chain: ingest into quarantine → five scanners → **licence gate**. If the
-  licence is unknown/Commons-Clause/restricted, it becomes `reference-only` and IIOS
+  licence is unknown/Commons-Clause/restricted, it becomes `reference-only` and Motif
   re-implements the *concept* clean-room instead of copying. Controlled installer plans,
   snapshots, patches, validates, and can auto-rollback., *implemented (foundation)*.
 
@@ -93,7 +93,7 @@ implemented; the rest are partial/experimental/planned and labelled accordingly.
   a11y, performance, originality, security) and reports reproducible scores, never marketing
   numbers., *planned (foundation in v0.2)*.
 
-## UC‑11, Extend IIOS (OSS contribution)
+## UC‑11, Extend Motif (OSS contribution)
 
 *"Add a new source / specialist agent / assurance check."*
 
@@ -117,4 +117,4 @@ implemented; the rest are partial/experimental/planned and labelled accordingly.
 | UC‑8 Enterprise fleet | Governance | partial/planned |
 | UC‑9 Design-system conformance | Design + Governance | experimental/planned |
 | UC‑10 InterfaceBench | Assurance | planned |
-| UC‑11 Extend IIOS | (schemas + gate) | **implemented** |
+| UC‑11 Extend Motif | (schemas + gate) | **implemented** |

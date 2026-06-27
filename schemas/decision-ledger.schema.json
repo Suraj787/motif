@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/decision-ledger.schema.json",
+  "$id": "https://motif.dev/schemas/decision-ledger.schema.json",
   "title": "decision-ledger",
   "type": "object",
   "required": [

@@ -1,6 +1,6 @@
-# Gap analysis, Motif foundation vs Interface Intelligence OS
+# Gap analysis, Motif foundation vs Motif
 
-Compares the current repository state against the target Interface Intelligence OS
+Compares the current repository state against the target Motif
 architecture and the capabilities of strong design-intelligence skills (e.g. UI UX Pro
 Max) and UI-generation tools. Status per capability: existing | partial | needs-refactor
 | planned | absent.
@@ -46,12 +46,12 @@ Max) and UI-generation tools. Status per capability: existing | partial | needs-
 | Provider architecture | planned | normalised, cross-checked |
 | InterfaceBench (production survival) | planned | 10-round scenario |
 
-## Honest non-goals for v0.2.0 (kept planned/experimental)
+## Honest non-goals for v2.0.0 (kept planned/experimental)
 - Live network connectors (ingestion stays offline/declarative; proven on fixtures).
 - Real measured performance and visual-regression runs (Playwright integration is planned;
   static estimation is implemented, never reported as measured).
 - Full provider imports of external datasets (architecture defined; imports planned).
 - `ii compile apply` against real projects beyond the existing installer scope.
 
-The goal of v0.2.0 is functioning, validated foundations for every engine, with rigorous
+The goal of v2.0.0 is functioning, validated foundations for every engine, with rigorous
 honesty about what is implemented versus experimental versus planned.

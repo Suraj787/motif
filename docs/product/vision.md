@@ -1,8 +1,8 @@
-# Vision, Interface Intelligence OS
+# Vision, Motif
 
 ## The one-sentence vision
 
-**Interface Intelligence OS (IIOS) is the open-source design-judgment, product-understanding,
+**Motif is the open-source design-judgment, product-understanding,
 interaction-engineering, implementation-assurance, and interface-governance layer that an AI
 coding agent runs *through*, so the interfaces it produces are intentional, complete,
 accessible, performant, licence-clean, and coherent over time.**
@@ -15,7 +15,7 @@ actually needs, choosing the least-complex interaction that achieves it, coverin
 state, meeting accessibility and performance bars, respecting licences, resisting the
 generic "AI look", and keeping a system coherent across a long session.
 
-IIOS moves the agent from **"generate something that looks right"** to **"reason from
+Motif moves the agent from **"generate something that looks right"** to **"reason from
 product context to the simplest correct interface, prove it, and record why."** It is a
 reasoning and governance system, not a component dump or a pile of animations.
 
@@ -23,7 +23,7 @@ reasoning and governance system, not a component dump or a pile of animations.
 flowchart LR
   A["Prompt"] --> B{"Today: generator"}
   B --> C["Plausible high-fidelity UI<br/>(happy path, generic, unverified)"]
-  A --> D["IIOS"]
+  A --> D["Motif"]
   D --> E["Understand product & user"]
   E --> F["Design judgment +<br/>least-complex interaction"]
   F --> G["All states + a11y/perf/licence proof"]
@@ -64,7 +64,7 @@ decision recorded. (Full list: [`principles.md`](./principles.md).)
 
 ## What success looks like
 
-- An agent using IIOS ships UI that **covers every state**, **passes accessibility and
+- An agent using Motif ships UI that **covers every state**, **passes accessibility and
   performance bars** (and says so honestly, including what it could not verify), and
   **does not look generically AI-generated**.
 - A reviewer can open the **decision ledger** and see *why* each choice was made and what
@@ -81,5 +81,5 @@ system, or "just another generator." See [`non-goals.md`](./non-goals.md).
 
 This vision describes the destination. The [roadmap](./roadmap.md) and the project
 capability matrix mark every capability as **implemented**, **experimental**, or
-**planned**, today only the secure interaction foundation is fully implemented. IIOS will
+**planned**, today only the secure interaction foundation is fully implemented. Motif will
 not claim a capability it has not built.

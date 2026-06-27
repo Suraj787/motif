@@ -1,6 +1,6 @@
 # Capability matrix
 
-Honest status of every Interface Intelligence OS capability as of v0.2.0.
+Honest status of every Motif capability as of v2.0.0.
 Status: **implemented** (working, tested by `make check`) | **experimental** (works but
 narrow or unverified) | **planned** (interface defined, not built).
 

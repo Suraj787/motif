@@ -1,4 +1,4 @@
-"""Unified data loading + schema validation for the Interface Intelligence OS engines.
+"""Unified data loading + schema validation for the Motif engines.
 
 Reuses the Motif foundation (registry + minimal JSON-Schema validator) and extends
 validation to the new engine data directories. Offline and dependency-free.

@@ -1,6 +1,6 @@
 # Product Intelligence
 
-Product Intelligence is the layer of **Interface Intelligence OS** that establishes
+Product Intelligence is the layer of **Motif** that establishes
 *what the product is, who uses it, what they are trying to do, where they do it, and
 what can go wrong*, **before** any pattern, effect, or pixel is chosen.
 

@@ -11,11 +11,10 @@ Toward v0.3.0: live `ii compile plan/apply`, workflow simulation (Playwright),
 visual-regression assurance, drift trend tracking, external provider imports, and the
 automated InterfaceBench runner.
 
-## [0.2.0] - 2026-06-28, Interface Intelligence OS
+## [2.0.0] - 2026-06-28
 
-Evolves the Motif secure interaction foundation (tagged below as 1.0.0) into Interface
-Intelligence OS: the intelligence, compilation, assurance, and governance layer for AI
-coding agents. History preserved; `ii` is the primary CLI with `oii` and `motif` aliases.
+Evolves the Motif secure interaction foundation (tagged below as 1.0.0) into a full platform: the intelligence, compilation, assurance, and governance layer for AI
+coding agents. History preserved; `motif` is the primary command, with `ii` and `oii` aliases.
 
 ### Added
 
@@ -139,6 +138,7 @@ This is representative breadth, not full coverage. Licence facts are confidence-
 `pending-verification`. Live network connectors are specified but not implemented in this
 release.
 
-[Unreleased]: https://github.com/Suraj787/motif/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Suraj787/motif/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/Suraj787/motif/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/Suraj787/motif/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/Suraj787/motif/releases/tag/v0.1.0

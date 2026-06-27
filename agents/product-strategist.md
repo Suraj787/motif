@@ -7,7 +7,7 @@ description: Establishes product purpose, type, and the user outcome at stake be
 
 ## Scope
 
-Owns the product and outcome framing for IIOS. Decides *why* the interface exists and
+Owns the product and outcome framing for Motif. Decides *why* the interface exists and
 *what the user must understand, feel, decide, or accomplish* before structure or visuals
 are considered.
 

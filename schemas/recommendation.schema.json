@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/recommendation.schema.json",
+  "$id": "https://motif.dev/schemas/recommendation.schema.json",
   "title": "recommendation",
   "type": "object",
   "required": [

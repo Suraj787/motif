@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/colour-system.schema.json",
+  "$id": "https://motif.dev/schemas/colour-system.schema.json",
   "title": "colour-system",
   "type": "object",
   "required": [

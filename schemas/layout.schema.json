@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/layout.schema.json",
+  "$id": "https://motif.dev/schemas/layout.schema.json",
   "title": "layout",
   "type": "object",
   "required": [

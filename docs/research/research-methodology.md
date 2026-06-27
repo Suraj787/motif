@@ -1,12 +1,12 @@
-# Research Methodology, Interface Intelligence OS
+# Research Methodology, Motif
 
-> This document governs how Interface Intelligence OS (IIOS) researches, records, and
+> This document governs how Motif researches, records, and
 > releases the knowledge that its six engines depend on. It **evolves** the foundation's
 > [`docs/research-methodology.md`](../research-methodology.md) (Motif's source-research
 > rules) and raises it to cover design, product, interaction, implementation, assurance,
 > and governance knowledge, not only effect/component sources.
 >
-> Status of this document: **implemented** (governing policy, in force for v0.2.0).
+> Status of this document: **implemented** (governing policy, in force for v2.0.0).
 > Honesty is the non-negotiable rule: nothing here authorizes fabricating facts, scale,
 > or confidence.
 
@@ -14,11 +14,11 @@
 
 ## 1. Why methodology comes first
 
-IIOS makes safety- and quality-affecting decisions on behalf of an AI coding agent:
+Motif makes safety- and quality-affecting decisions on behalf of an AI coding agent:
 "use this pattern", "this licence is redistributable", "this contrast ratio fails WCAG",
 "this interaction needs a reduced-motion fallback". Every such decision is only as
 trustworthy as the evidence behind it. The methodology exists to make the evidence
-**auditable**: any claim IIOS acts on can be traced to a source, a date, and a confidence
+**auditable**: any claim Motif acts on can be traced to a source, a date, and a confidence
 level, or it is treated as an inference, not a fact.
 
 The cost of getting this wrong is concrete: a fabricated licence identifier can cause a
@@ -61,7 +61,7 @@ Two standing rules:
 Every recorded claim carries five attributes:
 
 1. **Source**, the canonical URL or file path it came from (prefer the official one).
-2. **Date**, the publication/update date of the source *and* the date IIOS reviewed it
+2. **Date**, the publication/update date of the source *and* the date Motif reviewed it
    (`last_reviewed`). Both matter: a 2019 article about Core Web Vitals is stale.
 3. **Confidence**, `high` / `medium` / `low`, reflecting how directly the source supports
    the claim, not how much we like the claim.
@@ -69,7 +69,7 @@ Every recorded claim carries five attributes:
    design-system guideline), or `volatile` (e.g. a metric threshold, a pre-1.0 API, a
    licence under negotiation). Volatile facts get a re-check cadence.
 5. **Type**, **official-fact** vs **inference**. An official-fact is asserted verbatim by
-   a tier 1-3 source. An inference is IIOS's own reasoning *over* facts; it is labelled as
+   a tier 1-3 source. An inference is Motif's own reasoning *over* facts; it is labelled as
    such and never laundered into a fact.
 
 ### official-fact vs inference (worked examples)
@@ -79,14 +79,14 @@ Every recorded claim carries five attributes:
 | "WCAG 2.2 became a W3C Recommendation on 2023‑10‑05." | official-fact | Stated by W3C (tier 1). |
 | "INP replaced FID as a Core Web Vital on 2024‑03‑12." | official-fact | Stated by web.dev / Chrome (tier 2). |
 | "Automated tooling detects roughly half of WCAG issues." | official-fact (bounded) | Deque/axe-core state "up to ~57%"; record the figure *and* its bound. |
-| "Therefore agents must not treat an axe pass as full compliance." | inference | IIOS's reasoning over the fact; labelled inference. |
-| "This animated collection is unsafe to bundle." | inference-from-fact | The *fact* is "licence is Commons Clause / unknown"; the disposition is IIOS policy. |
+| "Therefore agents must not treat an axe pass as full compliance." | inference | Motif's reasoning over the fact; labelled inference. |
+| "This animated collection is unsafe to bundle." | inference-from-fact | The *fact* is "licence is Commons Clause / unknown"; the disposition is Motif policy. |
 
 ---
 
 ## 4. The evidence-based release model
 
-IIOS deliberately rejects the "thousands of sources" framing common to scraped catalogues.
+Motif deliberately rejects the "thousands of sources" framing common to scraped catalogues.
 Breadth without verification is a liability. The release model is:
 
 - **Core set: 15-25 sources, deeply reviewed.** These are read at their official location,
@@ -100,7 +100,7 @@ Breadth without verification is a liability. The release model is:
 - **Depth over volume.** A source is not "done" because its homepage loaded. It is done
   when its licence, maintenance, accessibility posture and redistribution disposition are
   evidenced. An honest "partial" beats a fabricated "complete".
-- **Do not fabricate scale.** IIOS never inflates counts, never invents version numbers,
+- **Do not fabricate scale.** Motif never inflates counts, never invents version numbers,
   benchmark figures, or accessibility ratings, and never claims to have reviewed a source
   it only skimmed. Where the network is unavailable, records are created as
   `pending-verification` with reduced confidence and a note on what would confirm them.
@@ -121,7 +121,7 @@ the capability matrix so readers always know what is implemented, experimental, 
 
 ## 5. Scope beyond sources
 
-Because IIOS now reasons about design judgment and product understanding, the same
+Because Motif now reasons about design judgment and product understanding, the same
 evidence standard applies to *non-source* knowledge:
 
 - **Design-intelligence data** (styles, colour, typography, layout, UX principles) cites

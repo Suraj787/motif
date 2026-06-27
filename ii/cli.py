@@ -1,8 +1,9 @@
-"""Interface Intelligence OS command-line interface (`ii`).
+"""Motif platform command-line interface.
 
-Primary CLI. Foundation commands (source, component, search, rank, doctor) delegate
-to the validated Motif engine; the new engine commands are implemented here.
-Offline and dependency-free. `oii` and `motif` are compatibility aliases.
+The user-facing command is `motif` (short alias `ii`; legacy alias `oii`). Foundation
+commands (source, component, search, rank) delegate to the validated interaction core;
+the design, product, and governance commands are implemented here. Offline and
+dependency-free.
 """
 from __future__ import annotations
 import argparse
@@ -18,7 +19,7 @@ from motif import registry, project as project_mod, cli as motif_cli
 ROOT = registry.ROOT
 _DELEGATE = {"source", "component", "search", "rank", "rank-sources", "generate-index"}
 EXPERIMENTAL = {
-    "simulate": "Workflow simulation (Playwright integration) is planned/experimental in v0.2.0.",
+    "simulate": "Workflow simulation (Playwright integration) is planned/experimental in v2.0.0.",
     "compile-apply": "Live `compile apply` beyond the controlled installer is planned for v0.3.0.",
     "visual": "Visual-regression assurance is planned (needs a screenshot runtime).",
 }
@@ -60,7 +61,7 @@ def cmd_doctor(_a) -> int:
     for k, n in counts.items():
         _p(f"  {k}: {n}")
     _p(f"  engine-data errors: {len(errs)}")
-    _p(f"\nii {__version__} (aliases: oii, motif)")
+    _p(f"\nMotif {__version__} (commands: motif, ii, oii)")
     return 0 if ok and not errs else 1
 
 
@@ -286,7 +287,7 @@ def cmd_decision(a) -> int:
 
 def cmd_experimental(a) -> int:
     key = a.cmd if a.cmd in EXPERIMENTAL else a.cmd
-    _p(EXPERIMENTAL.get(key, f"`{a.cmd}` is planned/experimental in v0.2.0; see PROJECT_STATUS.md."))
+    _p(EXPERIMENTAL.get(key, f"`{a.cmd}` is planned/experimental in v2.0.0; see PROJECT_STATUS.md."))
     _p("This command is intentionally not claimed as implemented.")
     return 0
 
@@ -294,8 +295,8 @@ def cmd_experimental(a) -> int:
 # ---- parser ---------------------------------------------------------------
 
 def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(prog="ii", description="Interface Intelligence OS (offline, dependency-free)")
-    p.add_argument("--version", action="version", version=f"ii {__version__} (aliases: oii, motif)")
+    p = argparse.ArgumentParser(prog="motif", description="Motif: design judgment, interface engineering, and governance (offline, dependency-free)")
+    p.add_argument("--version", action="version", version=f"Motif {__version__} (commands: motif, ii, oii)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("validate", help="validate foundation + engine data + graph").set_defaults(fn=cmd_validate)

@@ -1,4 +1,4 @@
-"""Interface Intelligence OS layer tests (pytest mirror of tools/ii_selfcheck.py)."""
+"""Motif layer tests (pytest mirror of tools/ii_selfcheck.py)."""
 import tempfile
 import pathlib
 from ii import cli, data, graph, originality, states, debt, genome

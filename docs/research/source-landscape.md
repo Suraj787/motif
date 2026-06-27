@@ -1,4 +1,4 @@
-# Source Landscape, Interface Intelligence OS
+# Source Landscape, Motif
 
 > The **candidate set** in the evidence-based release model
 > ([methodology](./research-methodology.md)): the 50-100 effect/component/knowledge
@@ -17,7 +17,7 @@
 
 ## How the landscape is governed
 
-Each source record carries `redistribution`, the disposition that controls how IIOS may
+Each source record carries `redistribution`, the disposition that controls how Motif may
 use it:
 
 - **`redistributable`**, permissive licence confirmed; code may be adapted and bundled.
@@ -37,7 +37,7 @@ Counts below reflect the current `registry/sources/` catalogue (~90 records). Tr
 the live count's snapshot, not a fixed number.
 
 ### 1. Accessible UI foundations
-The most important tier for IIOS: unstyled, behaviour-correct primitives.
+The most important tier for Motif: unstyled, behaviour-correct primitives.
 **Radix UI, React Aria, Ark UI, Base UI, Bits UI, Headless UI, Melt UI, Reka UI, shadcn/ui, shadcn-vue.** Mostly MIT/Apache‑2.0 → `redistributable`. Radix and React Aria
 are core-ledger sources ([#9, #10](./research-ledger.md)).
 
@@ -75,7 +75,7 @@ High-fidelity effect collections, the highest-risk tier for licence/quality.
 `reference-only`. The Commons-Clause cases are why "source-available ≠ open source".
 
 ### 9. Enterprise design systems
-Design *judgment* sources, with split code/asset terms IIOS must respect.
+Design *judgment* sources, with split code/asset terms Motif must respect.
 **Material Design (guidance, reference-only), Apple HIG (reference-only), IBM Carbon
 (Apache‑2.0 code), Microsoft Fluent 2 (MIT code), GitHub Primer (MIT code), Adobe
 Spectrum (Apache‑2.0 React code), Atlassian (Apache‑2.0 Atlaskit), Ant Design (MIT), Shopify Polaris (modified-MIT, field-of-use restricted), Salesforce SLDS (BSD‑3 code +
@@ -83,7 +83,7 @@ CC‑BY‑NC‑ND assets).** Most are `adaptable-concept`; guidance-only systems
 `reference-only`. Several are core-ledger sources ([#11-15](./research-ledger.md)).
 
 ### 10. Creative references (inspiration only)
-**Awwwards, Codrops, SiteInspire, Godly, Hoverstates.** All `reference-only`, IIOS
+**Awwwards, Codrops, SiteInspire, Godly, Hoverstates.** All `reference-only`, Motif
 draws *ideas* here, never code.
 
 ---

@@ -1,6 +1,6 @@
 # Interaction Intelligence
 
-The interaction-intelligence engine for **Interface Intelligence OS**. Where the registry answers *what to build* (effects, patterns, recipes) and design-intelligence answers *how it should look*, this engine answers **how it should move, breathe, and respond**, and whether an interface has actually handled every state it can land in.
+The interaction-intelligence engine for **Motif**. Where the registry answers *what to build* (effects, patterns, recipes) and design-intelligence answers *how it should look*, this engine answers **how it should move, breathe, and respond**, and whether an interface has actually handled every state it can land in.
 
 It does not reinvent the registry. It **reuses** the registry's effects, patterns, and recipes, and layers three new dimensions on top:
 

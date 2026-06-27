@@ -1,4 +1,4 @@
-# Interface Intelligence OS
+# Motif
 
 **Design judgment, interface engineering, assurance, and governance for AI coding agents.**
 
@@ -7,11 +7,11 @@ what should be built, why a design choice belongs, whether a pattern fits the us
 workflow, whether the output is generic, whether it is accessible, whether it is fast on
 real devices, whether third-party code is safe and legally reusable, whether it fits the
 existing design language, or whether the codebase stays coherent after many changes.
-Interface Intelligence OS is the intelligence and governance layer that answers those
+Motif is the intelligence and governance layer that answers those
 questions.
 
 [![CI](https://github.com/Suraj787/motif/actions/workflows/ci.yml/badge.svg)](https://github.com/Suraj787/motif/actions)
-&nbsp;Licence: MIT. Status: v0.2.0 (built on the Motif v1.0.0 secure interaction foundation)
+&nbsp;Licence: MIT. Status: v2.0.0 (Motif's interaction core shipped as v1.0.0)
 
 > Defining principle: first determine what the user needs to understand, feel, decide, or
 > accomplish, then choose the least complex interface and interaction that achieves it.
@@ -37,7 +37,7 @@ Product intent
 ```
 
 The Interaction Intelligence Engine and Secure Component Supply Chain are the validated
-**Motif / Open Interaction Intelligence** foundation (90 web-verified sources, 64
+**Motif** interaction foundation (originally the v1.0 core) (90 web-verified sources, 64
 components, 30 effects, 28 patterns, 14 recipes, 5 scanners, controlled installer). Vue and
 Frappe-Vue are first-class.
 
@@ -61,7 +61,7 @@ ii validate ; ii doctor                 # validate all engine data; health check
 make check                              # full local gate (mirrors CI)
 ```
 
-`oii` and `motif` remain as compatibility aliases for the foundation commands.
+`motif` is the primary command; `ii` and `oii` are aliases. All three expose the full platform.
 
 ## Installation
 
@@ -69,8 +69,8 @@ Requirements: Python 3.11+ and `git`. Node.js 18+ is optional. The core CLI has 
 dependencies.
 
 ```bash
-git clone https://github.com/Suraj787/motif.git interface-intelligence-os
-cd interface-intelligence-os
+git clone https://github.com/Suraj787/motif.git motif
+cd motif
 python -m ii doctor          # run in place, zero install
 # or install the entry points:
 python -m pip install -e .   # gives `ii`, `oii`, `motif`
@@ -95,12 +95,12 @@ skills live in [`skills/`](skills/).
 | `assurance/` | Assurance evidence model (static scans implemented; runtime planned) |
 | `specifications/` | Interface Specification Language (schema + examples) |
 | `interfacebench/` | Production-survival benchmark (15 capabilities, 10-round scenario) |
-| `ii/`, `motif/` | The `ii` CLI and the Motif foundation engine |
+| `ii/`, `motif/` | The platform CLI module (`ii`) and the Motif foundation engine |
 | `schemas/` | 25 strict JSON Schemas every record must satisfy |
 | `evals/`, `tests/` | Adversarial judgement + security evaluations; test suite |
 | `docs/` | Research, competitive analysis, architecture, capability matrix, ADRs |
 
-## What v0.2.0 contains
+## What v2.0.0 contains
 
 - All six engines have functioning, schema-validated foundations.
 - Design intelligence: 12 styles, 12 layouts, 15 executable UX principles, colour and

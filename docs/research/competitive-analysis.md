@@ -1,8 +1,8 @@
-# Competitive & Comparable Landscape, Interface Intelligence OS
+# Competitive & Comparable Landscape, Motif
 
 > The goal of this analysis is **not to attack** the tools below. Most of them are
-> excellent at what they do, and IIOS reuses or interoperates with several of them. The
-> goal is to locate the **layer IIOS occupies**, design judgment, product understanding,
+> excellent at what they do, and Motif reuses or interoperates with several of them. The
+> goal is to locate the **layer Motif occupies**, design judgment, product understanding,
 > state/assurance discipline, and interface governance for AI coding agents, and to be
 > honest about what is worth *importing* rather than recreating.
 >
@@ -35,16 +35,16 @@ flowchart LR
   subgraph Runtime["Agent runtime"]
     cc[Claude Code skills/subagents]
   end
-  IIOS[Interface Intelligence OS]:::ii
-  Generate --> IIOS
-  Build --> IIOS
-  Verify --> IIOS
-  Knowledge --> IIOS
-  Runtime --> IIOS
+  Motif[Motif]:::ii
+  Generate --> Motif
+  Build --> Motif
+  Verify --> Motif
+  Knowledge --> Motif
+  Runtime --> Motif
   classDef ii fill:#1f6feb,color:#fff,stroke:#0d2f6e;
 ```
 
-IIOS is not another generator. It is the **judgment, completeness, assurance and
+Motif is not another generator. It is the **judgment, completeness, assurance and
 governance layer** that sits *around* generation, build, and verification, deciding what
 should be built, refusing what shouldn't, and recording why.
 
@@ -64,11 +64,11 @@ should be built, refusing what shouldn't, and recording why.
 - **A11y / security / licensing / validation / governance.** A11y appears as guideline
   content rather than enforced checks; no secure-ingestion or licence-gate model; no
   built-in validator or decision ledger *(inference, based on its described scope)*.
-- **Gaps IIOS addresses.** Turns *knowledge* into *enforced judgment*: state-completeness,
+- **Gaps Motif addresses.** Turns *knowledge* into *enforced judgment*: state-completeness,
   accessibility/performance assurance with evidence, originality/anti-convergence checks,
   secure supply chain, and a decision ledger.
 - **Worth importing.** Its breadth of curated styles/palettes/pairings is a genuine asset;
-  IIOS's Design Intelligence engine should interoperate with such curated data rather than
+  Motif's Design Intelligence engine should interoperate with such curated data rather than
   re-deriving it.
 
 ## 2. Claude Code skills & subagents (agent runtime)
@@ -80,11 +80,11 @@ should be built, refusing what shouldn't, and recording why.
 - **Agent integration.** It *is* the integration surface.
 - **A11y / security / validation / governance.** Out of scope, it is a runtime, not a
   domain authority.
-- **Gaps IIOS addresses.** IIOS provides the *domain content and guarantees* that ride on
+- **Gaps Motif addresses.** Motif provides the *domain content and guarantees* that ride on
   this runtime: the orchestrator skill, 15 bounded specialist agents, deterministic tools,
   and the governance loop.
 - **Worth importing.** The pattern itself, orchestrator skill + bounded subagents +
-  deterministic tools, is exactly how IIOS is delivered. IIOS builds *on* it, not against
+  deterministic tools, is exactly how Motif is delivered. Motif builds *on* it, not against
   it. (See [ledger #17](./research-ledger.md).)
 
 ## 3. v0 (Vercel)
@@ -103,7 +103,7 @@ should be built, refusing what shouldn't, and recording why.
   scanner on arbitrary imported registries *(inference)*.
 - **Validation / governance.** Iteration loop is conversational; no formal
   state-completeness matrix, assurance evidence, or decision ledger *(inference)*.
-- **Gaps IIOS addresses.** Premature high-fidelity output without an explicit
+- **Gaps Motif addresses.** Premature high-fidelity output without an explicit
   fidelity-ladder; missing-states discipline; originality/anti-convergence; framework
   neutrality (Vue/Frappe-Vue first-class); auditable governance.
 - **Worth importing.** The **shadcn registry format** as a model-consumable distribution
@@ -118,8 +118,8 @@ should be built, refusing what shouldn't, and recording why.
 - **Framework coverage.** Generates frontend code / Figma; not framework-governed.
 - **A11y / security / validation / governance.** Not positioned as an
   accessibility/assurance or governance authority *(inference)*.
-- **Gaps IIOS addresses.** Same fidelity-ladder, state-completeness, assurance, and
-  governance gaps as other generators; plus IIOS is open-source and self-hostable.
+- **Gaps Motif addresses.** Same fidelity-ladder, state-completeness, assurance, and
+  governance gaps as other generators; plus Motif is open-source and self-hostable.
 - **Worth importing.** Multimodal sketch→structure ingestion is a strong *input* idea for
   Product Intelligence.
 
@@ -131,8 +131,8 @@ should be built, refusing what shouldn't, and recording why.
 - **Architecture.** Inside Figma's design platform + AI.
 - **A11y / security / validation / governance.** Design-tool-centric; not an enforced
   a11y/perf assurance layer or a governance ledger *(inference)*.
-- **Gaps IIOS addresses.** The handoff from "looks right in Figma" to "is accessible,
-  performant, state-complete and licence-clean in code", exactly IIOS's assurance scope.
+- **Gaps Motif addresses.** The handoff from "looks right in Figma" to "is accessible,
+  performant, state-complete and licence-clean in code", exactly Motif's assurance scope.
 - **Worth importing.** Design-intent preservation and the DTCG token bridge (Figma is a
   DTCG adopter, see [ledger #6](./research-ledger.md)).
 
@@ -145,10 +145,10 @@ should be built, refusing what shouldn't, and recording why.
 - **Source / data model.** Registry items (files, deps, metadata).
 - **A11y.** Strong (Radix/React Aria lineage). **Security.** Registry trust is the user's
   responsibility, arbitrary third-party registries are unsanitised by default *(inference;
-  this is the exact risk IIOS's ingestion pipeline addresses)*.
-- **Gaps IIOS addresses.** Secure ingestion + scanning + licence gate over arbitrary
+  this is the exact risk Motif's ingestion pipeline addresses)*.
+- **Gaps Motif addresses.** Secure ingestion + scanning + licence gate over arbitrary
   registries; judgment about *whether* a component fits the product context; assurance.
-- **Worth importing.** The **registry format** (IIOS already speaks it) and the
+- **Worth importing.** The **registry format** (Motif already speaks it) and the
   own-your-source philosophy, clean-room/adaptable implementations rather than runtime
   black boxes.
 
@@ -158,13 +158,13 @@ should be built, refusing what shouldn't, and recording why.
   and an **a11y addon built on axe-core** (catches up to ~57% of WCAG issues); visual and
   test-runner integration.
 - **Architecture.** Dev-time component explorer + addons + CI test runner.
-- **A11y / validation.** First-class, this is a model for *how* IIOS assurance should
+- **A11y / validation.** First-class, this is a model for *how* Motif assurance should
   plug into a dev workflow.
-- **Gaps IIOS addresses.** Storybook verifies what you *built*; IIOS governs *what to
+- **Gaps Motif addresses.** Storybook verifies what you *built*; Motif governs *what to
   build* and enforces **state completeness** before code (states as a spec, not just
   stories an author remembered to write).
 - **Worth importing.** The play-function interaction-test pattern and axe-core integration
-  (see [ledger #5, #16](./research-ledger.md)). IIOS should emit Storybook stories/tests as
+  (see [ledger #5, #16](./research-ledger.md)). Motif should emit Storybook stories/tests as
   an assurance output where Storybook is present.
 
 ## 8. Playwright
@@ -172,7 +172,7 @@ should be built, refusing what shouldn't, and recording why.
 - **What it does well.** Reliable cross-browser **E2E + component testing**, tracing,
   and `@axe-core/playwright` for automated a11y assertions in CI.
 - **Architecture.** Browser-automation test runner.
-- **Gaps IIOS addresses.** Playwright is an *execution* substrate; IIOS supplies the
+- **Gaps Motif addresses.** Playwright is an *execution* substrate; Motif supplies the
   *what to assert* (state matrix, a11y/perf/motion budgets) and records evidence.
 - **Worth importing.** Use Playwright as the assurance execution engine rather than
   building a runner, wrap, don't recreate.
@@ -183,8 +183,8 @@ should be built, refusing what shouldn't, and recording why.
   ~90 rules across WCAG 2.0/2.1/2.2 A-AAA, explicit "incomplete"/manual-review signalling,
   enormous adoption.
 - **Honesty it models.** It openly states it catches only ~57% of issues, the same
-  intellectual honesty IIOS requires of its own assurance claims.
-- **Gaps IIOS addresses.** axe checks rendered DOM; IIOS adds *design-time* a11y judgment,
+  intellectual honesty Motif requires of its own assurance claims.
+- **Gaps Motif addresses.** axe checks rendered DOM; Motif adds *design-time* a11y judgment,
   motion/reduced-motion, target-size and state coverage, and ties findings to evidence.
 - **Worth importing.** Use axe-core directly as the a11y rule engine; map each finding to a
   WCAG SC in the assurance evidence model.
@@ -193,13 +193,13 @@ should be built, refusing what shouldn't, and recording why.
 
 - **What they do well.** Decades of accumulated, opinionated design judgment: tokens,
   components, motion, accessibility guidance, content style.
-- **Source / licensing, the nuance IIOS lives on.** Code and guidance/assets often carry
+- **Source / licensing, the nuance Motif lives on.** Code and guidance/assets often carry
   **different** terms: Polaris is *modified-MIT with a field-of-use restriction*; Salesforce
   SLDS splits BSD‑3 code from CC‑BY‑NC‑ND assets; Material/Apple HIG guidance is
   reference-only; Carbon/Fluent/Primer code is permissive but brand/assets are reserved
   (all recorded in `registry/sources/`).
-- **Gaps IIOS addresses.** No single system is product-agnostic or agent-native, and their
-  licences are easy to violate by copying assets with code. IIOS's licence gate and
+- **Gaps Motif addresses.** No single system is product-agnostic or agent-native, and their
+  licences are easy to violate by copying assets with code. Motif's licence gate and
   `adaptable-concept` vs `redistributable` dispositions are designed precisely for this.
 - **Worth importing.** Their *principles and token structures* (via DTCG) as design
   intelligence, as guidance, honouring each system's terms; never bulk-copying assets.
@@ -209,18 +209,18 @@ should be built, refusing what shouldn't, and recording why.
 - **What they do well.** Design systems exposing **machine-consumable** registries/MCP so
   agents emit on-brand, on-system UI (the direction v0 design-systems, shadcn registries,
   and Figma/DTCG MCP point toward).
-- **Gaps IIOS addresses.** Agent-readiness solves *distribution*, not *judgment*: it does
+- **Gaps Motif addresses.** Agent-readiness solves *distribution*, not *judgment*: it does
   not by itself prevent premature fidelity, missing states, convergence, or licence drift,
-  nor does it govern long-horizon quality. IIOS is the governance/assurance layer that
+  nor does it govern long-horizon quality. Motif is the governance/assurance layer that
   consumes agent-ready systems safely.
-- **Worth importing.** The contract direction itself, IIOS treats DTCG tokens and the
+- **Worth importing.** The contract direction itself, Motif treats DTCG tokens and the
   shadcn registry format as first-class interop surfaces.
 
 ---
 
-## Where IIOS sits (synthesis)
+## Where Motif sits (synthesis)
 
-| Capability | Generators (v0/Stitch/Figma) | shadcn + registries | Storybook/Playwright/axe | Design systems | **IIOS** |
+| Capability | Generators (v0/Stitch/Figma) | shadcn + registries | Storybook/Playwright/axe | Design systems | **Motif** |
 |------------|:--:|:--:|:--:|:--:|:--:|
 | Generate UI fast | ✅ | ➖ | ✗ | ➖ | ➖ (delegates) |
 | Own-your-source components | ➖ | ✅ | ✗ | ➖ | ✅ (clean-room/adapt) |
@@ -233,9 +233,9 @@ should be built, refusing what shouldn't, and recording why.
 | Framework-neutral (Vue/Frappe-Vue first-class) | ➖ | ➖ | ✅ | ➖ | ✅ |
 
 Legend: ✅ strong, ➖ partial/indirect, ✗ not a goal. Generator/registry cells reflect
-*positioning*, not quality, these are excellent tools IIOS is built to cooperate with.
+*positioning*, not quality, these are excellent tools Motif is built to cooperate with.
 
 **Bottom line.** The market is crowded at *generation* and maturing at *distribution* and
 *verification*. It is thin at **judgment, completeness, originality, and governance for
-agents**, and that is the layer IIOS adds, while importing (not recreating) the registry
+agents**, and that is the layer Motif adds, while importing (not recreating) the registry
 format, axe-core, Playwright, Storybook patterns, DTCG tokens, and curated design knowledge.

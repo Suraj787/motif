@@ -75,7 +75,7 @@ Motif follows semantic versioning with a deliberate, honest progression:
 | Version | Meaning |
 |---------|---------|
 | **v0.1.0** | Complete architecture + working secure pipeline; **representative**, high-confidence records (not exhaustive breadth). The system is real and safe to use within its stated scope. |
-| **v0.2.0** | Broader verified coverage, more sources moved from `pending-verification` to `verified`, more catalogued components, more recipes, with no regressions to the pipeline or scanners. |
+| **v2.0.0** | Broader verified coverage, more sources moved from `pending-verification` to `verified`, more catalogued components, more recipes, with no regressions to the pipeline or scanners. |
 | **v1.0.0** | Stable, broadly verified registry and frozen schema/CLI surface; suitable for general adoption. Reserved until coverage and stability genuinely justify it. |
 
 Do not inflate the version to imply coverage that does not exist. Moving a source from

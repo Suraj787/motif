@@ -1,8 +1,8 @@
-# Problem Evidence, Interface Intelligence OS
+# Problem Evidence, Motif
 
 > Each problem category below is stated, **grounded in cited evidence** (see the
 > [research ledger](./research-ledger.md)), and converted into an **engineering
-> requirement** IIOS must satisfy. Where a figure is volatile (a metric threshold, an
+> requirement** Motif must satisfy. Where a figure is volatile (a metric threshold, an
 > annual report), it is marked. Claims that are our synthesis rather than a source
 > statement are marked *(inference)*.
 
@@ -22,7 +22,7 @@ outputs growing more homogeneous as models train on AI-generated content.
   yet peer-reviewed): https://arxiv.org/html/2603.13036v1
 - Industry synthesis on AI "sea of sameness" / visual homogenization (tier 5-7).
 
-**Engineering requirement.** IIOS provides an **Originality / Aesthetic-Convergence
+**Engineering requirement.** Motif provides an **Originality / Aesthetic-Convergence
 Detector**: heuristic rules that flag default-template signatures (stock gradient-on-dark
 hero, generic SaaS layout, over-used component clichés) and an audit that pushes toward
 intentional, context-fit design. Design Intelligence proposes *distinctive-but-appropriate*
@@ -40,7 +40,7 @@ cheap-iteration stages (intent → information architecture → low-fidelity →
 the costly mistakes are actually caught, a long-standing UX principle that fidelity should
 follow certainty *(inference, consistent with established design practice / NN/g, ledger #7)*.
 
-**Engineering requirement.** IIOS enforces a **fidelity ladder**: product/context manifest
+**Engineering requirement.** Motif enforces a **fidelity ladder**: product/context manifest
 → interaction specification → structure/low-fidelity → states → high-fidelity → assurance.
 The orchestrator refuses to emit high-fidelity output before the product context and state
 matrix exist. Fidelity is a governed gate, not a default.
@@ -55,7 +55,7 @@ zero/overflow-data states. Storybook's own model, authors write the stories they
 to write, illustrates that completeness depends on discipline, not defaults (ledger #16).
 Missing error/empty states are among the most common real-world UI defects *(inference)*.
 
-**Engineering requirement.** IIOS provides a **State Completeness Engine**: a required
+**Engineering requirement.** Motif provides a **State Completeness Engine**: a required
 state matrix per component/screen (at minimum: empty, loading, partial, ideal, error,
 offline/degraded, permission-denied, overflow), validated before sign-off. A UI that has
 not addressed each applicable state cannot pass assurance.
@@ -72,7 +72,7 @@ top one-million home pages had detected WCAG 2 failures, averaging ~51 errors pe
 standard itself is **WCAG 2.2**, a W3C Recommendation since **2023‑10‑05**, adding criteria
 like target size and focus-not-obscured (ledger #1-2).
 
-**Engineering requirement.** Accessibility is **mandatory, not optional**, in IIOS.
+**Engineering requirement.** Accessibility is **mandatory, not optional**, in Motif.
 The Assurance engine runs axe-core-class automated checks, maps each finding to a WCAG 2.2
 success criterion, enforces contrast and target-size at design time, requires
 keyboard/focus and reduced-motion handling, and, mirroring axe-core's honesty, **records
@@ -89,7 +89,7 @@ main-thread-blocking animation and unbounded effects degrade INP and harm users 
 motion-sensitive; browser-native primitives (View Transitions, Web Animations, scroll-driven
 animations, Intersection Observer) are the cheaper, more accessible path (MDN, ledger #8).
 
-**Engineering requirement.** IIOS carries **performance and motion budgets**: prefer the
+**Engineering requirement.** Motif carries **performance and motion budgets**: prefer the
 least-complex, browser-native technique that achieves the objective; enforce
 `prefers-reduced-motion` fallbacks; keep interaction handlers within INP-friendly bounds;
 and reject motion that hurts performance or accessibility. Assurance includes static
@@ -106,7 +106,7 @@ field-of-use restriction; SLDS's CC‑BY‑NC‑ND assets; Commons-Clause "sourc
 collections), all documented in `registry/sources/` and the
 [competitive analysis](./competitive-analysis.md).
 
-**Engineering requirement.** IIOS keeps the foundation's **secure supply chain**:
+**Engineering requirement.** Motif keeps the foundation's **secure supply chain**:
 offline-approved registry by default; untrusted-by-default ingestion into quarantine;
 five static scanners (dangerous patterns, browser behaviour, dependencies, licence,
 secrets); a **licence gate** (`unknown → reference-only`; source-available/Commons-Clause
@@ -124,7 +124,7 @@ patterns, duplicate components accumulate, and the system's coherence decays, "i
 debt". This is the UI analogue of code drift in long agent runs *(inference; the
 mechanism, context loss over long horizons, is well established for coding agents)*.
 
-**Engineering requirement.** IIOS provides a **Decision Ledger** (every selection recorded
+**Engineering requirement.** Motif provides a **Decision Ledger** (every selection recorded
 with rationale, provenance, and the rejected alternatives) plus **Interface Debt & Drift**
 scoring: heuristics that detect divergence from recorded decisions and accumulating
 inconsistency, surfaced through the CLI and the governance loop so quality is maintained
@@ -134,7 +134,7 @@ across long horizons rather than silently degrading.
 
 ## Requirements traceability
 
-| # | Problem | Primary evidence | IIOS engine / mechanism | Status |
+| # | Problem | Primary evidence | Motif engine / mechanism | Status |
 |--:|---------|------------------|-------------------------|:------:|
 | P1 | Generic-AI convergence | arXiv vibe-coding homogenization; industry synthesis | Design Intelligence + Originality Detector | experimental |
 | P2 | Premature high-fidelity | Generator positioning; UX fidelity principle | Fidelity ladder (orchestrator gate) | planned→v0.3 |

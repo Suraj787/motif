@@ -1,4 +1,4 @@
-# Principles, Interface Intelligence OS
+# Principles, Motif
 
 These are the core product principles. They are decision rules, not slogans: when two paths
 conflict, the higher principle wins. They govern every engine and every release.
@@ -8,7 +8,7 @@ conflict, the higher principle wins. They govern every engine and every release.
 ## 1. Honesty is paramount
 
 Every capability is labelled **implemented**, **experimental**, or **planned**, and the
-labels are kept true. IIOS never fabricates facts, version numbers, benchmarks, licences,
+labels are kept true. Motif never fabricates facts, version numbers, benchmarks, licences,
 coverage figures, or source counts. Where a check is partial (e.g. automated accessibility
 catches only part of the issues, see [problem-evidence](../research/problem-evidence.md)),
 it says so and flags the rest for human review. An honest "partial" beats a fabricated
@@ -54,7 +54,7 @@ path, and effects that degrade performance are rejected. (See
 
 Untrusted-by-default ingestion, static scanning, and a licence gate (`unknown →
 reference-only`; source-available/Commons-Clause are *not* permissive). Third-party install
-scripts never run against the user's repo. IIOS reduces risk but does not eliminate it, human review remains required.
+scripts never run against the user's repo. Motif reduces risk but does not eliminate it, human review remains required.
 
 ## 9. Originality by default
 
@@ -64,7 +64,7 @@ statistically modal template, and audit output for default-template signatures. 
 
 ## 10. Framework neutrality, with Vue and Frappe-Vue first-class
 
-Browser-native, Vue, Frappe-Vue, React, and Svelte are all real targets. IIOS owns the
+Browser-native, Vue, Frappe-Vue, React, and Svelte are all real targets. Motif owns the
 source it emits (clean-room or adapted), rather than depending on opaque runtimes.
 
 ## 11. Deterministic tools decide; agents judge
@@ -101,4 +101,4 @@ the core, so `make check` runs anywhere and the system can be inspected and trus
 
 Safety and honesty (1, 6, 7, 8) outrank expressiveness (3, 9). Correctness and completeness
 (2, 4, 5) outrank speed. Determinism (11) outranks convenience. If a principle cannot be
-honoured, IIOS says so (1) rather than pretending otherwise.
+honoured, Motif says so (1) rather than pretending otherwise.

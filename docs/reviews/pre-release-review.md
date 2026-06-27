@@ -48,7 +48,7 @@ filters, bulk actions, dense forms) is under-covered. Design-system fidelity dep
 agent correctly reading existing conventions in the target repo, which is not yet
 guaranteed by tooling.
 
-**Follow-ups.** Prioritise enterprise component records and Frappe-Vue recipes in v0.2.0;
+**Follow-ups.** Prioritise enterprise component records and Frappe-Vue recipes in v2.0.0;
 add profile presets for common enterprise contexts; add validation that flags motion
 density against the active profile.
 
@@ -171,7 +171,7 @@ v0.1.0 delivers the architecture, the governance posture and a working, transpar
 over a representative registry. Its real limitations are breadth (small catalogue), licence
 verification still pending for several sources, and the absence of implemented live network
 connectors (the secure pipeline is proven on fixtures, not against real hosts). None of
-these undermine the design; they are the explicit work of v0.2.0 and beyond. The strongest
+these undermine the design; they are the explicit work of v2.0.0 and beyond. The strongest
 version of this project is not the one with the most effects, it is the one that selects
 the right effect, proves where it came from, adapts it safely, and refuses inappropriate
 motion. v0.1.0 demonstrates that discipline at small scale.
@@ -202,10 +202,9 @@ holds at a much larger, verified scale.
 
 ---
 
-## Interface Intelligence OS v0.2.0 addendum (2026-06-28)
+## Motif v2.0.0 addendum (2026-06-28)
 
-This release evolves the validated Motif foundation into the six-engine Interface
-Intelligence OS. Reviewed from the spec's 14 perspectives; the load-bearing findings:
+This release evolves the validated Motif foundation into the six-engine Motif. Reviewed from the spec's 14 perspectives; the load-bearing findings:
 
 **Strengths**
 - The foundation (secure supply chain, registry, scanners, installer) is reused intact, so

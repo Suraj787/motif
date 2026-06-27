@@ -1,6 +1,6 @@
 # Governance Engine
 
-The Governance engine is the part of **Interface Intelligence OS** that turns
+The Governance engine is the part of **Motif** that turns
 *intent* about an interface into something **machine-checkable**, and then keeps
 the realised UI honest against that intent over time. It answers three questions:
 

@@ -1,11 +1,10 @@
-"""Interface Intelligence OS (ii).
+"""Motif platform layer (the `ii` engine modules).
 
-The intelligence, compilation, assurance, and governance layer for AI coding agents.
-Built on the validated Motif / Open Interaction Intelligence secure interaction
-foundation, which it reuses as the Interaction Intelligence Engine and Secure
-Component Supply Chain.
+The design-intelligence, product-intelligence, governance, and assurance layer that
+Motif 2.0 adds on top of its validated secure interaction foundation (registry,
+scanners, secure supply chain, controlled installer).
 
-Primary CLI: `ii`. Compatibility aliases: `oii`, `motif`. Dependency-free core.
+User-facing command: `motif` (short alias `ii`; legacy alias `oii`). Dependency-free.
 """
 
-__version__ = "0.2.0"
+__version__ = "2.0.0"

@@ -3,7 +3,7 @@
   "name": "Internal Design Intelligence",
   "trust_tier": 2,
   "licence": "MIT",
-  "version": "0.2.0",
+  "version": "2.0.0",
   "update_method": "in-repo",
   "confidence": "high",
   "evidence_quality": "curated",

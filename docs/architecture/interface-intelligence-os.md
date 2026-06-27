@@ -1,6 +1,6 @@
-# Architecture, Interface Intelligence OS
+# Architecture, Motif
 
-> The six-engine architecture of IIOS, with diagrams for module structure, context flow,
+> The six-engine architecture of Motif, with diagrams for module structure, context flow,
 > decision flow, the secure-ingestion trust boundary, the compilation pipeline, the
 > assurance pipeline, the governance loop, and the agent/deterministic-tool boundary.
 >
@@ -12,7 +12,7 @@
 
 ## 1. Module architecture
 
-IIOS is six cooperating engines over a shared context model and a secure supply chain, all
+Motif is six cooperating engines over a shared context model and a secure supply chain, all
 driven by an orchestrator and exposed through the `ii` CLI and deterministic tools. Engine
 names map to top-level directories (`design-intelligence/`, `product-intelligence/`,
 `interaction-intelligence/`, `implementations/` + `compiler/`, `assurance/`, `governance/`).
@@ -227,7 +227,7 @@ learnings back into design/interaction defaults.
 
 ## 8. Agent / deterministic-tool boundary
 
-The architectural line that makes IIOS auditable: **judgment** is for agents; anything
+The architectural line that makes Motif auditable: **judgment** is for agents; anything
 **safety-affecting, repeatable, or auditable** runs in deterministic, dependency-free tools.
 
 ```mermaid
@@ -252,7 +252,7 @@ flowchart TB
 
 **Why this boundary.** Agents are powerful but non-deterministic; safety decisions must be
 reproducible and inspectable. By pushing validation, scanning, licence gating, ranking,
-assurance, and ledger/drift scoring into stdlib-only tools, IIOS guarantees that the same
+assurance, and ledger/drift scoring into stdlib-only tools, Motif guarantees that the same
 input yields the same safety verdict, that `make check` runs anywhere, and that every
 safety-affecting result is auditable independent of the agent that requested it.
 

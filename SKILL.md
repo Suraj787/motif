@@ -1,11 +1,11 @@
 ---
-name: interface-intelligence-os
+name: motif
 description: Use when an AI coding agent must design, build, improve, audit, or migrate any web interface and needs to choose the least-complex interface and interaction that achieves a real user outcome, governed by evidence rather than aesthetic impulse.
 ---
 
-# Interface Intelligence OS
+# Motif
 
-Interface Intelligence OS (IIOS) is the intelligence and governance layer between
+Motif is the intelligence and governance layer between
 product intent, AI coding agents, design systems, public UI libraries, and production
 validation. It is **not** a component dump or an animation bundle.
 
@@ -96,7 +96,7 @@ registry**; reach the internet only through an explicit, reviewed source refresh
 - `skills/governance`, genome, interaction graph, decision ledger, debt, drift.
 
 The Motif interaction foundation (`motif`, `skills/interaction-design`, and the other
-`skills/*` from that layer) remains available; IIOS composes it rather than replacing it.
+`skills/*` from that layer) remains available; Motif composes it rather than replacing it.
 
 ## CLI
 

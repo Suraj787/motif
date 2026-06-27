@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/typography-system.schema.json",
+  "$id": "https://motif.dev/schemas/typography-system.schema.json",
   "title": "typography-system",
   "type": "object",
   "required": [

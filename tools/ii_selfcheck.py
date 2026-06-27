@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dependency-free self-check for the Interface Intelligence OS layer.
+"""Dependency-free self-check for the Motif layer.
 
 Complements tools/selfcheck.py (the Motif foundation gate). Run by `make check`.
 """

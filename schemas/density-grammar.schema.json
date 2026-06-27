@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://interface-intelligence-os.dev/schemas/density-grammar.schema.json",
+  "$id": "https://motif.dev/schemas/density-grammar.schema.json",
   "title": "density-grammar",
   "type": "object",
   "required": [

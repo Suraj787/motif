@@ -1,11 +1,11 @@
 # Providers
 
-Interface Intelligence OS treats every source of knowledge as a **provider** that is
+Motif treats every source of knowledge as a **provider** that is
 normalised into internal schemas and never trusted blindly. Provider declarations live in
 `registry/providers/*.json`; each declares identity, version, trust tier, licence, update
 method, confidence, and evidence quality, and lists which record kinds it supplies.
 
-Current providers (v0.2.0):
+Current providers (v2.0.0):
 
 | Provider | Trust | Supplies | Status |
 |---|---|---|---|
