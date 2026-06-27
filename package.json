@@ -1,0 +1,23 @@
+{
+  "name": "open-interaction-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interaction-design intelligence + governance for AI coding agents. The npm manifest exists for adapter/implementation tooling; the core CLI is Python and dependency-free.",
+  "license": "MIT",
+  "scripts": {
+    "check": "make check",
+    "validate": "python3 -m oii validate"
+  },
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "interaction-design",
+    "ui-animation",
+    "motion-design",
+    "accessibility",
+    "web-performance"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

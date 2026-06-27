@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-interaction-intelligence"
+version = "0.1.0"
+description = "Interaction-design intelligence + governance for AI coding agents: securely discover, select, adapt and validate UI motion, effects and patterns."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Open Interaction Intelligence contributors" }]
+keywords = ["claude-code", "agent-skills", "interaction-design", "ui-animation", "accessibility", "web-performance"]
+dependencies = []  # core is intentionally dependency-free
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+oii = "oii.cli:main"
+
+[tool.setuptools]
+packages = ["oii", "scanners"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501", "B008"]
