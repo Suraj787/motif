@@ -175,3 +175,27 @@ these undermine the design; they are the explicit work of v0.2.0 and beyond. The
 version of this project is not the one with the most effects, it is the one that selects
 the right effect, proves where it came from, adapts it safely, and refuses inappropriate
 motion. v0.1.0 demonstrates that discipline at small scale.
+
+---
+
+## v1.0.0 addendum (2026-06-27)
+
+The 0.1.0 review's headline limitation was representative breadth. v1.0.0 addresses it
+directly and honestly:
+
+- **Sources 22 -> 90, with web verification.** Each new source's licence was checked
+  against its real `LICENSE` file, `package.json`, or official terms page, with evidence
+  URLs recorded. The pass caught licences a naive search gets wrong (p5.js LGPL, ScrollReveal
+  GPL-3.0, Shopify Polaris field-of-use, vue-bits/svelte-bits Commons Clause, Theatre.js
+  dual-licensed, Salesforce SLDS split). Anything unconfirmed stays `pending-verification`.
+- **Components 10 -> 64** across all five usability modes; **effects 14 -> 30**, **patterns
+  16 -> 28**, **recipes 4 -> 14** with real clean-room implementations.
+- **Installer matured**: framework/convention detection, dependency planning against the
+  target's `package.json`, a framework-compatibility gate, and a static security scan of the
+  implementation before applying.
+
+**Still open (honest):** live network connectors remain declarative (the pipeline is proven
+on fixtures, not against real hosts); a handful of design-system licences are medium
+confidence; component catalogues are broad but not exhaustive per source. These are the
+next increment, not gaps in the safety model. The discipline the 0.1.0 review asked for now
+holds at a much larger, verified scale.

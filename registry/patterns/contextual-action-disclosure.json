@@ -1,0 +1,42 @@
+{
+  "id": "contextual-action-disclosure",
+  "name": "Contextual action disclosure",
+  "problem": "Showing every possible action clutters the interface, but hiding them all makes features undiscoverable.",
+  "user_intent": [
+    "act on an item",
+    "reduce clutter"
+  ],
+  "suitable_pages": [
+    "data table",
+    "card grid",
+    "list view"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "hover-lift",
+    "crossfade",
+    "focus-ring-pulse"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "cursor-trail"
+  ],
+  "interaction_states": [
+    "resting",
+    "revealed",
+    "active"
+  ],
+  "accessibility_requirements": [
+    "actions reachable by keyboard not hover only",
+    "actions present in the accessibility tree when resting",
+    "focus-visible reveals the same actions as hover"
+  ],
+  "performance_budget": "60fps; opacity/transform reveal only",
+  "success_criteria": [
+    "actions are discoverable without relying on hover",
+    "keyboard and touch users reach every action"
+  ],
+  "tests": []
+}

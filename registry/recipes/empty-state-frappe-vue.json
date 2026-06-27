@@ -1,0 +1,23 @@
+{
+  "id": "empty-state-frappe-vue",
+  "name": "Empty state guidance (Frappe-Vue)",
+  "pattern": "empty-state-guidance",
+  "framework": "frappe-vue",
+  "technology": [
+    "Vue 3",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "Presentational component renders a calm, blame-free empty state with sensible defaults that switch on a variant prop ('empty' vs 'no-results'). Primary/secondary action labels are passed in (e.g. frappe._() strings) and the component emits primary/secondary; the parent owns the resource. Optional autofocusPrimary focuses the primary action on mount.",
+  "implementation_path": "implementations/frappe-vue/empty-state.md",
+  "reduced_motion": "Fade/raise appear animation removed under prefers-reduced-motion; content simply shows.",
+  "responsive_behaviour": "centered, capped at 30rem; actions wrap on narrow screens; no fixed pixel motion",
+  "browser_support": "All modern browsers; Vue 3 + scoped CSS only.",
+  "accessibility": "Labelled role=region landmark; decorative icon aria-hidden; real button actions with visible focus rings and 44px targets; autofocus off by default so focus is never yanked.",
+  "tests": [],
+  "maturity": "stable"
+}

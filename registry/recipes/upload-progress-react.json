@@ -1,0 +1,24 @@
+{
+  "id": "upload-progress-react",
+  "name": "Upload progress (React)",
+  "pattern": "upload-progress",
+  "framework": "react",
+  "technology": [
+    "React",
+    "CSS",
+    "AbortController"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "An injected upload(onProgress, signal) function drives a determinate progressbar. onProgress rounds to an integer percent, updates aria-valuenow and the fill width, and announces throttled milestones (at most once per announceEvery). Completion forces a final announce; an AbortController cancel is recognised via signal.aborted to yield a cancelled state with Retry; real rejections become an error state.",
+  "implementation_path": "implementations/react/upload-progress.md",
+  "reduced_motion": "Bar fill width transition removed under prefers-reduced-motion; the bar still updates to the correct value.",
+  "responsive_behaviour": "fluid up to 28rem; track flexes; cancel button keeps a 44px target; no fixed pixel motion",
+  "browser_support": "All modern browsers; SSR-guarded idempotent style injection; uses AbortController.",
+  "accessibility": "role=progressbar with aria-valuemin/max/now and aria-valuetext; separate polite role=status carries throttled milestones; terminal events always announce; Cancel/Retry are 44px focusable buttons; focus never stolen.",
+  "tests": [],
+  "maturity": "stable"
+}

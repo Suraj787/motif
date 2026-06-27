@@ -1,0 +1,33 @@
+{
+  "id": "cursor-trail",
+  "name": "Cursor trail",
+  "category": "pointer-motion",
+  "objective": "render a decorative trail or particles following the pointer",
+  "contexts": [
+    "creative-landing",
+    "experimental-hero"
+  ],
+  "technologies": [
+    "Canvas",
+    "requestAnimationFrame",
+    "pointer-events"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "high",
+  "accessibility_risk": "high",
+  "mobile_suitability": "poor",
+  "reduced_motion_fallback": "Show the native cursor only with no trailing elements rendered.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "cursor",
+    "ambient",
+    "decorative"
+  ]
+}

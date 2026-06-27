@@ -1,0 +1,58 @@
+{
+  "id": "webgl",
+  "name": "WebGL API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/WebGL_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript",
+    "glsl"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-accelerated 2D/3D rendering capable of complex scenes and shaders; high GPU/power draw and verbose low-level API",
+  "suitable_contexts": [
+    "3d-visualization",
+    "games",
+    "immersive-marketing",
+    "data-visualization-large",
+    "shader-effects"
+  ],
+  "unsuitable_contexts": [
+    "low-power",
+    "enterprise dense-ui",
+    "battery-sensitive mobile",
+    "accessible structured content",
+    "simple UI animation (CSS/canvas are lighter)"
+  ],
+  "strengths": [
+    "Baseline everywhere; GPU-accelerated real-time 3D and shader rendering in the browser",
+    "Mature ecosystem (Three.js, Babylon.js, PixiJS) built on top of it",
+    "Handles complex scenes, lighting and post-processing impractical for canvas 2D",
+    "Broad, stable cross-device and mobile support after a decade of deployment"
+  ],
+  "weaknesses": [
+    "High GPU and battery cost; inappropriate for low-power or dense enterprise UI",
+    "Verbose, low-level API (based on OpenGL ES); steep learning curve without a library",
+    "No DOM semantics or built-in accessibility; everything is opaque pixels",
+    "Older API design than WebGPU; less efficient for compute and modern GPU features"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/WebGL_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

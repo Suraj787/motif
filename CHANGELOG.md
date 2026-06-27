@@ -7,16 +7,47 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-Work toward the **v0.2.0** roadmap:
+- Deepen per-source component catalogues with previews and more verified records.
+- Implement live network connectors for the source-refresh workflow (currently declarative).
+- Grow recipe and adapter coverage (Angular, more Svelte/vanilla).
+- Re-verify `pending-verification` and medium-confidence licences on a schedule.
 
-- Broaden the registry to roughly 40-50 reviewed sources.
-- Expand component-level coverage across the five usability modes.
-- Strengthen controlled-installer automation (planning, patching, validation, rollback).
-- Add more tested clean-room recipes and worked decision examples.
-- Re-verify licence facts online and reduce the number of `pending-verification` sources.
+## [1.0.0] - 2026-06-27
 
-(Longer term, v1.0.0 targets 75-100 thoroughly reviewed sources, broad component
-coverage, mature adapters and a proven contributor workflow.)
+Broadens coverage to a thoroughly reviewed source set with web-verified licences, expands
+the catalogues, and matures the controlled installer. The architecture, security model and
+honesty discipline from 0.1.0 are unchanged.
+
+### Added
+
+- **Source set expanded 22 → 90.** Every new source's licence was verified against its
+  actual `LICENSE` file, `package.json` `license` field, or official terms page (recorded
+  under `evidence`). Split: 53 redistributable, 20 adaptable-concept, 17 reference-only.
+- **Component catalogue expanded 10 → 64**, across all five usability modes (37 installable,
+  17 adaptable, 9 reference-only, 1 rejected).
+- **Taxonomies expanded**: effects 14 → 30, patterns 16 → 28; recipes 4 → 14 with real,
+  dependency-free, reduced-motion-aware clean-room implementations across browser-native,
+  Vue, Frappe-Vue, React and Svelte.
+- **Matured controlled installer.** New `motif/project.py` detects the target's framework,
+  TypeScript/Tailwind and installed dependencies; the install plan now includes a
+  framework-compatibility gate, a dependency plan against the project's `package.json`, and
+  a static security scan of the implementation before applying.
+- **`THIRD_PARTY_SOURCES.md` regenerated from the registry** so it always matches the
+  records, with a section documenting notable licence nuances.
+
+### Changed
+
+- `make check` now runs 60 self-checks (added project detection, dependency planning and
+  the larger registry).
+- Documentation, README and the research methodology updated with the verification pass and
+  corrected licence facts (p5.js LGPL, ScrollReveal GPL-3.0, Shopify Polaris field-of-use,
+  vue-bits/svelte-bits Commons Clause, Theatre.js dual-licensed, Salesforce SLDS split).
+
+### Notes
+
+Live network connectors remain declarative (specified, not yet implemented); the
+source-refresh workflow is offline in this release. Licence facts are confidence-rated;
+re-verify before bundling anything new.
 
 ## [0.1.0] - 2026-06-27
 
@@ -69,5 +100,6 @@ This is representative breadth, not full coverage. Licence facts are confidence-
 `pending-verification`. Live network connectors are specified but not implemented in this
 release.
 
-[Unreleased]: https://github.com/Suraj787/motif/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Suraj787/motif/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Suraj787/motif/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/Suraj787/motif/releases/tag/v0.1.0

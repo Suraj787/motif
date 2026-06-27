@@ -1,0 +1,53 @@
+{
+  "id": "resize-observer",
+  "name": "Resize Observer API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/Resize_Observer_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "Fires per-element size-change callbacks synchronously before paint; avoids window resize polling and layout thrash",
+  "suitable_contexts": [
+    "enterprise",
+    "marketing",
+    "editorial",
+    "low-power",
+    "mobile",
+    "dense-ui"
+  ],
+  "unsuitable_contexts": [
+    "tracking position/scroll changes (it only reports size, not coordinates)"
+  ],
+  "strengths": [
+    "Baseline everywhere; element-level size observation independent of the viewport",
+    "Foundation for container-responsive components and charts/canvas resizing",
+    "Avoids costly global resize listeners and manual measurement loops",
+    "Provides content-box, border-box and device-pixel content-box dimensions"
+  ],
+  "weaknesses": [
+    "Easy to cause 'ResizeObserver loop' warnings when callbacks mutate observed size",
+    "Reports size only, not visibility or position on screen",
+    "Heavy synchronous work inside the callback can delay paint"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/Resize_Observer_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

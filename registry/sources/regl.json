@@ -1,0 +1,47 @@
+{
+  "id": "regl",
+  "name": "regl",
+  "category": "canvas-particles-generative",
+  "homepage": "https://regl-project.github.io/regl/",
+  "repository": "https://github.com/regl-project/regl",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/regl-project/regl/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "slow",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "functional WebGL abstraction; continuous render loop",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "stateless functional WebGL API",
+    "fine-grained control over draw commands"
+  ],
+  "weaknesses": [
+    "continuous render loop drains battery on low-power devices",
+    "low-level; steeper learning curve"
+  ],
+  "evidence": [
+    "https://regl-project.github.io/regl/",
+    "https://github.com/regl-project/regl",
+    "https://github.com/regl-project/regl/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

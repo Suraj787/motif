@@ -1,0 +1,46 @@
+{
+  "id": "ogl",
+  "name": "OGL",
+  "category": "canvas-particles-generative",
+  "homepage": "https://github.com/oframe/ogl",
+  "repository": "https://github.com/oframe/ogl",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "Unlicense",
+  "license_reference": "https://github.com/oframe/ogl/blob/master/package.json",
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 3,
+  "maintenance": "maintained",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "minimal WebGL wrapper; continuous render loop",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "tiny, low-overhead WebGL library",
+    "Unlicense (public domain), no attribution required"
+  ],
+  "weaknesses": [
+    "continuous render loop drains battery on low-power devices",
+    "sparse documentation; relies on examples"
+  ],
+  "evidence": [
+    "https://github.com/oframe/ogl",
+    "https://github.com/oframe/ogl/blob/master/package.json"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

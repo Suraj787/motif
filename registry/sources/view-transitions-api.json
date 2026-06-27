@@ -1,0 +1,53 @@
+{
+  "id": "view-transitions-api",
+  "name": "View Transitions API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/View_Transitions_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "css",
+    "javascript"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "Browser snapshots old and new states and animates them on the compositor; cheap relative to manual FLIP implementations",
+  "suitable_contexts": [
+    "marketing",
+    "editorial",
+    "spa-navigation",
+    "shared-element transitions"
+  ],
+  "unsuitable_contexts": [
+    "experiences that must work identically on older browsers without fallback",
+    "enterprise apps with strict legacy-browser support matrices"
+  ],
+  "strengths": [
+    "Native shared-element and cross-document/SPA page transitions with minimal code",
+    "Browser handles snapshotting and crossfade automatically via document.startViewTransition",
+    "Cross-document MPA transitions available via @view-transition CSS, no framework needed",
+    "Degrades gracefully: without support the state change just happens instantly"
+  ],
+  "weaknesses": [
+    "Newer baseline; cross-document support and Firefox lagged adoption, so progressive enhancement is required",
+    "Default crossfade can ignore prefers-reduced-motion unless authored carefully",
+    "Snapshot capture can be costly for very large or complex DOM trees"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/View_Transitions_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

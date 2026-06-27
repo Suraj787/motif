@@ -1,0 +1,50 @@
+{
+  "id": "shadcn-vue",
+  "name": "shadcn-vue",
+  "category": "accessible-ui-foundation",
+  "homepage": "https://www.shadcn-vue.com",
+  "repository": "https://github.com/unovue/shadcn-vue",
+  "frameworks": [
+    "vue"
+  ],
+  "technologies": [
+    "typescript",
+    "tailwindcss",
+    "reka-ui"
+  ],
+  "dependency_model": "copy-paste",
+  "delivery_model": "registry-cli",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/unovue/shadcn-vue/blob/dev/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "copy-in components, no runtime dependency lock-in",
+  "suitable_contexts": [
+    "vue web app",
+    "design systems"
+  ],
+  "unsuitable_contexts": [
+    "non-vue stacks"
+  ],
+  "strengths": [
+    "shadcn/ui port for Vue",
+    "owns the code via copy-paste / CLI",
+    "built on Reka UI accessible primitives"
+  ],
+  "weaknesses": [
+    "Vue-only",
+    "Tailwind-coupled"
+  ],
+  "evidence": [
+    "https://www.shadcn-vue.com",
+    "https://github.com/unovue/shadcn-vue/blob/dev/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

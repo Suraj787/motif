@@ -1,0 +1,48 @@
+{
+  "id": "curtainsjs",
+  "name": "curtains.js",
+  "category": "3d-shader",
+  "homepage": "https://www.curtainsjs.com",
+  "repository": "https://github.com/martinlaxenaire/curtainsjs",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [
+    "WebGL",
+    "GLSL"
+  ],
+  "dependency_model": "self-contained library",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/martinlaxenaire/curtainsjs/blob/master/LICENSE.txt",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "slow",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL shader rendering",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "maps HTML/images to WebGL planes with shaders",
+    "lightweight vanilla WebGL wrapper"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order",
+    "slow maintenance cadence"
+  ],
+  "evidence": [
+    "https://www.curtainsjs.com",
+    "https://github.com/martinlaxenaire/curtainsjs"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

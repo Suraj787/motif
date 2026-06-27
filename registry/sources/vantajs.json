@@ -1,0 +1,48 @@
+{
+  "id": "vantajs",
+  "name": "Vanta.js",
+  "category": "canvas-particles-generative",
+  "homepage": "https://www.vantajs.com",
+  "repository": "https://github.com/tengbao/vanta",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/tengbao/vanta/blob/master/package.json",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "slow",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "animated 3D backgrounds; continuous WebGL render loop",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "drop-in animated 3D website backgrounds",
+    "MIT licensed, minimal setup"
+  ],
+  "weaknesses": [
+    "requires three.js or p5.js peer dependency at runtime - significant transitive weight",
+    "continuous WebGL render loop drains battery on low-power devices"
+  ],
+  "evidence": [
+    "https://www.vantajs.com",
+    "https://github.com/tengbao/vanta",
+    "https://github.com/tengbao/vanta/blob/master/package.json"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

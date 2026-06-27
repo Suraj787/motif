@@ -1,0 +1,45 @@
+{
+  "id": "locomotive-scroll",
+  "name": "Locomotive Scroll",
+  "category": "scrolling-transitions",
+  "homepage": "https://scroll.locomotive.ca",
+  "repository": "https://github.com/locomotivemtl/locomotive-scroll",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/locomotivemtl/locomotive-scroll/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "maintained",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "smooth scroll via transform; can be heavy on long pages",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "smooth scroll with parallax/data-attributes",
+    "popular for editorial sites"
+  ],
+  "weaknesses": [
+    "scroll-hijacking harms accessibility and native scroll behaviour \u2014 use cautiously"
+  ],
+  "evidence": [
+    "https://scroll.locomotive.ca",
+    "https://github.com/locomotivemtl/locomotive-scroll/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

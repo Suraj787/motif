@@ -1,0 +1,33 @@
+{
+  "id": "page-route-fade",
+  "name": "Page route fade",
+  "category": "transition",
+  "objective": "crossfade between routes to soften navigation between views",
+  "contexts": [
+    "spa-navigation",
+    "multi-step-flow"
+  ],
+  "technologies": [
+    "CSS",
+    "View-Transition-API",
+    "opacity"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Swap routes instantly with no fade between the outgoing and incoming views.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "routing",
+    "transition",
+    "fade"
+  ]
+}

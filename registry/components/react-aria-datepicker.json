@@ -1,0 +1,35 @@
+{
+  "id": "react-aria-datepicker",
+  "name": "DatePicker",
+  "source": "react-aria",
+  "canonical_page": "https://react-spectrum.adobe.com/react-aria/DatePicker.html",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "unstyled + CSS",
+  "animation_technology": "CSS",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm react-aria-components",
+  "copy_paste_available": false,
+  "license": "Apache-2.0",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "good",
+  "reduced_motion_support": "yes",
+  "responsive_behaviour": "good",
+  "performance_cost": "low",
+  "complexity": "high",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://react-spectrum.adobe.com/react-aria/DatePicker.html"
+  ]
+}

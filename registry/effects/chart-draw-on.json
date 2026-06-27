@@ -1,0 +1,35 @@
+{
+  "id": "chart-draw-on",
+  "name": "Chart draw-on",
+  "category": "data-viz",
+  "objective": "animate chart lines, bars, or arcs drawing in as data appears",
+  "contexts": [
+    "dashboard",
+    "report",
+    "analytics"
+  ],
+  "technologies": [
+    "CSS",
+    "SVG",
+    "stroke-dashoffset",
+    "IntersectionObserver"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Render the chart fully drawn in its final state with no draw-in animation.",
+  "enterprise_suitability": "conditional",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "chart",
+    "dataviz",
+    "draw"
+  ]
+}

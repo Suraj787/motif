@@ -1,0 +1,54 @@
+{
+  "id": "svg-animation",
+  "name": "SVG Animation (SMIL + CSS)",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/SVG/Guides/SVG_animation_with_SMIL",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "svg",
+    "css"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "Resolution-independent vector animation; CSS-driven transform/opacity is compositor-friendly, while SMIL and path/attribute animation run on the main thread",
+  "suitable_contexts": [
+    "marketing",
+    "editorial",
+    "icons-and-logos",
+    "data-visualization",
+    "illustrations"
+  ],
+  "unsuitable_contexts": [
+    "very large or highly complex scenes (canvas/WebGL scale better)",
+    "high element-count particle effects"
+  ],
+  "strengths": [
+    "Crisp, resolution-independent animation of icons, logos and illustrations",
+    "Can animate stroke, path morphing and attributes not reachable by plain CSS",
+    "CSS animation of SVG transform/opacity is GPU-friendly and accessible",
+    "Self-contained, scriptable and stylable within the DOM"
+  ],
+  "weaknesses": [
+    "SMIL has been historically deprecation-threatened and is uneven across engines; CSS/Web Animations are the safer path",
+    "Animating many nodes or complex filters is CPU-heavy and can jank",
+    "Accessibility requires explicit roles/labels and reduced-motion handling"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/SVG/Guides/SVG_animation_with_SMIL"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

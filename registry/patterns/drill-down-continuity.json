@@ -1,0 +1,42 @@
+{
+  "id": "drill-down-continuity",
+  "name": "Drill-down continuity",
+  "problem": "Navigating from a summary item to its detail view feels disconnected, breaking spatial context.",
+  "user_intent": [
+    "explore a record",
+    "move between overview and detail"
+  ],
+  "suitable_pages": [
+    "dashboard",
+    "catalog",
+    "gallery"
+  ],
+  "unsuitable_pages": [
+    "form"
+  ],
+  "recommended_effects": [
+    "shared-element",
+    "page-route-fade"
+  ],
+  "rejected_effects": [
+    "marquee-ticker",
+    "noise-grain-overlay"
+  ],
+  "interaction_states": [
+    "overview",
+    "transitioning",
+    "detail",
+    "returning"
+  ],
+  "accessibility_requirements": [
+    "maintain focus order across the transition",
+    "provide a clear back affordance",
+    "transition is skippable under reduced motion"
+  ],
+  "performance_budget": "60fps; transform/opacity only; under 400ms transition",
+  "success_criteria": [
+    "the relationship between summary and detail is visually preserved",
+    "navigation works without animation when reduced motion is set"
+  ],
+  "tests": []
+}

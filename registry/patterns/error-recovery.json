@@ -1,0 +1,44 @@
+{
+  "id": "error-recovery",
+  "name": "Error recovery",
+  "problem": "When an action fails, users are left without a clear explanation or a path to fix it.",
+  "user_intent": [
+    "recover from an error",
+    "retry an action"
+  ],
+  "suitable_pages": [
+    "form",
+    "checkout",
+    "upload",
+    "editor"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "optimistic-flash",
+    "toast-slide",
+    "focus-ring-pulse"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "cursor-trail"
+  ],
+  "interaction_states": [
+    "error",
+    "explaining",
+    "retrying",
+    "recovered"
+  ],
+  "accessibility_requirements": [
+    "error announced via aria-live assertive",
+    "error text tied to the relevant control via aria-describedby",
+    "retry affordance is keyboard reachable"
+  ],
+  "performance_budget": "instant error surfacing; retry response without full reload",
+  "success_criteria": [
+    "the cause of the error is explained in plain language",
+    "users can retry or correct without losing their input"
+  ],
+  "tests": []
+}

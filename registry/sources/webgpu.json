@@ -1,0 +1,58 @@
+{
+  "id": "webgpu",
+  "name": "WebGPU API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/WebGPU_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript",
+    "wgsl"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "Modern explicit GPU API exposing rendering and compute shaders; lower driver overhead and better multi-threading than WebGL, at high implementation complexity",
+  "suitable_contexts": [
+    "3d-visualization",
+    "gpu-compute",
+    "machine-learning-inference",
+    "games-high-end",
+    "scientific-visualization"
+  ],
+  "unsuitable_contexts": [
+    "low-power",
+    "enterprise dense-ui",
+    "older browsers and devices without WebGPU support",
+    "broad mobile reach",
+    "accessible structured content"
+  ],
+  "strengths": [
+    "Modern explicit GPU API with first-class compute shaders, not just rendering",
+    "Lower CPU/driver overhead and better parallelism than WebGL",
+    "Enables in-browser GPU compute for ML, simulation and large-scale visualization",
+    "WGSL shading language and a cleaner resource/pipeline model"
+  ],
+  "weaknesses": [
+    "Newer baseline; support arrived later and remains limited on older browsers and many mobile/older devices, so a WebGL fallback is usually required",
+    "Highest complexity of the graphics APIs; verbose pipeline and bind-group setup",
+    "Heavy GPU and battery usage; unsuitable for low-power or dense enterprise UI",
+    "No DOM semantics or built-in accessibility; ecosystem still maturing"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/WebGPU_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

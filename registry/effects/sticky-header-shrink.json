@@ -1,0 +1,34 @@
+{
+  "id": "sticky-header-shrink",
+  "name": "Sticky header shrink",
+  "category": "scroll-motion",
+  "objective": "shrink and condense a sticky header as the user scrolls down",
+  "contexts": [
+    "app-shell",
+    "content-site"
+  ],
+  "technologies": [
+    "CSS",
+    "position-sticky",
+    "IntersectionObserver",
+    "transition"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Keep the header at a single fixed size; switch state instantly at the threshold with no size tween.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "header",
+    "scroll",
+    "sticky"
+  ]
+}

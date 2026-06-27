@@ -1,0 +1,26 @@
+{
+  "id": "shared-element-view-transition-browser-native",
+  "name": "Shared-element navigation via View Transitions (browser-native)",
+  "pattern": "shared-element-navigation",
+  "framework": "browser-native",
+  "technology": [
+    "View Transitions API",
+    "JavaScript",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "browser standard (no licence needed)",
+  "provenance_type": "browser-native",
+  "source_references": [
+    "view-transitions-api"
+  ],
+  "algorithm": "If document.startViewTransition is unsupported or reduced motion is set, the injected updateDOM() runs instantly and focus moves to the new view. Otherwise the outgoing element is tagged with a shared view-transition-name, the DOM mutation runs inside startViewTransition so the browser morphs the matching pair, the name is freed once transition.ready settles, and focus moves to the new heading after transition.finished.",
+  "implementation_path": "implementations/browser-native/view-transition-nav.md",
+  "reduced_motion": "prefers-reduced-motion forces the instant path: DOM updates with no view transition or morph.",
+  "responsive_behaviour": "fluid; no fixed pixel motion; morph driven by element geometry",
+  "browser_support": "Same-document view transitions in Chromium 111+ with rollout to Safari/Firefox; everywhere else automatically takes the instant fallback.",
+  "accessibility": "Morph is pure enhancement; DOM always correct; focus moved to the new heading (tabindex -1 if needed); modifier/middle clicks left to native behaviour.",
+  "tests": [],
+  "maturity": "experimental"
+}

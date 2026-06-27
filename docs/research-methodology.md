@@ -99,8 +99,20 @@ This is the governing rule of all Motif research:
 - If a number is not measured or read from an authoritative source, it is not recorded as
   fact, describe the uncertainty instead.
 - Prefer a smaller set of **high-confidence, evidence-backed** records over fabricated
-  breadth. Motif v0.1.0 deliberately ships representative depth (16 deeply reviewed
-  sources plus the pipeline and schema for the rest) rather than 100 unverified rows.
+  breadth.
+
+## v1.0.0 verification pass
+
+For the v1.0.0 release the source set was broadened to roughly 90 sources, and each new
+record's licence was checked against the project's actual `LICENSE` file, `package.json`
+`license` field, or official terms page (recorded under `evidence`). This pass corrected
+several assumptions that a naive search would get wrong, for example: p5.js is LGPL-2.1
+(copyleft, so `adaptable-concept`, not bundled); ScrollReveal is GPL-3.0 with a paid
+commercial licence (`reference-only`); Shopify Polaris is a field-of-use-restricted
+modified MIT; Salesforce SLDS splits BSD-3-Clause code from no-derivatives CC-BY-NC-ND
+assets; vue-bits / svelte-bits / animate-ui carry a Commons Clause (source-available);
+and Theatre.js is dual-licensed (Apache-2.0 core, AGPL studio). Anything that could not
+be confirmed is marked `pending-verification` with reduced `confidence`, never asserted.
 - Every claim that affects a safety decision (licence, redistribution, behaviour) must be
   backed by `evidence` or downgraded in `confidence`/`status`.
 

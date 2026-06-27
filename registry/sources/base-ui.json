@@ -1,0 +1,47 @@
+{
+  "id": "base-ui",
+  "name": "Base UI",
+  "category": "accessible-ui-foundation",
+  "homepage": "https://base-ui.com",
+  "repository": "https://github.com/mui/base-ui",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "dependency_model": "npm",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/mui/base-ui/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "lightweight unstyled primitives, tree-shakeable",
+  "suitable_contexts": [
+    "design systems",
+    "web app"
+  ],
+  "unsuitable_contexts": [
+    "non-react stacks"
+  ],
+  "strengths": [
+    "unstyled accessible React primitives",
+    "from the MUI, Radix and Floating UI teams"
+  ],
+  "weaknesses": [
+    "React-only",
+    "younger API still stabilizing"
+  ],
+  "evidence": [
+    "https://base-ui.com",
+    "https://github.com/mui/base-ui/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

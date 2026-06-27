@@ -1,0 +1,42 @@
+{
+  "id": "siteinspire",
+  "name": "SiteInspire",
+  "category": "creative-reference",
+  "homepage": "https://www.siteinspire.com",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "reference (SiteInspire terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "unknown",
+  "performance_characteristics": "n/a (gallery)",
+  "suitable_contexts": [
+    "web and interactive design inspiration",
+    "layout and style trend study"
+  ],
+  "unsuitable_contexts": [
+    "production component source"
+  ],
+  "strengths": [
+    "well-curated showcase of finely designed web and interactive projects"
+  ],
+  "weaknesses": [
+    "treat visual galleries as inspiration, not reusable code"
+  ],
+  "evidence": [
+    "https://www.siteinspire.com"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

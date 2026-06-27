@@ -1,0 +1,45 @@
+{
+  "id": "barba-js",
+  "name": "Barba.js",
+  "category": "scrolling-transitions",
+  "homepage": "https://barba.js.org",
+  "repository": "https://github.com/barbajs/barba",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/barbajs/barba/blob/master/packages/core/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "slow",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "page-transition orchestration via fetch + DOM swap",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "smooth SPA-like page transitions",
+    "prefetch + view lifecycle hooks"
+  ],
+  "weaknesses": [
+    "custom DOM/history takeover can break accessibility, focus management and back/forward unless handled carefully"
+  ],
+  "evidence": [
+    "https://barba.js.org",
+    "https://github.com/barbajs/barba/blob/master/packages/core/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "list-reorder-flip",
+  "name": "List reorder (FLIP)",
+  "category": "layout-animation",
+  "objective": "animate list items to new positions when order changes using the FLIP technique",
+  "contexts": [
+    "sortable-list",
+    "leaderboard",
+    "filtered-grid"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "getBoundingClientRect",
+    "requestAnimationFrame"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "high",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "conditional",
+  "reduced_motion_fallback": "Reflow items to their new positions instantly with no movement tween.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "adapted-concept",
+  "testing": [],
+  "tags": [
+    "flip",
+    "reorder",
+    "layout"
+  ]
+}

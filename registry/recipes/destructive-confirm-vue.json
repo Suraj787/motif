@@ -1,0 +1,24 @@
+{
+  "id": "destructive-confirm-vue",
+  "name": "Destructive confirmation (Vue 3)",
+  "pattern": "destructive-confirmation",
+  "framework": "vue",
+  "technology": [
+    "Vue 3",
+    "HTML dialog",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "v-model:open drives a native <dialog>; a watch calls showModal()/close(). On open the trigger is saved and focus moves to the safe Cancel button (data-default-focus). showModal() traps focus and inerts the page. Escape/backdrop fire native cancel, routed through a single cancel() path; on close focus is restored to the trigger. An optional confirm-phrase gates the destructive button until the exact phrase is typed.",
+  "implementation_path": "implementations/vue/destructive-confirm.md",
+  "reduced_motion": "Open animation and backdrop fade disabled under prefers-reduced-motion; dialog appears instantly.",
+  "responsive_behaviour": "min(28rem, 100vw - 2rem) wide; actions right-aligned and wrap if needed; no fixed pixel motion",
+  "browser_support": "Evergreen browsers and Safari 15.4+ for dialog.showModal()/::backdrop; degrades to open attribute.",
+  "accessibility": "aria-labelledby title; danger button aria-describedby the plain-language consequence; focus defaults to Cancel; Escape cancels; focus restored on close; type-to-confirm gate; 44px targets and visible focus rings.",
+  "tests": [],
+  "maturity": "stable"
+}

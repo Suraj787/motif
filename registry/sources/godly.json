@@ -1,0 +1,42 @@
+{
+  "id": "godly",
+  "name": "Godly",
+  "category": "creative-reference",
+  "homepage": "https://godly.website",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "reference (Godly terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 4,
+  "maintenance": "active",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "unknown",
+  "performance_characteristics": "n/a (gallery)",
+  "suitable_contexts": [
+    "motion inspiration",
+    "bold/experimental web design trends"
+  ],
+  "unsuitable_contexts": [
+    "production component source"
+  ],
+  "strengths": [
+    "daily-curated gallery of bold, experimental interaction and motion design"
+  ],
+  "weaknesses": [
+    "treat visual galleries as inspiration, not reusable code"
+  ],
+  "evidence": [
+    "https://godly.website"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

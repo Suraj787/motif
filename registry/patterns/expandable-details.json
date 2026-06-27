@@ -1,0 +1,43 @@
+{
+  "id": "expandable-details",
+  "name": "Expandable details",
+  "problem": "Showing all detail at once overwhelms users, but hiding it removes context they may need.",
+  "user_intent": [
+    "scan then dig deeper",
+    "control information density"
+  ],
+  "suitable_pages": [
+    "faq",
+    "record details",
+    "settings",
+    "pricing"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "accordion-expand",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "parallax-layer",
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "collapsed",
+    "expanding",
+    "expanded",
+    "collapsing"
+  ],
+  "accessibility_requirements": [
+    "toggle exposes aria-expanded state",
+    "panel is keyboard operable",
+    "no motion-only indication of expanded state"
+  ],
+  "performance_budget": "60fps; height transition only; respect reduced motion",
+  "success_criteria": [
+    "users can reveal and hide detail predictably",
+    "expanded content is reachable by keyboard and screen reader"
+  ],
+  "tests": []
+}

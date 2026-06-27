@@ -1,0 +1,45 @@
+{
+  "id": "vivus",
+  "name": "Vivus",
+  "category": "svg-icon-motion",
+  "homepage": "https://maxwellito.github.io/vivus/",
+  "repository": "https://github.com/maxwellito/vivus",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/maxwellito/vivus/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "stale",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "animates SVG path stroke drawing; lightweight, no dependencies",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "accessibility-first"
+  ],
+  "strengths": [
+    "zero-dependency SVG line-drawing animation",
+    "simple API"
+  ],
+  "weaknesses": [
+    "only handles stroke-draw effect on SVG paths",
+    "project largely unmaintained"
+  ],
+  "evidence": [
+    "https://maxwellito.github.io/vivus/",
+    "https://github.com/maxwellito/vivus/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

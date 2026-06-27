@@ -1,0 +1,37 @@
+{
+  "id": "lottie-player",
+  "name": "Lottie Player",
+  "source": "lottie",
+  "canonical_page": "https://airbnb.io/lottie/#/web",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla",
+  "styling_technology": "CSS",
+  "animation_technology": "Lottie (SVG/Canvas)",
+  "dependencies": [
+    "lottie-web"
+  ],
+  "required_assets": [
+    "animation.json"
+  ],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm lottie-web",
+  "copy_paste_available": false,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://airbnb.io/lottie/#/web"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "scrolltrigger",
+  "name": "GSAP ScrollTrigger",
+  "category": "scrolling-transitions",
+  "homepage": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+  "repository": "https://github.com/greensock/GSAP",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "requires-gsap-core",
+  "delivery_model": "mixed",
+  "access_class": "free",
+  "license": "GSAP Standard 'No Charge' License (custom, not SPDX)",
+  "license_reference": "https://gsap.com/standard-license",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "performant scroll-driven animation; depends on GSAP core",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "accessibility-first"
+  ],
+  "strengths": [
+    "industry-standard scroll-trigger plugin",
+    "robust pinning, scrubbing, snapping"
+  ],
+  "weaknesses": [
+    "licence nuance: GSAP plugin under GSAP custom 'no charge' license (now free incl. ScrollTrigger after Webflow made GSAP 100% free in 2025) \u2014 not a standard SPDX licence; bundling/redistributing GSAP as part of a competing tool is restricted, so treat as adaptable concept rather than free redistribution",
+    "requires GSAP core dependency"
+  ],
+  "evidence": [
+    "https://gsap.com/standard-license",
+    "https://webflow.com/updates/gsap-becomes-free",
+    "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+    "https://github.com/greensock/GSAP"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

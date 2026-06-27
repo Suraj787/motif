@@ -1,0 +1,54 @@
+{
+  "id": "css-keyframes",
+  "name": "CSS Animations (@keyframes)",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/CSS/CSS_animations",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "css"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "Compositor-accelerated for transform/opacity; runs off main thread when animating cheap properties",
+  "suitable_contexts": [
+    "enterprise",
+    "marketing",
+    "editorial",
+    "low-power",
+    "mobile",
+    "dense-ui"
+  ],
+  "unsuitable_contexts": [
+    "data-driven or interactive timeline scrubbing",
+    "motion that must react to runtime input mid-animation"
+  ],
+  "strengths": [
+    "Baseline everywhere; declarative multi-step keyframe sequencing",
+    "Looping, delay, direction, fill-mode and play-state without JS",
+    "Compositor-friendly for transform/opacity; good battery behaviour",
+    "Pairs with prefers-reduced-motion for accessible fallbacks"
+  ],
+  "weaknesses": [
+    "Hard to coordinate complex timelines or stagger many elements",
+    "No runtime control of progress without the Web Animations API",
+    "Animating layout properties causes reflow and dropped frames"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/CSS/CSS_animations"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

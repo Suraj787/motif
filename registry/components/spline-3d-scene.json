@@ -1,0 +1,36 @@
+{
+  "id": "spline-3d-scene",
+  "name": "Embedded 3D Scene",
+  "source": "spline",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "N/A",
+  "animation_technology": "Spline runtime (WebGL)",
+  "dependencies": [
+    "@splinetool/react-spline",
+    "@splinetool/runtime"
+  ],
+  "required_assets": [
+    "Spline .splinecode scene export"
+  ],
+  "browser_requirements": "WebGL2-capable browser",
+  "installation_method": "varies",
+  "copy_paste_available": false,
+  "license": "Proprietary (freemium SaaS; runtime exports)",
+  "component_exceptions": "Reference/inspiration only; verify per-element licence before any reuse.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "unclear",
+  "modification": "unclear",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "no",
+  "responsive_behaviour": "good",
+  "performance_cost": "high",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "reference-only",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

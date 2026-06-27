@@ -1,0 +1,36 @@
+{
+  "id": "drawer-slide",
+  "name": "Drawer slide",
+  "category": "entrance",
+  "objective": "slide a panel in from a screen edge to reveal secondary content",
+  "contexts": [
+    "mobile-nav",
+    "filters",
+    "cart",
+    "details-panel"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "transition",
+    "focus-trap"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Show the drawer in its open position immediately with no sliding transition.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "drawer",
+    "panel",
+    "slide"
+  ]
+}

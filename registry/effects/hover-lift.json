@@ -1,0 +1,35 @@
+{
+  "id": "hover-lift",
+  "name": "Hover lift",
+  "category": "hover-feedback",
+  "objective": "lift and shadow a card or button on hover to signal interactivity",
+  "contexts": [
+    "card-grid",
+    "cta",
+    "pricing"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "box-shadow",
+    "transition"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "conditional",
+  "reduced_motion_fallback": "Apply a static shadow or border change on hover with no transform or transition.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "hover",
+    "card",
+    "affordance"
+  ]
+}

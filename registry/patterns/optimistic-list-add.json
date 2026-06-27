@@ -1,0 +1,44 @@
+{
+  "id": "optimistic-list-add",
+  "name": "Optimistic list add",
+  "problem": "Adding an item to a list feels slow when the UI waits for the server before showing it.",
+  "user_intent": [
+    "add an item",
+    "build a collection"
+  ],
+  "suitable_pages": [
+    "todo list",
+    "cart",
+    "comment thread"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "spring-scale",
+    "optimistic-flash",
+    "toast-slide"
+  ],
+  "rejected_effects": [
+    "parallax-layer",
+    "noise-grain-overlay"
+  ],
+  "interaction_states": [
+    "idle",
+    "adding",
+    "added",
+    "reconciling",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "announce the added item via aria-live",
+    "move focus to the new item or its input",
+    "clearly indicate and recover from a failed add"
+  ],
+  "performance_budget": "60fps; insert animation under one frame budget",
+  "success_criteria": [
+    "the new item appears immediately on submit",
+    "a failed add is rolled back with a clear, recoverable error"
+  ],
+  "tests": []
+}

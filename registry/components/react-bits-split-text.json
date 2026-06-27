@@ -1,0 +1,33 @@
+{
+  "id": "react-bits-split-text",
+  "name": "Split Text",
+  "source": "react-bits",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "CSS",
+  "animation_technology": "GSAP",
+  "dependencies": [
+    "gsap"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "varies",
+  "copy_paste_available": true,
+  "license": "MIT",
+  "component_exceptions": "Adapt the interaction concept; do not copy/port the source into another framework.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "partial",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "adaptable",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

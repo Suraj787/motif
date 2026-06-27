@@ -1,0 +1,49 @@
+{
+  "id": "rive",
+  "name": "Rive",
+  "category": "svg-icon-motion",
+  "homepage": "https://rive.app",
+  "repository": "https://github.com/rive-app/rive-runtime",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "freemium",
+  "license": "MIT (runtimes); editor is a paid SaaS (freemium)",
+  "license_reference": "https://github.com/rive-app/rive-runtime/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "vector runtime with state machines; efficient, GPU-accelerated rendering",
+  "suitable_contexts": [
+    "marketing",
+    "editorial",
+    "product onboarding"
+  ],
+  "unsuitable_contexts": [
+    "accessibility-first"
+  ],
+  "strengths": [
+    "interactive state-machine vector animations",
+    "MIT-licensed runtimes free for commercial use, exports keep working forever",
+    "official web and react runtimes"
+  ],
+  "weaknesses": [
+    "authoring requires the Rive editor (freemium: Free, plus paid Cadet $9/mo, Voyager, Enterprise tiers) \u2014 runtime is free/MIT but the design tool is the paywalled part",
+    "decorative motion needs reduced-motion handling"
+  ],
+  "evidence": [
+    "https://github.com/rive-app/rive-runtime/blob/main/LICENSE",
+    "https://rive.app/pricing",
+    "https://rive.app/runtimes"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "github-primer",
+  "name": "GitHub Primer",
+  "category": "enterprise-design-system",
+  "homepage": "https://primer.style",
+  "repository": "https://github.com/primer/css",
+  "frameworks": [
+    "react",
+    "browser-native"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT (Primer code); GitHub brand/logos reserved",
+  "license_reference": "https://github.com/primer/css/blob/main/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion/animation token reference"
+  ],
+  "unsuitable_contexts": [
+    "reskinning as GitHub brand"
+  ],
+  "strengths": [
+    "documented animation/transition design tokens (durations, easing)",
+    "clear, accessible enterprise interaction guidance"
+  ],
+  "weaknesses": [
+    "Primer code is MIT but GitHub brand and logos are reserved (reference-only)",
+    "adapt motion tokens/principles; do not present work as GitHub's brand"
+  ],
+  "evidence": [
+    "https://github.com/primer/css/blob/main/LICENSE",
+    "https://primer.style"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

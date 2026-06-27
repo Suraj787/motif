@@ -1,0 +1,49 @@
+{
+  "id": "spline",
+  "name": "Spline",
+  "category": "3d-shader",
+  "homepage": "https://spline.design",
+  "repository": "https://github.com/splinetool",
+  "frameworks": [
+    "react",
+    "vanilla"
+  ],
+  "technologies": [
+    "WebGL"
+  ],
+  "dependency_model": "design tool; exports runtime viewer (@splinetool/react-spline, spline-viewer)",
+  "delivery_model": "mixed",
+  "access_class": "freemium",
+  "license": "Proprietary (freemium SaaS; runtime exports)",
+  "license_reference": "https://spline.design",
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL; heavy runtime payloads",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "no-code interactive 3D design tool",
+    "exports React/web runtime and embeddable viewer"
+  ],
+  "weaknesses": [
+    "proprietary freemium tooling; reference only for our purposes",
+    "heavy runtime; vendor lock-in"
+  ],
+  "evidence": [
+    "https://spline.design",
+    "Spline homepage confirms freemium model and React/Next.js/HTML runtime exports"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

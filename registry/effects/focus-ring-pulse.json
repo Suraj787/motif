@@ -1,0 +1,33 @@
+{
+  "id": "focus-ring-pulse",
+  "name": "Focus ring pulse",
+  "category": "feedback",
+  "objective": "draw attention to the focused control with a brief outline pulse",
+  "contexts": [
+    "form",
+    "interactive-control"
+  ],
+  "technologies": [
+    "CSS",
+    "focus-visible",
+    "keyframes"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Show a solid, persistent focus ring with no pulsing animation.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "focus",
+    "accessibility",
+    "feedback"
+  ]
+}

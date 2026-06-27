@@ -1,0 +1,34 @@
+{
+  "id": "tab-underline-slide",
+  "name": "Tab underline slide",
+  "category": "navigation",
+  "objective": "slide an active-indicator underline between tabs as selection changes",
+  "contexts": [
+    "tabs",
+    "segmented-control",
+    "sub-nav"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "transition"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Move the underline to the active tab instantly with no sliding transition.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "tabs",
+    "indicator",
+    "navigation"
+  ]
+}

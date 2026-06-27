@@ -1,0 +1,33 @@
+{
+  "id": "konva-draggable-shape",
+  "name": "Draggable Shape",
+  "source": "konva",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla/react",
+  "styling_technology": "Canvas",
+  "animation_technology": "Konva tween",
+  "dependencies": [
+    "konva"
+  ],
+  "required_assets": [],
+  "browser_requirements": "Canvas-capable browser",
+  "installation_method": "npm",
+  "copy_paste_available": true,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "partial",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

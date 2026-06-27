@@ -1,0 +1,45 @@
+{
+  "id": "swup",
+  "name": "Swup",
+  "category": "scrolling-transitions",
+  "homepage": "https://swup.js.org",
+  "repository": "https://github.com/swup/swup",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/swup/swup/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "page-transition library with plugin ecosystem; lightweight core",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "animated page transitions with good plugin ecosystem",
+    "includes a11y plugin for focus/announcements"
+  ],
+  "weaknesses": [
+    "transition/history takeover risks accessibility regressions if not configured (focus, reduced-motion)"
+  ],
+  "evidence": [
+    "https://swup.js.org",
+    "https://github.com/swup/swup/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

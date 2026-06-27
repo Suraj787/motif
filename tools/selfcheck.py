@@ -89,6 +89,17 @@ check("install refuses rejected component",
 plan = install_mod.plan_install("shadcn-button", "/tmp/z")
 check("install plans installable component", plan.refused is None and bool(plan.files))
 
+# 7b. Project detection + dependency plan + framework-compat gate
+from motif import project as project_mod  # noqa: E402
+with tempfile.TemporaryDirectory() as td:
+    proj = pathlib.Path(td)
+    (proj / "package.json").write_text('{"dependencies":{"vue":"3.4.0","tailwindcss":"3.0"}}')
+    info = project_mod.detect(proj)
+    check("detects vue project", info.framework == "vue")
+    check("detects tailwind", info.tailwind is True)
+check("vue recipe incompatible with react project", project_mod.compatible("vue", "react") is False)
+check("browser-native recipe compatible everywhere", project_mod.compatible("browser-native", "angular") is True)
+
 # 8. Install + rollback roundtrip
 with tempfile.TemporaryDirectory() as td:
     target = pathlib.Path(td) / "proj"

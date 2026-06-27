@@ -1,0 +1,34 @@
+{
+  "id": "ripple-feedback",
+  "name": "Ripple feedback",
+  "category": "feedback",
+  "objective": "confirm a tap or click with a radial ripple emanating from the pointer",
+  "contexts": [
+    "button",
+    "list-item",
+    "fab"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "pointer-events"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Apply an instant background-color change on press with no expanding ripple.",
+  "enterprise_suitability": "conditional",
+  "marketing_suitability": "recommended",
+  "provenance": "adapted-concept",
+  "testing": [],
+  "tags": [
+    "tap",
+    "press",
+    "material"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "marquee-ticker",
+  "name": "Marquee ticker",
+  "category": "continuous-motion",
+  "objective": "continuously scroll a row of logos, text, or stats horizontally",
+  "contexts": [
+    "logo-wall",
+    "announcement-bar"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "keyframes"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Display the items as a static, wrapping row with no scrolling motion.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "loop",
+    "ambient",
+    "ticker"
+  ]
+}

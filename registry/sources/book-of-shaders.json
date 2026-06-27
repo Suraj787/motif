@@ -1,0 +1,48 @@
+{
+  "id": "book-of-shaders",
+  "name": "The Book of Shaders",
+  "category": "3d-shader",
+  "homepage": "https://thebookofshaders.com",
+  "repository": "https://github.com/patriciogonzalezvivo/thebookofshaders",
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "GLSL"
+  ],
+  "dependency_model": "none (educational reference)",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "All rights reserved (Copyright Patricio Gonzalez Vivo)",
+  "license_reference": "https://github.com/patriciogonzalezvivo/thebookofshaders/blob/master/license.md",
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 1,
+  "maintenance": "slow",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "n/a (learning reference); fragment-shader examples",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "authoritative step-by-step GLSL fragment-shader guide",
+    "excellent conceptual reference for shader techniques"
+  ],
+  "weaknesses": [
+    "content is copyrighted (all rights reserved); reference only",
+    "not a redistributable library"
+  ],
+  "evidence": [
+    "https://thebookofshaders.com",
+    "https://github.com/patriciogonzalezvivo/thebookofshaders",
+    "license.md states: Copyright (c) Patricio Gonzalez Vivo, 2015 - All rights reserved"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "skeleton-list-vue",
+  "name": "Streaming skeleton list (Vue 3)",
+  "pattern": "streaming-indication",
+  "framework": "vue",
+  "technology": [
+    "Vue 3 TransitionGroup",
+    "CSS",
+    "async iterators"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "An injected async-iterable source is pulled in a loop; before the first item a shimmer skeleton shows. Arrivals append rows and emit item, but live-region announcements are throttled: a single interval flushes a summary every announceEvery ms and stops itself when no rows are pending. A Stop control sets an abort flag and calls iterator.return() so generators run their finally; states resolve to stopped/done/error.",
+  "implementation_path": "implementations/vue/streaming-list.md",
+  "reduced_motion": "Skeleton shimmer and activity pip animation stop and new rows insert instantly under prefers-reduced-motion.",
+  "responsive_behaviour": "fluid up to 36rem; rows wrap; no fixed pixel motion",
+  "browser_support": "All modern browsers; relies on async iterators and TransitionGroup.",
+  "accessibility": "Single polite role=status region carries throttled summaries (no per-row spam); skeleton aria-hidden; Stop/Restart are 44px keyboard-reachable buttons; focus is never moved as rows arrive.",
+  "tests": [],
+  "maturity": "stable"
+}

@@ -1,93 +1,153 @@
-# Third-Party Sources
+# Third-party sources
 
-Motif catalogues external libraries, design systems and references as **source metadata** in
-[`registry/sources/`](registry/sources/). This document summarises that metadata and the
-rules that govern it.
+Public visibility is **not** permission to redistribute. The presence of a source
+in `registry/sources/` records research and metadata only; it confers no rights over
+that project's code. Each source keeps its own licence and obligations.
 
-> **Cataloguing a source does not imply any right to redistribute it.** A record in
-> `registry/sources/` describes a source and our review of it. It is *not* a grant of
-> licence and *not* a statement that the source's code or assets may be copied into your
-> project.
+Bundling requires a **verified permissive licence** AND **trust tier >= 3**. Anything
+with an unknown, copyleft, source-available, or premium licence is `adaptable-concept`
+or `reference-only`. Licence facts below carry a confidence level and were reviewed on
+the date shown; re-verify online via `motif source scan` before relying on them.
 
-## How to read this
+_Generated from the registry: 90 sources._
 
-- **The registry is the source of truth.** This file is a human-readable summary; the
-  authoritative, machine-readable records (with `license`, `license_reference`,
-  `redistribution`, `trust_tier`, `confidence`, `status` and `evidence`) live in
-  `registry/sources/` and are validated against `schemas/source.schema.json`.
-- **Licence facts are confidence-rated and must be re-verified online.** Each record
-  carries a `confidence` level and a `status` (`verified` / `pending-verification`).
-  Licences change; re-verify through `python -m motif source retrieve --refresh` before
-  relying on them.
-- **Bundling requires a verified permissive licence _and_ trust tier ≥ 3.** See the
-  LICENCE GATE and redistribution classes in [`LICENSE_POLICY.md`](LICENSE_POLICY.md).
-  Unknown licence ⇒ `reference-only`, never bundled. Source-available / Commons-Clause
-  terms are not permissive OSS.
+| Redistribution class | Count | Meaning |
+|---|---:|---|
+| `redistributable` | 53 | Verified permissive licence. May be bundled or installed via the official package, preserving notices. |
+| `adaptable-concept` | 20 | Adapt the interaction concept and implement it cleanly. Do NOT copy or port the source (copyleft, source-available, or framework-specific). |
+| `reference-only` | 17 | Inspiration and metadata only. Unknown/restricted licence, premium, or a gallery. Never copy; verify per element before any reuse. |
+| `rejected` | 0 | Unsafe, unlicensed, or insufficient quality. |
 
-## v0.1.0 sources by redistribution class
+## redistributable (53)
 
-22 reviewed sources. Trust tiers shown are 1-5 (lower can be high-quality guidance that is
-simply not redistributable, e.g. official design guidelines).
+| Source | Category | Licence | Trust | Conf. | Status |
+|---|---|---|:---:|:---:|---|
+| `animejs` | animation-engine | MIT | 2 | medium | verified |
+| `aos` | scrolling-transitions | MIT | 3 | high | verified |
+| `ark-ui` | accessible-ui-foundation | MIT | 2 | high | verified |
+| `autoanimate` | animation-engine | MIT | 2 | medium | verified |
+| `babylonjs` | 3d-shader | Apache-2.0 | 2 | high | verified |
+| `barba-js` | scrolling-transitions | MIT | 3 | high | verified |
+| `base-ui` | accessible-ui-foundation | MIT | 2 | high | verified |
+| `bits-ui` | accessible-ui-foundation | MIT | 2 | high | verified |
+| `canvas-api` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `css-keyframes` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `css-scroll-driven` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `css-transitions` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `curtainsjs` | 3d-shader | MIT | 3 | high | verified |
+| `fabricjs` | canvas-particles-generative | MIT | 2 | high | verified |
+| `headless-ui` | accessible-ui-foundation | MIT | 2 | medium | verified |
+| `intersection-observer` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `konva` | canvas-particles-generative | MIT | 2 | high | verified |
+| `lenis` | scrolling-transitions | MIT | 3 | medium | verified |
+| `locomotive-scroll` | scrolling-transitions | MIT | 3 | high | verified |
+| `lottie` | svg-icon-motion | MIT | 2 | high | verified |
+| `mdn-web-animations` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `melt-ui` | accessible-ui-foundation | MIT | 2 | high | verified |
+| `motion` | animation-engine | MIT | 2 | medium | verified |
+| `motion-vue` | animation-engine | MIT | 3 | high | verified |
+| `ogl` | canvas-particles-generative | Unlicense | 3 | high | verified |
+| `paperjs` | canvas-particles-generative | MIT | 2 | high | verified |
+| `pixijs` | canvas-particles-generative | MIT | 2 | high | verified |
+| `pointer-events` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `radix-ui` | accessible-ui-foundation | MIT | 2 | medium | verified |
+| `react-aria` | accessible-ui-foundation | Apache-2.0 | 2 | medium | verified |
+| `react-spring` | animation-engine | MIT | 2 | high | verified |
+| `react-three-fiber` | 3d-shader | MIT | 2 | high | verified |
+| `regl` | canvas-particles-generative | MIT | 3 | high | verified |
+| `reka-ui` | accessible-ui-foundation | MIT | 3 | medium | verified |
+| `resize-observer` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `rive` | svg-icon-motion | MIT (runtimes); editor is a paid SaaS (freemium) | 2 | high | verified |
+| `rough-notation` | svg-icon-motion | MIT | 3 | medium | verified |
+| `shadcn-ui` | accessible-ui-foundation | MIT | 2 | medium | verified |
+| `shadcn-vue` | accessible-ui-foundation | MIT | 2 | high | verified |
+| `svelte-motion` | animation-engine | MIT | 2 | high | verified |
+| `svg-animation` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `swup` | scrolling-transitions | MIT | 3 | high | verified |
+| `theatre-js` | animation-engine | Apache-2.0 | 3 | high | verified |
+| `threejs` | 3d-shader | MIT | 2 | medium | verified |
+| `threlte` | 3d-shader | MIT | 3 | high | verified |
+| `tresjs` | 3d-shader | MIT | 3 | high | verified |
+| `tsparticles` | canvas-particles-generative | MIT | 3 | medium | verified |
+| `vantajs` | canvas-particles-generative | MIT | 3 | high | verified |
+| `view-transitions-api` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `vivus` | svg-icon-motion | MIT | 3 | high | verified |
+| `vueuse-motion` | animation-engine | MIT | 2 | high | verified |
+| `webgl` | browser-native | browser standard (no licence needed) | 1 | high | verified |
+| `webgpu` | browser-native | browser standard (no licence needed) | 1 | high | verified |
 
-### Redistributable (14), verified permissive OSS or open standards
+## adaptable-concept (20)
 
-Concepts may be implemented and original implementations bundled (trust tier ≥ 3 and a
-verified licence still required), preserving attribution and notices.
+| Source | Category | Licence | Trust | Conf. | Status |
+|---|---|---|:---:|:---:|---|
+| `adobe-spectrum` | enterprise-design-system | Apache-2.0 (React Spectrum code); Spectrum guidance and brand are Adobe's | 2 | high | verified |
+| `animata` | animated-component-collection | MIT | 3 | high | verified |
+| `ant-design` | enterprise-design-system | MIT | 2 | high | verified |
+| `atlassian-design` | enterprise-design-system | Apache-2.0 (most Atlaskit components); styles/assets/icons under Atlassian Design Guidelines license | 2 | medium | verified |
+| `cult-ui` | animated-component-collection | MIT | 3 | high | verified |
+| `fancy-components` | animated-component-collection | MIT | 3 | high | verified |
+| `github-primer` | enterprise-design-system | MIT (Primer code); GitHub brand/logos reserved | 2 | high | verified |
+| `godui` | animated-component-collection | MIT | 4 | high | verified |
+| `gsap` | animation-engine | GSAP-Standard (now free) | 2 | low | pending-verification |
+| `ibm-carbon` | enterprise-design-system | Apache-2.0 | 2 | medium | verified |
+| `kokonut-ui` | animated-component-collection | MIT | 3 | high | verified |
+| `magic-ui` | animated-component-collection | MIT | 3 | low | verified |
+| `microsoft-fluent` | enterprise-design-system | MIT (Fluent UI code); Fluent Design guidance is Microsoft's | 1 | high | verified |
+| `motion-primitives` | animated-component-collection | MIT | 3 | high | verified |
+| `p5js` | canvas-particles-generative | LGPL-2.1 | 2 | high | verified |
+| `react-bits` | animated-component-collection | MIT | 3 | low | verified |
+| `salesforce-lightning` | enterprise-design-system | BSD-3-Clause (SLDS CSS/source); icons and images under CC BY-NC-ND 4.0; Salesforce trademarks reserved | 2 | medium | verified |
+| `scrolltrigger` | scrolling-transitions | GSAP Standard 'No Charge' License (custom, not SPDX) | 2 | high | verified |
+| `shopify-polaris` | enterprise-design-system | MIT (modified) - use limited to apps that interoperate with Shopify and are visually distinct from Shopify products | 2 | high | verified |
+| `smoothui` | animated-component-collection | MIT | 3 | high | verified |
 
-| Source | Licence | Trust tier | Confidence |
-|--------|---------|:----------:|:----------:|
-| Anime.js | MIT | 2 | medium |
-| AutoAnimate | MIT | 2 | medium |
-| CSS Scroll-driven Animations | Browser standard (no licence needed) | 1 | high |
-| Headless UI | MIT | 2 | medium |
-| Lenis | MIT | 3 | medium |
-| Web Animations API (MDN) | Browser standard (no licence needed) | 1 | high |
-| Motion (Framer Motion) | MIT | 2 | medium |
-| Radix UI | MIT | 2 | medium |
-| React Aria | Apache-2.0 | 2 | medium |
-| Reka UI | MIT | 3 | medium |
-| Rough Notation | MIT | 3 | medium |
-| shadcn/ui | MIT | 2 | medium |
-| Three.js | MIT | 2 | medium |
-| tsParticles | MIT | 3 | medium |
+## reference-only (17)
 
-### Adaptable-concept (4), learn the concept, write clean-room original code
+| Source | Category | Licence | Trust | Conf. | Status |
+|---|---|---|:---:|:---:|---|
+| `aceternity-ui` | animated-component-collection | unknown / per-component | 4 | low | pending-verification |
+| `animate-ui` | animated-component-collection | MIT + Commons Clause | 3 | high | verified |
+| `apple-hig` | enterprise-design-system | guidance (Apple terms) | 1 | high | verified |
+| `awwwards` | creative-reference | reference (Awwwards terms) | 3 | high | verified |
+| `book-of-shaders` | 3d-shader | All rights reserved (Copyright Patricio Gonzalez Vivo) | 1 | high | verified |
+| `codrops` | creative-reference | reference (Codrops content; some demos MIT) | 2 | high | verified |
+| `godly` | creative-reference | reference (Godly terms) | 4 | medium | verified |
+| `hover-dev` | animated-component-collection | Proprietary (Hover Dev, LLC license) | 3 | high | verified |
+| `hoverstates` | creative-reference | reference (Hoverstates terms) | 4 | medium | verified |
+| `material-design` | enterprise-design-system | guidance (CC-BY / Google terms) | 1 | high | verified |
+| `scrollreveal` | scrolling-transitions | GPL-3.0 (dual-licensed; commercial licence required for proprietary use) | 3 | high | verified |
+| `shadertoy` | 3d-shader | Per-author; default CC BY-NC-SA 3.0 unless author sets otherwise | 4 | high | verified |
+| `siteinspire` | creative-reference | reference (SiteInspire terms) | 3 | medium | verified |
+| `spline` | 3d-shader | Proprietary (freemium SaaS; runtime exports) | 3 | high | verified |
+| `svelte-bits` | animated-component-collection | MIT + Commons Clause | 3 | high | verified |
+| `uiverse` | animated-component-collection | MIT (community-submitted; verify per element) | 4 | low | pending-verification |
+| `vue-bits` | animated-component-collection | MIT + Commons Clause | 3 | high | verified |
 
-The licence/terms permit learning from the concept but not wholesale redistribution of the
-source's code or assets. Implement from scratch and record provenance; never copy.
+## Notable licence nuances (do not treat as ordinary MIT)
 
-| Source | Licence | Trust tier | Confidence | Notes |
-|--------|---------|:----------:|:----------:|-------|
-| GSAP | GSAP-Standard (now free) | 2 | low | `pending-verification`, re-verify current terms before bundling. |
-| IBM Carbon | Apache-2.0 | 2 | medium | Design system; adapt concepts, mind trademark/assets. |
-| Magic UI | MIT | 3 | low | Re-verify per-component provenance. |
-| React Bits | MIT | 3 | low | Re-verify per-component provenance. |
+- **aceternity-ui** (unknown / per-component, freemium): licence unclear per component → reference-only until verified
+- **adobe-spectrum** (Apache-2.0 (React Spectrum code); Spectrum guidance and brand are Adobe's, open-source): React Spectrum code is Apache-2.0 but Spectrum visual guidance and brand are Adobe's (reference-only)
+- **animate-ui** (MIT + Commons Clause, source-available): Commons Clause forbids selling/redistributing the components in their original form (alone or bundled); concept reference only
+- **atlassian-design** (Apache-2.0 (most Atlaskit components); styles/assets/icons under Atlassian Design Guidelines license, open-source): Atlaskit components are largely Apache-2.0 but styles, assets and icons fall under the Atlassian Design Guidelines license (reference-only)
+- **awwwards** (reference (Awwwards terms), freemium): treat visual galleries as inspiration, not reusable code
+- **babylonjs** (Apache-2.0, open-source): heavy; last-resort per implementation order
+- **book-of-shaders** (All rights reserved (Copyright Patricio Gonzalez Vivo), free): content is copyrighted (all rights reserved); reference only
+- **github-primer** (MIT (Primer code); GitHub brand/logos reserved, open-source): Primer code is MIT but GitHub brand and logos are reserved (reference-only)
+- **gsap** (GSAP-Standard (now free), freemium): licence nuance: re-verify current terms before bundling
+- **hover-dev** (Proprietary (Hover Dev, LLC license), freemium): freemium/proprietary; most components behind Hover Pro paywall
+- **ibm-carbon** (Apache-2.0, open-source): 
+- **p5js** (LGPL-2.1, open-source): LGPL-2.1 copyleft: redistribution as adaptable-concept rather than bundled library; modifications to the library must stay LGPL
+- **react-aria** (Apache-2.0, open-source): 
+- **rive** (MIT (runtimes); editor is a paid SaaS (freemium), freemium): authoring requires the Rive editor (freemium: Free, plus paid Cadet $9/mo, Voyager, Enterprise tiers) — runtime is free/MIT but the design tool is the paywalled part
+- **salesforce-lightning** (BSD-3-Clause (SLDS CSS/source); icons and images under CC BY-NC-ND 4.0; Salesforce trademarks reserved, open-source): CSS/source is BSD-3-Clause but icons/images are CC BY-NC-ND (no derivatives) and Salesforce trademarks are reserved
+- **scrollreveal** (GPL-3.0 (dual-licensed; commercial licence required for proprietary use), freemium): LICENCE NUANCE: GPL-3.0 (not MIT) — copyleft; v4+ requires a paid COMMERCIAL licence for proprietary/closed-source commercial use, so it is NOT freely redistributable into proprietary output — reference-only for Motif
+- **scrolltrigger** (GSAP Standard 'No Charge' License (custom, not SPDX), free): licence nuance: GSAP plugin under GSAP custom 'no charge' license (now free incl. ScrollTrigger after Webflow made GSAP 100% free in 2025) — not a standard SPDX licence; bundling/redistributing GSAP as part of a competing tool is restricted, so treat as adaptable concept rather than free redistribution
+- **shadertoy** (Per-author; default CC BY-NC-SA 3.0 unless author sets otherwise, free): per-author licensing; reference only
+- **shopify-polaris** (MIT (modified) - use limited to apps that interoperate with Shopify and are visually distinct from Shopify products, open-source): license is a modified MIT: grants are limited to Shopify-interoperating apps that stay visually distinct from Shopify products
+- **spline** (Proprietary (freemium SaaS; runtime exports), freemium): proprietary freemium tooling; reference only for our purposes
+- **svelte-bits** (MIT + Commons Clause, source-available): Commons Clause forbids selling/redistributing/porting the components themselves; concept reference only
+- **theatre-js** (Apache-2.0, open-source): studio package (theatre/studio/...) is AGPL-3.0 while core runtime is Apache-2.0
+- **vue-bits** (MIT + Commons Clause, source-available): Commons Clause forbids selling/redistributing/porting the components themselves; treat as concept reference, do not bundle or re-port
 
-### Reference-only (4), cite only, never bundle or reconstruct
-
-Unknown, guidance-only, or community/per-element terms. Reference and cite; never copy,
-never reconstruct from previews.
-
-| Source | Licence | Trust tier | Confidence | Notes |
-|--------|---------|:----------:|:----------:|-------|
-| Apple Human Interface Guidelines | Guidance (Apple terms) | 1 | high | Official guidance; not redistributable. |
-| Material Design | Guidance (CC-BY / Google terms) | 1 | high | Official guidance; mind asset/trademark terms. |
-| Aceternity UI | Unknown / per-component | 4 | low | `pending-verification`, licence unclear per component. |
-| Uiverse | MIT (community-submitted; verify per element) | 4 | low | `pending-verification`, verify each element's provenance. |
-
-### Rejected (0)
-
-No source in v0.1.0 is classified `rejected`. A rejected source would be excluded as a
-usable source and retained only as a documented rejection. (A rejected **component**
-fixture exists in the registry to exercise the rejection path.)
-
-## Verifying for yourself
-
-```bash
-python -m motif source completeness          # coverage by source
-python -m motif source retrieve --refresh    # re-verify against the allowlisted official host
-make check                                 # validate the registry
-```
-
-Always confirm the current licence and redistribution class against the official source
-before bundling. When in doubt, treat the source as `reference-only`.
+The full machine-readable records, including evidence URLs and per-source strengths
+and weaknesses, live in `registry/sources/`. See also `LICENSE_POLICY.md`.

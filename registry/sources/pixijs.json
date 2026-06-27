@@ -1,0 +1,48 @@
+{
+  "id": "pixijs",
+  "name": "PixiJS",
+  "category": "canvas-particles-generative",
+  "homepage": "https://pixijs.com",
+  "repository": "https://github.com/pixijs/pixijs",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/pixijs/pixijs/blob/dev/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "WebGL/WebGPU renderer; continuous rendering loop",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "fast WebGL/WebGPU 2D rendering",
+    "mature ecosystem and community react wrappers"
+  ],
+  "weaknesses": [
+    "continuous render loop drains battery on low-power devices",
+    "heavyweight for static UI"
+  ],
+  "evidence": [
+    "https://pixijs.com",
+    "https://github.com/pixijs/pixijs",
+    "https://github.com/pixijs/pixijs/blob/dev/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

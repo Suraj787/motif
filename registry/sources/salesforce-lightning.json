@@ -1,0 +1,47 @@
+{
+  "id": "salesforce-lightning",
+  "name": "Salesforce Lightning Design System",
+  "category": "enterprise-design-system",
+  "homepage": "https://www.lightningdesignsystem.com",
+  "repository": "https://github.com/salesforce-ux/design-system",
+  "frameworks": [
+    "browser-native",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "BSD-3-Clause (SLDS CSS/source); icons and images under CC BY-NC-ND 4.0; Salesforce trademarks reserved",
+  "license_reference": "https://github.com/salesforce-ux/design-system",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion/transition token reference"
+  ],
+  "unsuitable_contexts": [
+    "reskinning as Salesforce brand",
+    "redistributing SLDS icons/images"
+  ],
+  "strengths": [
+    "documented animation/transition tokens for enterprise UI",
+    "mature accessibility and enterprise interaction guidance"
+  ],
+  "weaknesses": [
+    "CSS/source is BSD-3-Clause but icons/images are CC BY-NC-ND (no derivatives) and Salesforce trademarks are reserved",
+    "adapt motion tokens/principles; treat brand assets and guidance as reference-only"
+  ],
+  "evidence": [
+    "https://github.com/salesforce-ux/design-system",
+    "https://www.lightningdesignsystem.com"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

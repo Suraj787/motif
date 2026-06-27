@@ -1,0 +1,35 @@
+{
+  "id": "lenis-smooth-scroll",
+  "name": "Smooth Scroll",
+  "source": "lenis",
+  "canonical_page": "https://lenis.darkroom.engineering/",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla",
+  "styling_technology": "CSS",
+  "animation_technology": "requestAnimationFrame",
+  "dependencies": [
+    "lenis"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm lenis",
+  "copy_paste_available": false,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "partial",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "low",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://lenis.darkroom.engineering/"
+  ]
+}

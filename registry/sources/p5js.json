@@ -1,0 +1,47 @@
+{
+  "id": "p5js",
+  "name": "p5.js",
+  "category": "canvas-particles-generative",
+  "homepage": "https://p5js.org",
+  "repository": "https://github.com/processing/p5.js",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "LGPL-2.1",
+  "license_reference": "https://github.com/processing/p5.js/blob/main/license.txt",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "canvas/WebGL draw loop; continuous rendering",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "approachable creative-coding API",
+    "excellent documentation and learning resources"
+  ],
+  "weaknesses": [
+    "LGPL-2.1 copyleft: redistribution as adaptable-concept rather than bundled library; modifications to the library must stay LGPL",
+    "continuous draw loop drains battery on low-power devices"
+  ],
+  "evidence": [
+    "https://p5js.org",
+    "https://github.com/processing/p5.js",
+    "https://github.com/processing/p5.js/blob/main/license.txt"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

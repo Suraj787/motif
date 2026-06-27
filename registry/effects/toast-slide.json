@@ -1,0 +1,33 @@
+{
+  "id": "toast-slide",
+  "name": "Toast slide",
+  "category": "entrance",
+  "objective": "slide a transient notification into view and out after a timeout",
+  "contexts": [
+    "notification",
+    "status-feedback"
+  ],
+  "technologies": [
+    "CSS",
+    "transform",
+    "transition"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Show and remove the toast instantly at its resting position with no slide.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "toast",
+    "notification",
+    "entrance"
+  ]
+}

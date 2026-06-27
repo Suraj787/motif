@@ -1,0 +1,23 @@
+{
+  "id": "inline-validation-vue",
+  "name": "Inline validation (Vue 3)",
+  "pattern": "inline-validation",
+  "framework": "vue",
+  "technology": [
+    "Vue 3",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "Field stays silent until first blur (or parent submit). Once touched, injected pure rule functions re-run on every input so corrections clear immediately. Validity is emitted for the parent form; exposed validate() force-shows the first failing rule's message, wired via aria-describedby/aria-invalid.",
+  "implementation_path": "implementations/vue/inline-validation.md",
+  "reduced_motion": "Message reveal transition (transform/opacity) collapses to an instant swap under prefers-reduced-motion.",
+  "responsive_behaviour": "fluid; field capped at readable max-width, 44px input target; no fixed pixel motion",
+  "browser_support": "All modern browsers; matchMedia change listener uses optional chaining.",
+  "accessibility": "aria-invalid + aria-describedby link the message; role=alert announces once on appear; error conveyed with text + icon, never colour alone; label association and focus ring preserved.",
+  "tests": [],
+  "maturity": "stable"
+}

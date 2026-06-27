@@ -1,7 +1,7 @@
 # Phase status
 
 Persistent build log so a later Claude Code session can continue without duplicating work.
-Target release: **v0.1.0** (representative breadth, complete architecture + secure pipeline).
+Target release: **v1.0.0** (broad web-verified coverage, matured installer).
 
 Legend: ✅ done, 🟡 partial/representative, ⬜ not started
 
@@ -10,7 +10,7 @@ Legend: ✅ done, 🟡 partial/representative, ⬜ not started
 | 0  | Environment, repository, safety | ✅ | git init (main), identity set, .gitignore, ADR 0001/0002, master spec stored |
 | 1  | Product & interaction intelligence model | ✅ | 8-level model in `intelligence/` |
 | 2  | Research 50-100 sources | 🟡 | 16 deeply reviewed sources; pipeline + schema for the rest |
-| 3  | Component-level catalogue | 🟡 | Representative component records w/ usability modes + completeness report |
+| 3  | Component-level catalogue | ✅ | 64 component records across all 5 usability modes |
 | 4  | Effect / pattern / recipe taxonomies | ✅ | Machine-readable taxonomies + anti-patterns |
 | 5  | Secure source connectors & ingestion | ✅ | Connector contract, 3 modes, offline-registry default |
 | 6  | Security controls | ✅ | Policies + 5 scanners + malicious fixtures |
@@ -25,11 +25,11 @@ Legend: ✅ done, 🟡 partial/representative, ⬜ not started
 | 15 | Schemas & registry | ✅ | 7 JSON Schemas + validated records |
 | 16 | Search, ranking, CLI | ✅ | `python -m motif` with transparent ranking |
 | 17 | Tests & evaluations | ✅ | Judgement evals + rejection/security tests |
-| 18 | Examples | 🟡 | Representative example decision records |
+| 18 | Examples | ✅ | 12 worked decision records |
 | 19 | Open-source readiness | ✅ | README, CONTRIBUTING, SECURITY, CoC, CHANGELOG, issue/PR templates |
 | 20 | CI & quality | ✅ | GitHub Actions + `make check` mirror (46/46 self-checks, secret scan clean) |
 | 21 | Critical self-review | ✅ | `docs/reviews/pre-release-review.md` (8 perspectives + checklist) |
-| 22 | Versioning & release | ✅ | Conventional commits per phase; `v0.1.0` tagged after full check |
+| 22 | Versioning & release | ✅ | v0.1.0 + v1.0.0 tagged after full check |
 | 23 | GitHub publication | ✅ | Public repo pushed: https://github.com/Suraj787/motif (main + v0.1.0 tag, topics, issues) |
 
 ## Next-session entry point

@@ -1,0 +1,23 @@
+{
+  "id": "notification-toast-vue",
+  "name": "Notification toast (Vue 3)",
+  "pattern": "notification-entrance",
+  "framework": "vue",
+  "technology": [
+    "Vue 3 TransitionGroup",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "Toasts in a reactive array slide in via TransitionGroup; each entering toast arms a per-toast auto-dismiss timer. Hover/focus pauses the timer (so it can be read and the close button reached); leaving resumes it. Dismissal removes the toast through update:toasts and emits dismiss; the absolute leave-state lets the stack close its gap.",
+  "implementation_path": "implementations/vue/notification-toast.md",
+  "reduced_motion": "Slide/fade enter-leave transition removed under prefers-reduced-motion; toasts appear and disappear instantly.",
+  "responsive_behaviour": "fixed to a configurable corner, capped at min(28rem, 100vw - 2rem); region pointer-events none with toasts re-enabling pointer events",
+  "browser_support": "All modern browsers.",
+  "accessibility": "role=status per toast; aria-live polite for info/success/warning and assertive for errors; never steals focus; close button has descriptive aria-label; type shown by border+icon+text; 44px targets.",
+  "tests": [],
+  "maturity": "stable"
+}

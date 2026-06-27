@@ -1,0 +1,24 @@
+{
+  "id": "command-palette-browser-native",
+  "name": "Command palette (browser-native)",
+  "pattern": "command-palette-reveal",
+  "framework": "browser-native",
+  "technology": [
+    "HTML dialog",
+    "CSS",
+    "JavaScript"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "browser standard (no licence needed)",
+  "provenance_type": "browser-native",
+  "source_references": [],
+  "algorithm": "Cmd/Ctrl-K toggles a native <dialog>. showModal() provides modality, background inertness, and the focus trap. The input (role=combobox) filters commands by substring; Arrow/Home/End move an active option communicated via aria-activedescendant over a role=listbox. Enter or tap runs the active command after closing; Escape (native cancel) closes and restores focus to the trigger.",
+  "implementation_path": "implementations/browser-native/command-palette.md",
+  "reduced_motion": "Open/backdrop reveal keyframes disabled under prefers-reduced-motion; palette appears instantly.",
+  "responsive_behaviour": "panel min(40rem, 100vw - 2rem); options are 44px full-width tap targets; list scrolls within 60vh",
+  "browser_support": "Evergreen browsers and Safari 15.4+ for dialog.showModal()/::backdrop; degrades to open attribute and manual focus restoration.",
+  "accessibility": "Native dialog modality; combobox/listbox with aria-activedescendant keeps focus on the input; Escape restores focus to the trigger; forced-colors keeps the active option visible.",
+  "tests": [],
+  "maturity": "stable"
+}

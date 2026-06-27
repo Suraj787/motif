@@ -11,7 +11,7 @@ interaction patterns for websites and web applications.
 > usability, accessibility, performance or licensing.
 
 [![CI](https://github.com/Suraj787/motif/actions/workflows/ci.yml/badge.svg)](https://github.com/Suraj787/motif/actions)
-&nbsp;Licence: MIT. Status: v0.1.0
+&nbsp;Licence: MIT. Status: v1.0.0
 
 ---
 
@@ -131,29 +131,34 @@ responsiveness before recording the decision and provenance. Specialist skills l
 | `examples/` | Worked decision records (enterprise dashboard, ERP form, SaaS hero, and more) |
 | `docs/` | Architecture, threat model, authoring guides, ADRs |
 
-## What v0.1.0 honestly contains
+## What v1.0.0 contains
 
-Following the project's release discipline, v0.1.0 ships the complete architecture and
-secure pipeline with representative, high-confidence breadth rather than fabricated
-volume:
+v1.0.0 broadens coverage to a thoroughly reviewed source set while keeping every record
+honest:
 
-- 22 reviewed sources (licence and redistribution classified; a few `pending-verification`)
-- 10 component records spanning all five usability modes (including a rejected fixture)
-- 14 effects, 16 patterns, 4 clean-room recipe implementations, 10 quality profiles
-- Working search, transparent ranking, controlled install and rollback, 5 scanners
-- 12 evaluation cases (judgement and security) and a dependency-free `make check`
+- **90 reviewed sources**, each new one's licence verified against its actual `LICENSE`
+  file, `package.json`, or official terms page (recorded under `evidence`). Split: 53
+  redistributable, 20 adaptable-concept, 17 reference-only.
+- **64 component records** across all five usability modes (37 installable, 17 adaptable,
+  9 reference-only, 1 rejected), each carrying the source's licence and a usability mode.
+- **30 effects, 28 patterns, 14 clean-room recipe implementations**, 10 quality profiles.
+- Working search, transparent ranking, and a controlled installer with framework
+  detection, dependency planning, a static security scan, snapshot and rollback.
+- 5 scanners, malicious fixtures, 12+ evaluation cases, and a dependency-free `make check`
+  (60 self-checks).
 
-Licence facts carry a confidence level and must be re-verified online through the
-source-refresh workflow before bundling. See
-[`THIRD_PARTY_SOURCES.md`](THIRD_PARTY_SOURCES.md) and
+Licence facts carry a confidence level. The verification pass corrected several naive
+assumptions (p5.js is LGPL, ScrollReveal is GPL-3.0, Shopify Polaris is field-of-use
+restricted, vue-bits/svelte-bits carry a Commons Clause, Theatre.js is dual-licensed).
+See [`THIRD_PARTY_SOURCES.md`](THIRD_PARTY_SOURCES.md) and
 [`docs/research-methodology.md`](docs/research-methodology.md).
 
-## Roadmap
+## Roadmap beyond v1.0.0
 
-- **v0.2.0:** broaden to 40-50 sources, expand component coverage, strengthen installer
-  automation, add more tested recipes.
-- **v1.0.0:** 75-100 thoroughly reviewed sources, broad component coverage, mature
-  adapters, a proven contributor workflow.
+- Deepen component catalogues per source (more verified records, previews).
+- Implement live network connectors for the source-refresh workflow (currently declarative).
+- Grow the recipe library and adapter coverage (Angular, more Svelte/vanilla).
+- Re-verify `pending-verification` and medium-confidence licences on a schedule.
 
 ## Contributing and security
 

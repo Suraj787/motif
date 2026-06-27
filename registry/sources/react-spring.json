@@ -1,0 +1,48 @@
+{
+  "id": "react-spring",
+  "name": "react-spring",
+  "category": "animation-engine",
+  "homepage": "https://www.react-spring.dev",
+  "repository": "https://github.com/pmndrs/react-spring",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [
+    "typescript"
+  ],
+  "dependency_model": "npm",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/pmndrs/react-spring/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "spring-physics animation, runs outside React render; adds bundle weight",
+  "suitable_contexts": [
+    "saas",
+    "interactive react ui"
+  ],
+  "unsuitable_contexts": [
+    "non-react stacks",
+    "ultra bundle-sensitive pages"
+  ],
+  "strengths": [
+    "physics-based spring animation",
+    "maintained by pmndrs"
+  ],
+  "weaknesses": [
+    "React-only",
+    "bundle weight if overused"
+  ],
+  "evidence": [
+    "https://www.react-spring.dev",
+    "https://github.com/pmndrs/react-spring/blob/main/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

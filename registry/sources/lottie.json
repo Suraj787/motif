@@ -1,0 +1,48 @@
+{
+  "id": "lottie",
+  "name": "Lottie (lottie-web)",
+  "category": "svg-icon-motion",
+  "homepage": "https://airbnb.io/lottie/",
+  "repository": "https://github.com/airbnb/lottie-web",
+  "frameworks": [
+    "vanilla",
+    "react",
+    "vue"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/airbnb/lottie-web/blob/master/LICENSE.md",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "renders After Effects JSON via SVG/Canvas/HTML; complex animations can be CPU-heavy",
+  "suitable_contexts": [
+    "marketing",
+    "editorial",
+    "product onboarding"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device"
+  ],
+  "strengths": [
+    "renders designer-authored After Effects animations as JSON",
+    "official react (lottie-react) and vue wrappers"
+  ],
+  "weaknesses": [
+    "large/complex animations can be CPU/GPU intensive on low-power devices",
+    "decorative motion needs reduced-motion handling"
+  ],
+  "evidence": [
+    "https://airbnb.io/lottie/",
+    "https://github.com/airbnb/lottie-web/blob/master/LICENSE.md"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

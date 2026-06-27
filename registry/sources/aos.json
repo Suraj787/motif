@@ -1,0 +1,46 @@
+{
+  "id": "aos",
+  "name": "AOS (Animate On Scroll)",
+  "category": "scrolling-transitions",
+  "homepage": "https://michalsnik.github.io/aos/",
+  "repository": "https://github.com/michalsnik/aos",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/michalsnik/aos/blob/next/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "stale",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "CSS-driven animate-on-scroll via data attributes; lightweight",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "declarative data-aos attributes",
+    "easy drop-in scroll animations"
+  ],
+  "weaknesses": [
+    "scroll-triggered animation can harm accessibility (motion sensitivity, focus)",
+    "largely unmaintained"
+  ],
+  "evidence": [
+    "https://michalsnik.github.io/aos/",
+    "https://github.com/michalsnik/aos/blob/next/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

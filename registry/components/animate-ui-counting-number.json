@@ -1,0 +1,33 @@
+{
+  "id": "animate-ui-counting-number",
+  "name": "Counting Number",
+  "source": "animate-ui",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "Tailwind CSS",
+  "animation_technology": "Motion (Framer Motion)",
+  "dependencies": [
+    "motion"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "varies",
+  "copy_paste_available": false,
+  "license": "MIT + Commons Clause",
+  "component_exceptions": "Reference/inspiration only; verify per-element licence before any reuse.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "unclear",
+  "modification": "unclear",
+  "accessibility_status": "partial",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "low",
+  "complexity": "low",
+  "quality_status": "high",
+  "usability_mode": "reference-only",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

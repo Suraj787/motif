@@ -1,0 +1,34 @@
+{
+  "id": "accordion-expand",
+  "name": "Accordion expand",
+  "category": "disclosure",
+  "objective": "smoothly expand and collapse a content panel to reveal details",
+  "contexts": [
+    "faq",
+    "settings",
+    "nav-group"
+  ],
+  "technologies": [
+    "CSS",
+    "grid-template-rows",
+    "height-transition"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Toggle the panel between shown and hidden instantly with no height transition.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "browser-native",
+  "testing": [],
+  "tags": [
+    "disclosure",
+    "expand",
+    "collapse"
+  ]
+}

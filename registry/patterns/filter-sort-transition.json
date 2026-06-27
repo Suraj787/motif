@@ -1,0 +1,42 @@
+{
+  "id": "filter-sort-transition",
+  "name": "Filter and sort transition",
+  "problem": "When a list reorders or filters, items jumping abruptly makes it hard to track what changed.",
+  "user_intent": [
+    "find information",
+    "narrow choices"
+  ],
+  "suitable_pages": [
+    "search results",
+    "product listing",
+    "data table"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "list-reorder-flip",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "cursor-trail"
+  ],
+  "interaction_states": [
+    "idle",
+    "filtering",
+    "reordered",
+    "empty"
+  ],
+  "accessibility_requirements": [
+    "announce result count via aria-live",
+    "preserve focus on active control",
+    "results usable before animation completes"
+  ],
+  "performance_budget": "60fps; animate transform/opacity only; no layout thrash",
+  "success_criteria": [
+    "user can track items moving to new positions",
+    "filtered result set is readable within 300ms"
+  ],
+  "tests": []
+}

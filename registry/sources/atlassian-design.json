@@ -1,0 +1,46 @@
+{
+  "id": "atlassian-design",
+  "name": "Atlassian Design System",
+  "category": "enterprise-design-system",
+  "homepage": "https://atlassian.design",
+  "repository": "https://github.com/atlassian/atlassian-frontend-mirror",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "Apache-2.0 (most Atlaskit components); styles/assets/icons under Atlassian Design Guidelines license",
+  "license_reference": "https://community.developer.atlassian.com/t/atlaskit-licensing/59672",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion principle and token reference"
+  ],
+  "unsuitable_contexts": [
+    "reskinning as Atlassian brand",
+    "redistributing Atlassian icons/assets"
+  ],
+  "strengths": [
+    "documented motion tokens (durations, easing) and enterprise motion principles",
+    "mature, large-scale enterprise interaction guidance"
+  ],
+  "weaknesses": [
+    "Atlaskit components are largely Apache-2.0 but styles, assets and icons fall under the Atlassian Design Guidelines license (reference-only)",
+    "adapt motion tokens/principles; treat brand and guidance as reference-only"
+  ],
+  "evidence": [
+    "https://atlassian.design",
+    "https://community.developer.atlassian.com/t/atlaskit-licensing/59672"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

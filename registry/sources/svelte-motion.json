@@ -1,0 +1,48 @@
+{
+  "id": "svelte-motion",
+  "name": "Svelte Motion (svelte/motion)",
+  "category": "animation-engine",
+  "homepage": "https://svelte.dev/docs/svelte/svelte-motion",
+  "repository": "https://github.com/sveltejs/svelte",
+  "frameworks": [
+    "svelte"
+  ],
+  "technologies": [
+    "typescript",
+    "svelte"
+  ],
+  "dependency_model": "built-in",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/sveltejs/svelte/blob/main/LICENSE.md",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "native Svelte Tween/Spring stores, near-zero added bundle weight",
+  "suitable_contexts": [
+    "svelte web app",
+    "micro-interactions"
+  ],
+  "unsuitable_contexts": [
+    "non-svelte stacks"
+  ],
+  "strengths": [
+    "built into Svelte (Tween and Spring) with no extra dependency",
+    "spring/tween motion via reactive stores"
+  ],
+  "weaknesses": [
+    "Svelte-only",
+    "lower-level than full animation libraries"
+  ],
+  "evidence": [
+    "https://svelte.dev/docs/svelte/svelte-motion",
+    "https://github.com/sveltejs/svelte/blob/main/LICENSE.md"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

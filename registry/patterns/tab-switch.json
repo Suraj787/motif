@@ -1,0 +1,41 @@
+{
+  "id": "tab-switch",
+  "name": "Tab switch",
+  "problem": "Switching tabs swaps content abruptly, making it unclear which panel is now active.",
+  "user_intent": [
+    "switch context",
+    "browse sections"
+  ],
+  "suitable_pages": [
+    "settings",
+    "dashboard",
+    "record details"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "tab-underline-slide",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "parallax-layer",
+    "cursor-trail"
+  ],
+  "interaction_states": [
+    "idle",
+    "switching",
+    "active"
+  ],
+  "accessibility_requirements": [
+    "implement the WAI-ARIA tabs pattern with roving tabindex",
+    "manage aria-selected and focus correctly",
+    "content swap announced or focus moved to the new panel"
+  ],
+  "performance_budget": "60fps; opacity transition only; under 200ms",
+  "success_criteria": [
+    "the active tab and its panel are always unambiguous",
+    "tabs are fully operable by keyboard"
+  ],
+  "tests": []
+}

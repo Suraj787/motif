@@ -1,0 +1,45 @@
+{
+  "id": "codrops",
+  "name": "Codrops",
+  "category": "creative-reference",
+  "homepage": "https://tympanus.net/codrops/",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "reference (Codrops content; some demos MIT)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "unknown",
+  "performance_characteristics": "varies by demo",
+  "suitable_contexts": [
+    "motion inspiration",
+    "scroll/WebGL technique study"
+  ],
+  "unsuitable_contexts": [
+    "production component source"
+  ],
+  "strengths": [
+    "high-quality step-by-step motion/animation tutorials",
+    "GSAP, Three.js and scroll-driven technique walkthroughs"
+  ],
+  "weaknesses": [
+    "treat visual galleries as inspiration, not reusable code",
+    "some demos ship MIT-licensed code but tutorial content itself is reference-only"
+  ],
+  "evidence": [
+    "https://tympanus.net/codrops/",
+    "https://tympanus.net/codrops/category/tutorials/"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

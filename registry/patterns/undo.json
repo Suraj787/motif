@@ -1,0 +1,42 @@
+{
+  "id": "undo",
+  "name": "Undo",
+  "problem": "After a destructive or significant action, users need a clear, time-bound way to reverse it.",
+  "user_intent": [
+    "recover from mistake",
+    "reverse an action"
+  ],
+  "suitable_pages": [
+    "inbox",
+    "data table",
+    "editor"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "toast-slide",
+    "optimistic-flash"
+  ],
+  "rejected_effects": [
+    "cursor-trail",
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "action-taken",
+    "undo-available",
+    "undo-expiring",
+    "undone"
+  ],
+  "accessibility_requirements": [
+    "undo affordance is keyboard reachable and labeled",
+    "announce action and undo availability via aria-live",
+    "do not rely on a disappearing toast as the only recovery path"
+  ],
+  "performance_budget": "instant undo response; toast render under one frame",
+  "success_criteria": [
+    "undo reverses the action with no data loss",
+    "undo window is communicated and accessible without a pointer"
+  ],
+  "tests": []
+}

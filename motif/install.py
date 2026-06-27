@@ -12,7 +12,7 @@ import hashlib
 import datetime
 import pathlib
 from dataclasses import dataclass, field
-from . import registry
+from . import registry, project as project_mod, scan as scan_mod
 
 ROOT = registry.ROOT
 SNAP_DIR = ROOT / ".motif" / "snapshots"
@@ -31,17 +31,40 @@ class InstallPlan:
     target: str
     files: list[dict] = field(default_factory=list)
     dependencies: list[str] = field(default_factory=list)
+    dependency_plan: list[dict] = field(default_factory=list)
     security_findings: list[dict] = field(default_factory=list)
+    security_verdict: str = "pass"
+    project: dict = field(default_factory=dict)
+    warnings: list[str] = field(default_factory=list)
     refused: str | None = None
 
     def to_dict(self) -> dict:
         return {
             "component_id": self.component_id, "source": self.source,
             "license": self.license, "usability_mode": self.usability_mode,
-            "target": self.target, "files": self.files,
-            "dependencies": self.dependencies,
-            "security_findings": self.security_findings, "refused": self.refused,
+            "target": self.target, "project": self.project,
+            "files": self.files, "dependencies": self.dependencies,
+            "dependency_plan": self.dependency_plan,
+            "security_findings": self.security_findings,
+            "security_verdict": self.security_verdict,
+            "warnings": self.warnings, "refused": self.refused,
         }
+
+
+def _dependency_plan(recipe_deps: list[str], installed: dict) -> list[dict]:
+    """Apply the dependency-policy preference order against what the project has."""
+    plan: list[dict] = []
+    for dep in recipe_deps:
+        if dep in installed:
+            plan.append({"dependency": dep, "decision": "reuse-existing",
+                         "detail": f"already in project ({installed[dep]})"})
+        else:
+            plan.append({"dependency": dep, "decision": "needs-approval",
+                         "detail": "new dependency — prefer a dependency-free recipe first"})
+    if not recipe_deps:
+        plan.append({"dependency": None, "decision": "dependency-free",
+                     "detail": "no new dependencies required"})
+    return plan
 
 
 def _component(component_id: str) -> registry.Record | None:
@@ -77,10 +100,29 @@ def plan_install(component_id: str, target: str) -> InstallPlan:
         plan.refused = "unknown licence, refused by the LICENCE GATE"
         return plan
 
+    # Inspect the real target project so we never mismatch frameworks or re-add deps.
+    info = project_mod.detect(target)
+    plan.project = info.to_dict()
+    plan.dependency_plan = _dependency_plan(plan.dependencies, info.dependencies)
+
     impl = _recipe_for(component_id)
     if impl and impl.data.get("implementation_path"):
+        recipe_fw = impl.data.get("framework", "browser-native")
+        if info.framework != "unknown" and not project_mod.compatible(recipe_fw, info.framework):
+            plan.warnings.append(
+                f"recipe framework '{recipe_fw}' is not compatible with project "
+                f"framework '{info.framework}'. Adapt the concept natively instead of "
+                f"installing a foreign framework.")
         src = ROOT / impl.data["implementation_path"]
         if src.exists():
+            # Static-scan the implementation we are about to apply.
+            findings = scan_mod.scan_all(src.parent)
+            plan.security_findings = [f.to_dict() for f in findings
+                                      if f.severity in ("warn", "high", "critical")]
+            plan.security_verdict = scan_mod.verdict(findings)
+            if plan.security_verdict == "reject":
+                plan.refused = "implementation failed static security scan (reject verdict)"
+                return plan
             plan.files.append({"action": "create", "path": f"{target}/{src.name}",
                                "from": impl.data["implementation_path"], "sha256": _sha256(src)})
     if not plan.files:

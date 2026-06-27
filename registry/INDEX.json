@@ -5,20 +5,116 @@
       "name": "Aceternity UI"
     },
     {
+      "id": "adobe-spectrum",
+      "name": "Adobe Spectrum"
+    },
+    {
+      "id": "animata",
+      "name": "Animata"
+    },
+    {
+      "id": "animate-ui",
+      "name": "Animate UI"
+    },
+    {
       "id": "animejs",
       "name": "Anime.js"
+    },
+    {
+      "id": "ant-design",
+      "name": "Ant Design"
+    },
+    {
+      "id": "aos",
+      "name": "AOS (Animate On Scroll)"
     },
     {
       "id": "apple-hig",
       "name": "Apple Human Interface Guidelines"
     },
     {
+      "id": "ark-ui",
+      "name": "Ark UI"
+    },
+    {
+      "id": "atlassian-design",
+      "name": "Atlassian Design System"
+    },
+    {
       "id": "autoanimate",
       "name": "AutoAnimate"
     },
     {
+      "id": "awwwards",
+      "name": "Awwwards"
+    },
+    {
+      "id": "babylonjs",
+      "name": "Babylon.js"
+    },
+    {
+      "id": "barba-js",
+      "name": "Barba.js"
+    },
+    {
+      "id": "base-ui",
+      "name": "Base UI"
+    },
+    {
+      "id": "bits-ui",
+      "name": "Bits UI"
+    },
+    {
+      "id": "book-of-shaders",
+      "name": "The Book of Shaders"
+    },
+    {
+      "id": "canvas-api",
+      "name": "Canvas API (2D)"
+    },
+    {
+      "id": "codrops",
+      "name": "Codrops"
+    },
+    {
+      "id": "css-keyframes",
+      "name": "CSS Animations (@keyframes)"
+    },
+    {
       "id": "css-scroll-driven",
       "name": "CSS Scroll-driven Animations"
+    },
+    {
+      "id": "css-transitions",
+      "name": "CSS Transitions"
+    },
+    {
+      "id": "cult-ui",
+      "name": "Cult UI"
+    },
+    {
+      "id": "curtainsjs",
+      "name": "curtains.js"
+    },
+    {
+      "id": "fabricjs",
+      "name": "Fabric.js"
+    },
+    {
+      "id": "fancy-components",
+      "name": "Fancy Components"
+    },
+    {
+      "id": "github-primer",
+      "name": "GitHub Primer"
+    },
+    {
+      "id": "godly",
+      "name": "Godly"
+    },
+    {
+      "id": "godui",
+      "name": "GodUI"
     },
     {
       "id": "gsap",
@@ -29,12 +125,40 @@
       "name": "Headless UI"
     },
     {
+      "id": "hover-dev",
+      "name": "Hover.dev"
+    },
+    {
+      "id": "hoverstates",
+      "name": "Hoverstates"
+    },
+    {
       "id": "ibm-carbon",
       "name": "IBM Carbon"
     },
     {
+      "id": "intersection-observer",
+      "name": "Intersection Observer API"
+    },
+    {
+      "id": "kokonut-ui",
+      "name": "Kokonut UI"
+    },
+    {
+      "id": "konva",
+      "name": "Konva"
+    },
+    {
       "id": "lenis",
       "name": "Lenis"
+    },
+    {
+      "id": "locomotive-scroll",
+      "name": "Locomotive Scroll"
+    },
+    {
+      "id": "lottie",
+      "name": "Lottie (lottie-web)"
     },
     {
       "id": "magic-ui",
@@ -49,8 +173,44 @@
       "name": "Web Animations API (MDN)"
     },
     {
+      "id": "melt-ui",
+      "name": "Melt UI"
+    },
+    {
+      "id": "microsoft-fluent",
+      "name": "Microsoft Fluent Design System"
+    },
+    {
+      "id": "motion-primitives",
+      "name": "Motion Primitives"
+    },
+    {
+      "id": "motion-vue",
+      "name": "Motion for Vue"
+    },
+    {
       "id": "motion",
       "name": "Motion (Framer Motion)"
+    },
+    {
+      "id": "ogl",
+      "name": "OGL"
+    },
+    {
+      "id": "p5js",
+      "name": "p5.js"
+    },
+    {
+      "id": "paperjs",
+      "name": "Paper.js"
+    },
+    {
+      "id": "pixijs",
+      "name": "PixiJS"
+    },
+    {
+      "id": "pointer-events",
+      "name": "Pointer Events API"
     },
     {
       "id": "radix-ui",
@@ -65,20 +225,104 @@
       "name": "React Bits"
     },
     {
+      "id": "react-spring",
+      "name": "react-spring"
+    },
+    {
+      "id": "react-three-fiber",
+      "name": "React Three Fiber"
+    },
+    {
+      "id": "regl",
+      "name": "regl"
+    },
+    {
       "id": "reka-ui",
       "name": "Reka UI"
+    },
+    {
+      "id": "resize-observer",
+      "name": "Resize Observer API"
+    },
+    {
+      "id": "rive",
+      "name": "Rive"
     },
     {
       "id": "rough-notation",
       "name": "Rough Notation"
     },
     {
+      "id": "salesforce-lightning",
+      "name": "Salesforce Lightning Design System"
+    },
+    {
+      "id": "scrollreveal",
+      "name": "ScrollReveal"
+    },
+    {
+      "id": "scrolltrigger",
+      "name": "GSAP ScrollTrigger"
+    },
+    {
       "id": "shadcn-ui",
       "name": "shadcn/ui"
     },
     {
+      "id": "shadcn-vue",
+      "name": "shadcn-vue"
+    },
+    {
+      "id": "shadertoy",
+      "name": "Shadertoy"
+    },
+    {
+      "id": "shopify-polaris",
+      "name": "Shopify Polaris"
+    },
+    {
+      "id": "siteinspire",
+      "name": "SiteInspire"
+    },
+    {
+      "id": "smoothui",
+      "name": "SmoothUI"
+    },
+    {
+      "id": "spline",
+      "name": "Spline"
+    },
+    {
+      "id": "svelte-bits",
+      "name": "Svelte Bits"
+    },
+    {
+      "id": "svelte-motion",
+      "name": "Svelte Motion (svelte/motion)"
+    },
+    {
+      "id": "svg-animation",
+      "name": "SVG Animation (SMIL + CSS)"
+    },
+    {
+      "id": "swup",
+      "name": "Swup"
+    },
+    {
+      "id": "theatre-js",
+      "name": "Theatre.js"
+    },
+    {
       "id": "threejs",
       "name": "Three.js"
+    },
+    {
+      "id": "threlte",
+      "name": "Threlte"
+    },
+    {
+      "id": "tresjs",
+      "name": "TresJS"
     },
     {
       "id": "tsparticles",
@@ -87,6 +331,34 @@
     {
       "id": "uiverse",
       "name": "Uiverse"
+    },
+    {
+      "id": "vantajs",
+      "name": "Vanta.js"
+    },
+    {
+      "id": "view-transitions-api",
+      "name": "View Transitions API"
+    },
+    {
+      "id": "vivus",
+      "name": "Vivus"
+    },
+    {
+      "id": "vue-bits",
+      "name": "Vue Bits"
+    },
+    {
+      "id": "vueuse-motion",
+      "name": "@vueuse/motion"
+    },
+    {
+      "id": "webgl",
+      "name": "WebGL API"
+    },
+    {
+      "id": "webgpu",
+      "name": "WebGPU API"
     }
   ],
   "components": [
@@ -95,28 +367,232 @@
       "name": "Aurora Background"
     },
     {
+      "id": "aceternity-spotlight-card",
+      "name": "Spotlight Card"
+    },
+    {
+      "id": "adobe-spectrum-combobox",
+      "name": "ComboBox"
+    },
+    {
+      "id": "animata-counter",
+      "name": "Animated Counter"
+    },
+    {
+      "id": "animate-ui-counting-number",
+      "name": "Counting Number"
+    },
+    {
+      "id": "ant-design-table",
+      "name": "Table"
+    },
+    {
+      "id": "aos-fade-up",
+      "name": "Fade Up On Scroll"
+    },
+    {
+      "id": "ark-ui-accordion",
+      "name": "Accordion"
+    },
+    {
+      "id": "ark-ui-tabs",
+      "name": "Tabs"
+    },
+    {
+      "id": "autoanimate-list",
+      "name": "Auto Animate List"
+    },
+    {
+      "id": "barba-js-page-transition",
+      "name": "Page Transition"
+    },
+    {
+      "id": "base-ui-select",
+      "name": "Select"
+    },
+    {
+      "id": "bits-ui-dialog",
+      "name": "Dialog"
+    },
+    {
+      "id": "cult-ui-shader-gradient",
+      "name": "Shader Gradient"
+    },
+    {
+      "id": "fancy-components-gravity-text",
+      "name": "Gravity Text"
+    },
+    {
+      "id": "github-primer-button",
+      "name": "Button"
+    },
+    {
+      "id": "gsap-scroll-pin",
+      "name": "Scroll Pin Section"
+    },
+    {
       "id": "headless-ui-combobox",
       "name": "Combobox"
+    },
+    {
+      "id": "headless-ui-listbox",
+      "name": "Listbox"
+    },
+    {
+      "id": "ibm-carbon-data-table",
+      "name": "Data Table"
+    },
+    {
+      "id": "kokonut-ai-input",
+      "name": "AI Input"
+    },
+    {
+      "id": "konva-draggable-shape",
+      "name": "Draggable Shape"
+    },
+    {
+      "id": "lenis-smooth-scroll",
+      "name": "Smooth Scroll"
+    },
+    {
+      "id": "lottie-player",
+      "name": "Lottie Player"
+    },
+    {
+      "id": "magic-ui-bento-grid",
+      "name": "Bento Grid"
     },
     {
       "id": "magic-ui-marquee",
       "name": "Marquee"
     },
     {
+      "id": "magic-ui-shimmer-button",
+      "name": "Shimmer Button"
+    },
+    {
+      "id": "melt-ui-toast",
+      "name": "Toast"
+    },
+    {
+      "id": "motion-layout-group",
+      "name": "Layout Group"
+    },
+    {
+      "id": "motion-primitives-text-shimmer",
+      "name": "Text Shimmer"
+    },
+    {
+      "id": "p5js-flow-field",
+      "name": "Flow Field"
+    },
+    {
+      "id": "pixijs-sprite-burst",
+      "name": "Sprite Burst"
+    },
+    {
+      "id": "r3f-floating-mesh",
+      "name": "Floating Mesh"
+    },
+    {
+      "id": "radix-accordion",
+      "name": "Accordion"
+    },
+    {
       "id": "radix-dialog",
       "name": "Dialog"
+    },
+    {
+      "id": "radix-dropdown-menu",
+      "name": "Dropdown Menu"
+    },
+    {
+      "id": "radix-tooltip",
+      "name": "Tooltip"
+    },
+    {
+      "id": "react-aria-combobox",
+      "name": "ComboBox"
+    },
+    {
+      "id": "react-aria-datepicker",
+      "name": "DatePicker"
     },
     {
       "id": "react-aria-listbox",
       "name": "ListBox"
     },
     {
+      "id": "react-bits-split-text",
+      "name": "Split Text"
+    },
+    {
+      "id": "react-spring-trail",
+      "name": "Trail"
+    },
+    {
       "id": "reka-ui-popover",
       "name": "Popover"
     },
     {
+      "id": "reka-ui-tooltip",
+      "name": "Tooltip"
+    },
+    {
+      "id": "rive-interactive-icon",
+      "name": "Interactive Icon"
+    },
+    {
+      "id": "rough-notation-highlight",
+      "name": "Sketchy Highlight Annotation"
+    },
+    {
+      "id": "scrolltrigger-horizontal-scroll",
+      "name": "Horizontal Scroll Gallery"
+    },
+    {
       "id": "shadcn-button",
       "name": "Button"
+    },
+    {
+      "id": "shadcn-sonner-toast",
+      "name": "Sonner Toast"
+    },
+    {
+      "id": "shadcn-vue-command",
+      "name": "Command"
+    },
+    {
+      "id": "shadertoy-raymarch-clouds",
+      "name": "Raymarched Clouds Shader"
+    },
+    {
+      "id": "smoothui-dynamic-island",
+      "name": "Dynamic Island"
+    },
+    {
+      "id": "spline-3d-scene",
+      "name": "Embedded 3D Scene"
+    },
+    {
+      "id": "svelte-bits-aurora",
+      "name": "Aurora"
+    },
+    {
+      "id": "svelte-motion-spring",
+      "name": "Spring"
+    },
+    {
+      "id": "swup-page-transition",
+      "name": "Page Transition"
+    },
+    {
+      "id": "threejs-particle-field",
+      "name": "Particle Field"
+    },
+    {
+      "id": "tsparticles-confetti",
+      "name": "Confetti Burst"
     },
     {
       "id": "tsparticles-preset",
@@ -129,9 +605,25 @@
     {
       "id": "uiverse-loader-x",
       "name": "Community Loader"
+    },
+    {
+      "id": "uiverse-neon-toggle",
+      "name": "Neon Toggle"
+    },
+    {
+      "id": "vue-bits-blob-cursor",
+      "name": "Blob Cursor"
+    },
+    {
+      "id": "vueuse-motion-fade",
+      "name": "Fade"
     }
   ],
   "effects": [
+    {
+      "id": "accordion-expand",
+      "name": "Accordion expand"
+    },
     {
       "id": "aurora-background",
       "name": "Aurora background"
@@ -139,6 +631,10 @@
     {
       "id": "blur-reveal",
       "name": "Blur reveal"
+    },
+    {
+      "id": "chart-draw-on",
+      "name": "Chart draw-on"
     },
     {
       "id": "counter-rollup",
@@ -149,24 +645,68 @@
       "name": "Crossfade"
     },
     {
+      "id": "cursor-trail",
+      "name": "Cursor trail"
+    },
+    {
+      "id": "drawer-slide",
+      "name": "Drawer slide"
+    },
+    {
+      "id": "focus-ring-pulse",
+      "name": "Focus ring pulse"
+    },
+    {
       "id": "gradient-movement",
       "name": "Animated gradient"
+    },
+    {
+      "id": "hover-lift",
+      "name": "Hover lift"
+    },
+    {
+      "id": "list-reorder-flip",
+      "name": "List reorder (FLIP)"
     },
     {
       "id": "magnetic-button",
       "name": "Magnetic button"
     },
     {
+      "id": "marquee-ticker",
+      "name": "Marquee ticker"
+    },
+    {
+      "id": "noise-grain-overlay",
+      "name": "Noise grain overlay"
+    },
+    {
       "id": "optimistic-flash",
       "name": "Optimistic success flash"
+    },
+    {
+      "id": "page-route-fade",
+      "name": "Page route fade"
+    },
+    {
+      "id": "parallax-layer",
+      "name": "Parallax layer"
     },
     {
       "id": "perspective-tilt",
       "name": "Perspective tilt"
     },
     {
+      "id": "pinned-scroll-storytelling",
+      "name": "Pinned scroll storytelling"
+    },
+    {
       "id": "pointer-spotlight",
       "name": "Pointer spotlight"
+    },
+    {
+      "id": "ripple-feedback",
+      "name": "Ripple feedback"
     },
     {
       "id": "scroll-progress",
@@ -185,14 +725,34 @@
       "name": "Spring scale"
     },
     {
+      "id": "sticky-header-shrink",
+      "name": "Sticky header shrink"
+    },
+    {
+      "id": "tab-underline-slide",
+      "name": "Tab underline slide"
+    },
+    {
       "id": "text-reveal-stagger",
       "name": "Staggered text reveal"
+    },
+    {
+      "id": "toast-slide",
+      "name": "Toast slide"
     }
   ],
   "patterns": [
     {
       "id": "command-palette-reveal",
       "name": "Command-palette reveal"
+    },
+    {
+      "id": "comparison-highlighting",
+      "name": "Comparison highlighting"
+    },
+    {
+      "id": "contextual-action-disclosure",
+      "name": "Contextual action disclosure"
     },
     {
       "id": "destructive-confirmation",
@@ -203,8 +763,24 @@
       "name": "Drag-and-drop feedback"
     },
     {
+      "id": "drill-down-continuity",
+      "name": "Drill-down continuity"
+    },
+    {
       "id": "empty-state-guidance",
       "name": "Empty-state guidance"
+    },
+    {
+      "id": "error-recovery",
+      "name": "Error recovery"
+    },
+    {
+      "id": "expandable-details",
+      "name": "Expandable details"
+    },
+    {
+      "id": "filter-sort-transition",
+      "name": "Filter and sort transition"
     },
     {
       "id": "inline-validation",
@@ -219,6 +795,10 @@
       "name": "Notification entrance"
     },
     {
+      "id": "optimistic-list-add",
+      "name": "Optimistic list add"
+    },
+    {
       "id": "optimistic-save",
       "name": "Optimistic save feedback"
     },
@@ -227,8 +807,16 @@
       "name": "Pending / saving / saved status"
     },
     {
+      "id": "processing-state",
+      "name": "Processing state"
+    },
+    {
       "id": "progressive-onboarding",
       "name": "Progressive onboarding"
+    },
+    {
+      "id": "row-insertion-removal",
+      "name": "Row insertion and removal"
     },
     {
       "id": "scroll-reveal",
@@ -243,12 +831,24 @@
       "name": "Skeleton loading"
     },
     {
+      "id": "status-change",
+      "name": "Status change"
+    },
+    {
       "id": "streaming-indication",
       "name": "Streaming / processing indication"
     },
     {
       "id": "success-confirmation",
       "name": "Success confirmation"
+    },
+    {
+      "id": "tab-switch",
+      "name": "Tab switch"
+    },
+    {
+      "id": "undo",
+      "name": "Undo"
     },
     {
       "id": "upload-progress",
@@ -261,6 +861,30 @@
       "name": "Blur reveal on scroll (browser-native)"
     },
     {
+      "id": "command-palette-browser-native",
+      "name": "Command palette (browser-native)"
+    },
+    {
+      "id": "destructive-confirm-vue",
+      "name": "Destructive confirmation (Vue 3)"
+    },
+    {
+      "id": "drag-reorder-svelte",
+      "name": "Drag reorder with keyboard alternative (Svelte)"
+    },
+    {
+      "id": "empty-state-frappe-vue",
+      "name": "Empty state guidance (Frappe-Vue)"
+    },
+    {
+      "id": "inline-validation-vue",
+      "name": "Inline validation (Vue 3)"
+    },
+    {
+      "id": "notification-toast-vue",
+      "name": "Notification toast (Vue 3)"
+    },
+    {
       "id": "optimistic-save-feedback-vue",
       "name": "Optimistic save feedback (Vue 3)"
     },
@@ -269,8 +893,24 @@
       "name": "Pending/saving/saved status (Frappe-Vue)"
     },
     {
+      "id": "shared-element-view-transition-browser-native",
+      "name": "Shared-element navigation via View Transitions (browser-native)"
+    },
+    {
+      "id": "skeleton-list-vue",
+      "name": "Streaming skeleton list (Vue 3)"
+    },
+    {
       "id": "skeleton-loading-react",
       "name": "Skeleton loading (React)"
+    },
+    {
+      "id": "success-check-browser-native",
+      "name": "Success check confirmation (browser-native)"
+    },
+    {
+      "id": "upload-progress-react",
+      "name": "Upload progress (React)"
     }
   ]
 }

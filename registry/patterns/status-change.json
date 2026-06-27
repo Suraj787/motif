@@ -1,0 +1,43 @@
+{
+  "id": "status-change",
+  "name": "Status change",
+  "problem": "A record's status updates with no visible transition, so users miss that the state changed.",
+  "user_intent": [
+    "track progress",
+    "monitor state"
+  ],
+  "suitable_pages": [
+    "record details",
+    "kanban",
+    "ticket view"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "optimistic-flash",
+    "crossfade",
+    "focus-ring-pulse"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "marquee-ticker"
+  ],
+  "interaction_states": [
+    "idle",
+    "changing",
+    "changed",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "announce new status via aria-live",
+    "convey status with text and icon not color alone",
+    "keyboard unaffected"
+  ],
+  "performance_budget": "60fps; no layout shift on status badge change",
+  "success_criteria": [
+    "new status is announced and visible within 150ms",
+    "previous and current status are distinguishable"
+  ],
+  "tests": []
+}

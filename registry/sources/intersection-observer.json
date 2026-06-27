@@ -1,0 +1,53 @@
+{
+  "id": "intersection-observer",
+  "name": "Intersection Observer API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "Asynchronous, off-main-thread visibility checks; vastly cheaper than scroll-event polling and getBoundingClientRect loops",
+  "suitable_contexts": [
+    "enterprise",
+    "marketing",
+    "editorial",
+    "low-power",
+    "mobile",
+    "dense-ui"
+  ],
+  "unsuitable_contexts": [
+    "sub-pixel continuous scroll progress tracking (use scroll-driven animations instead)"
+  ],
+  "strengths": [
+    "Baseline everywhere; the standard tool for lazy-loading, infinite scroll and reveal-on-scroll",
+    "Eliminates expensive scroll listeners and forced layout reflows",
+    "Configurable thresholds and rootMargin for precise trigger control",
+    "Low battery and CPU cost, safe on low-power and mobile devices"
+  ],
+  "weaknesses": [
+    "Reports discrete threshold crossings, not continuous scroll position",
+    "Callbacks are async, so it is not suited to per-frame animation driving",
+    "Observing huge numbers of targets still carries some bookkeeping cost"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

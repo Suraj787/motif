@@ -1,0 +1,46 @@
+{
+  "id": "microsoft-fluent",
+  "name": "Microsoft Fluent Design System",
+  "category": "enterprise-design-system",
+  "homepage": "https://fluent2.microsoft.design",
+  "repository": "https://github.com/microsoft/fluentui",
+  "frameworks": [
+    "react",
+    "web-components"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT (Fluent UI code); Fluent Design guidance is Microsoft's",
+  "license_reference": "https://github.com/microsoft/fluentui/blob/master/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion token/easing reference"
+  ],
+  "unsuitable_contexts": [
+    "reskinning a product as Microsoft/Fluent brand"
+  ],
+  "strengths": [
+    "Fluent 2 motion tokens with documented durations and easing curves",
+    "enterprise motion principles (connected, purposeful animation)"
+  ],
+  "weaknesses": [
+    "Fluent UI components are MIT but the 'Fluent Design' guidance and brand are Microsoft's (reference-only)",
+    "adapt motion tokens/principles; do not present work as Microsoft's brand"
+  ],
+  "evidence": [
+    "https://github.com/microsoft/fluentui/blob/master/LICENSE",
+    "https://fluent2.microsoft.design"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

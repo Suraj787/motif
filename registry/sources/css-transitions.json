@@ -1,0 +1,54 @@
+{
+  "id": "css-transitions",
+  "name": "CSS Transitions",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/CSS/CSS_transitions",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "css"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "GPU-accelerated for transform/opacity; compositor-friendly when animating cheap properties",
+  "suitable_contexts": [
+    "enterprise",
+    "marketing",
+    "editorial",
+    "low-power",
+    "mobile",
+    "dense-ui"
+  ],
+  "unsuitable_contexts": [
+    "complex multi-step choreography",
+    "physics-based or spring motion"
+  ],
+  "strengths": [
+    "Baseline-supported in every modern browser for years",
+    "Declarative, zero-JS state-change animation (hover, focus, class toggle)",
+    "Cheap and smooth when animating transform/opacity on the compositor",
+    "Respects prefers-reduced-motion when authored correctly"
+  ],
+  "weaknesses": [
+    "Only animates between two states; no keyframe sequencing",
+    "Animating layout properties (width, top, height) triggers reflow and jank",
+    "No native spring/physics easing; limited to cubic-bezier and steps"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/CSS/CSS_transitions"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "noise-grain-overlay",
+  "name": "Noise grain overlay",
+  "category": "ambient-texture",
+  "objective": "overlay an animated film-grain texture for atmospheric depth",
+  "contexts": [
+    "creative-landing",
+    "editorial-hero"
+  ],
+  "technologies": [
+    "CSS",
+    "SVG-filter",
+    "Canvas",
+    "mix-blend-mode"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "high",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "poor",
+  "reduced_motion_fallback": "Apply a static, single-frame grain texture or omit the overlay entirely.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "texture",
+    "grain",
+    "ambient"
+  ]
+}

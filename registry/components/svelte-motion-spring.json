@@ -1,0 +1,35 @@
+{
+  "id": "svelte-motion-spring",
+  "name": "Spring",
+  "source": "svelte-motion",
+  "canonical_page": "https://www.npmjs.com/package/svelte-motion",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "svelte",
+  "styling_technology": "CSS",
+  "animation_technology": "Motion One / spring",
+  "dependencies": [
+    "svelte-motion"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm svelte-motion",
+  "copy_paste_available": false,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://www.npmjs.com/package/svelte-motion"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ant-design",
+  "name": "Ant Design",
+  "category": "enterprise-design-system",
+  "homepage": "https://ant.design",
+  "repository": "https://github.com/ant-design/ant-design",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion token and easing reference"
+  ],
+  "unsuitable_contexts": [
+    "reskinning as Ant Design brand"
+  ],
+  "strengths": [
+    "documented motion principles with named easing curves and duration tokens",
+    "comprehensive enterprise component motion patterns"
+  ],
+  "weaknesses": [
+    "components are MIT but the Ant Design brand/identity is reserved (guidance is reference-only)",
+    "adapt motion tokens/principles; do not present work as the Ant Design brand"
+  ],
+  "evidence": [
+    "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+    "https://ant.design"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

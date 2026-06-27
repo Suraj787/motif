@@ -1,0 +1,123 @@
+/* ============================================================================
+ * Motif Recipe, Command Palette styles (browser-native)
+ * ----------------------------------------------------------------------------
+ * Animates only transform + opacity. The reveal is gated behind a CSS @media so
+ * that prefers-reduced-motion users get an instant, static palette.
+ * Provenance: original (clean-room).
+ * ========================================================================== */
+
+.motif-cmdk {
+  --motif-cmdk-bg: var(--motif-surface, #ffffff);
+  --motif-cmdk-fg: var(--motif-fg, #0f172a);
+  --motif-cmdk-muted: var(--motif-muted, #64748b);
+  --motif-cmdk-accent: var(--motif-accent, #2563eb);
+  --motif-cmdk-border: var(--motif-border, #e2e8f0);
+
+  padding: 0;
+  border: none;
+  border-radius: 0.875rem;
+  width: min(40rem, calc(100vw - 2rem));
+  background: var(--motif-cmdk-bg);
+  color: var(--motif-cmdk-fg);
+  box-shadow: 0 24px 60px -12px rgb(15 23 42 / 0.35);
+  /* Pin near the top so it does not jump around with content height. */
+  margin: 12vh auto auto;
+}
+
+/* Native dialog backdrop. */
+.motif-cmdk::backdrop {
+  background: rgb(15 23 42 / 0.35);
+}
+
+.motif-cmdk__panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+}
+
+.motif-cmdk__input {
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 1rem 1.125rem;
+  border: none;
+  border-bottom: 1px solid var(--motif-cmdk-border);
+  background: transparent;
+  color: inherit;
+  min-height: 44px;
+}
+.motif-cmdk__input:focus {
+  outline: none; /* focus is visually implied by the open palette */
+}
+
+.motif-cmdk__list {
+  list-style: none;
+  margin: 0;
+  padding: 0.375rem;
+  overflow-y: auto;
+}
+
+.motif-cmdk__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.625rem 0.875rem;
+  min-height: 44px; /* coarse-pointer target */
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.motif-cmdk__option[aria-selected="true"] {
+  background: color-mix(in srgb, var(--motif-cmdk-accent) 12%, transparent);
+}
+/* Keep a clear visual marker even in forced-colors / high-contrast modes. */
+@media (forced-colors: active) {
+  .motif-cmdk__option[aria-selected="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -2px;
+  }
+}
+
+.motif-cmdk__label {
+  font-size: 0.95rem;
+}
+.motif-cmdk__hint {
+  font-size: 0.78rem;
+  color: var(--motif-cmdk-muted);
+}
+
+.motif-cmdk__empty {
+  margin: 0;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--motif-cmdk-muted);
+}
+
+/* ---- Reveal animation: transform + opacity only ------------------------- */
+.motif-cmdk[open] {
+  animation: motif-cmdk-in 140ms ease-out;
+}
+.motif-cmdk[open]::backdrop {
+  animation: motif-cmdk-fade 140ms ease-out;
+}
+
+@keyframes motif-cmdk-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes motif-cmdk-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motif-cmdk[open],
+  .motif-cmdk[open]::backdrop {
+    animation: none !important;
+  }
+}

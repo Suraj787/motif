@@ -1,0 +1,47 @@
+{
+  "id": "paperjs",
+  "name": "Paper.js",
+  "category": "canvas-particles-generative",
+  "homepage": "http://paperjs.org",
+  "repository": "https://github.com/paperjs/paper.js",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/paperjs/paper.js/blob/develop/LICENSE.txt",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "slow",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "vector graphics scene graph on canvas; redraws on animation",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "powerful vector graphics scripting and scene graph",
+    "strong Bezier/path manipulation"
+  ],
+  "weaknesses": [
+    "continuous redraw on animation drains battery on low-power devices",
+    "slow maintenance cadence"
+  ],
+  "evidence": [
+    "http://paperjs.org",
+    "https://github.com/paperjs/paper.js",
+    "https://github.com/paperjs/paper.js/blob/develop/package.json"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

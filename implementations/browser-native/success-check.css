@@ -1,0 +1,84 @@
+/* ============================================================================
+ * Motif Recipe, Success Check styles (browser-native)
+ * ----------------------------------------------------------------------------
+ * A restrained success confirmation: the ring and tick draw in via
+ * stroke-dashoffset (compositor-cheap, no layout), the message fades up. Short
+ * and calm, no confetti, no bounce. Under prefers-reduced-motion everything is
+ * shown already-complete with no drawing or movement.
+ * Provenance: original (clean-room).
+ * ========================================================================== */
+
+.motif-success {
+  --motif-ok: var(--motif-success, #16a34a);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--motif-fg, #0f172a);
+  font: inherit;
+}
+
+.motif-success__mark {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+}
+.motif-success__ring {
+  stroke: var(--motif-ok);
+  opacity: 0.35;
+}
+.motif-success__tick {
+  stroke: var(--motif-ok);
+}
+
+.motif-success__msg {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* ---- Resting (no animation) state: fully drawn, fully visible. ----------
+   This is the DEFAULT so that if JS never adds `is-animating` (or under reduced
+   motion) the check is simply present and correct. */
+.motif-success__ring,
+.motif-success__tick {
+  /* No dash by default → shape is fully visible. */
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+}
+
+/* ---- Animated state: draw the ring then the tick, fade the message up. --- */
+.motif-success.is-animating .motif-success__ring {
+  stroke-dasharray: 151; /* ~circumference (2πr, r=24) */
+  stroke-dashoffset: 151;
+  animation: motif-draw 320ms ease-out forwards;
+}
+.motif-success.is-animating .motif-success__tick {
+  stroke-dasharray: 36;
+  stroke-dashoffset: 36;
+  animation: motif-draw 240ms ease-out 220ms forwards;
+}
+.motif-success.is-animating .motif-success__msg {
+  opacity: 0;
+  transform: translateY(2px);
+  animation: motif-rise 200ms ease-out 320ms forwards;
+}
+
+@keyframes motif-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes motif-rise {
+  to { opacity: 1; transform: none; }
+}
+
+/* Reduced motion: never animate; show the completed check and static message. */
+@media (prefers-reduced-motion: reduce) {
+  .motif-success.is-animating .motif-success__ring,
+  .motif-success.is-animating .motif-success__tick,
+  .motif-success.is-animating .motif-success__msg {
+    animation: none !important;
+    stroke-dasharray: none !important;
+    stroke-dashoffset: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

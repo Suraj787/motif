@@ -1,0 +1,48 @@
+{
+  "id": "vueuse-motion",
+  "name": "@vueuse/motion",
+  "category": "animation-engine",
+  "homepage": "https://motion.vueuse.org",
+  "repository": "https://github.com/vueuse/motion",
+  "frameworks": [
+    "vue"
+  ],
+  "technologies": [
+    "typescript",
+    "popmotion"
+  ],
+  "dependency_model": "npm",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/vueuse/motion/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "directive-based Vue animations, lightweight; some bundle weight",
+  "suitable_contexts": [
+    "vue web app",
+    "marketing"
+  ],
+  "unsuitable_contexts": [
+    "non-vue stacks"
+  ],
+  "strengths": [
+    "Vue composables and directives for motion",
+    "part of the VueUse ecosystem"
+  ],
+  "weaknesses": [
+    "Vue-only",
+    "bundle weight if overused"
+  ],
+  "evidence": [
+    "https://motion.vueuse.org",
+    "https://github.com/vueuse/motion/blob/main/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

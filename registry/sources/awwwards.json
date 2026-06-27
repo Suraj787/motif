@@ -1,0 +1,46 @@
+{
+  "id": "awwwards",
+  "name": "Awwwards",
+  "category": "creative-reference",
+  "homepage": "https://www.awwwards.com",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "freemium",
+  "license": "reference (Awwwards terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "unknown",
+  "performance_characteristics": "n/a (gallery)",
+  "suitable_contexts": [
+    "motion inspiration",
+    "award-winning interaction trends"
+  ],
+  "unsuitable_contexts": [
+    "production component source"
+  ],
+  "strengths": [
+    "curated showcase of award-winning interactive sites",
+    "useful for spotting motion/interaction trends"
+  ],
+  "weaknesses": [
+    "treat visual galleries as inspiration, not reusable code",
+    "PRO membership and paid submissions gate parts of the experience (freemium)"
+  ],
+  "evidence": [
+    "https://www.awwwards.com",
+    "https://www.awwwards.com/pro",
+    "https://www.awwwards.com/plans/user-plans"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

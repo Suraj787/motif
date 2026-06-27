@@ -1,0 +1,46 @@
+{
+  "id": "shopify-polaris",
+  "name": "Shopify Polaris",
+  "category": "enterprise-design-system",
+  "homepage": "https://polaris.shopify.com",
+  "repository": "https://github.com/Shopify/polaris",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT (modified) - use limited to apps that interoperate with Shopify and are visually distinct from Shopify products",
+  "license_reference": "https://github.com/Shopify/polaris/blob/main/LICENSE.md",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app",
+    "motion/transition token reference"
+  ],
+  "unsuitable_contexts": [
+    "non-Shopify apps that mimic Shopify's look",
+    "reskinning as Shopify brand"
+  ],
+  "strengths": [
+    "documented motion duration and easing design tokens",
+    "clear enterprise interaction/motion guidance"
+  ],
+  "weaknesses": [
+    "license is a modified MIT: grants are limited to Shopify-interoperating apps that stay visually distinct from Shopify products",
+    "brand assets restricted; adapt motion tokens/principles only, treat guidance as reference-only"
+  ],
+  "evidence": [
+    "https://github.com/Shopify/polaris/blob/main/LICENSE.md",
+    "https://polaris.shopify.com"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "react-three-fiber",
+  "name": "React Three Fiber",
+  "category": "3d-shader",
+  "homepage": "https://r3f.docs.pmnd.rs",
+  "repository": "https://github.com/pmndrs/react-three-fiber",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [
+    "WebGL",
+    "three.js"
+  ],
+  "dependency_model": "requires three.js + react peer deps",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/pmndrs/react-three-fiber/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL; heavy bundle",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "declarative React renderer for three.js",
+    "large pmndrs ecosystem (drei, etc.)"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order",
+    "React-only wrapper over three.js"
+  ],
+  "evidence": [
+    "https://r3f.docs.pmnd.rs",
+    "https://github.com/pmndrs/react-three-fiber",
+    "https://github.com/pmndrs/react-three-fiber/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

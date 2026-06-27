@@ -1,0 +1,24 @@
+{
+  "id": "success-check-browser-native",
+  "name": "Success check confirmation (browser-native)",
+  "pattern": "success-confirmation",
+  "framework": "browser-native",
+  "technology": [
+    "SVG",
+    "CSS",
+    "JavaScript"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "browser standard (no licence needed)",
+  "provenance_type": "browser-native",
+  "source_references": [],
+  "algorithm": "createSuccessCheck builds a small role=status element. show(message) sets the text, unhides, and unless reduced motion is set replays the draw by toggling is-animating (a forced reflow re-triggers the keyframes). CSS draws the ring then the tick via stroke-dashoffset and fades the message up, then it auto-hides after lingerMs. The default resting CSS state shows the check fully drawn so it is never left half-drawn.",
+  "implementation_path": "implementations/browser-native/success-check.md",
+  "reduced_motion": "No stroke draw, fade, or movement under prefers-reduced-motion; the check shows already complete with static message.",
+  "responsive_behaviour": "inline-flex; fixed 40px SVG mark, message reflows; no layout-affecting motion",
+  "browser_support": "All modern browsers; SVG stroke-dash animation and matchMedia universally supported; SSR-guarded.",
+  "accessibility": "role=status / aria-live polite announces the message once without stealing focus; SVG mark aria-hidden; success conveyed by tick shape + text not colour; deliberately short and quiet (no confetti).",
+  "tests": [],
+  "maturity": "stable"
+}

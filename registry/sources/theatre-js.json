@@ -1,0 +1,52 @@
+{
+  "id": "theatre-js",
+  "name": "Theatre.js",
+  "category": "animation-engine",
+  "homepage": "https://www.theatrejs.com",
+  "repository": "https://github.com/theatre-js/theatre",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [
+    "typescript",
+    "three.js",
+    "react-three-fiber"
+  ],
+  "dependency_model": "npm",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "Apache-2.0",
+  "license_reference": "https://github.com/theatre-js/theatre/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "animation sequencer with visual studio; runtime core is light, studio editor heavier",
+  "suitable_contexts": [
+    "creative coding",
+    "3d / three.js scenes",
+    "complex sequenced animation"
+  ],
+  "unsuitable_contexts": [
+    "simple ui micro-interactions",
+    "bundle-sensitive pages shipping the studio"
+  ],
+  "strengths": [
+    "professional animation sequencer with visual editor",
+    "works with the DOM, Three.js and React Three Fiber"
+  ],
+  "weaknesses": [
+    "studio package (theatre/studio/...) is AGPL-3.0 while core runtime is Apache-2.0",
+    "overkill for simple animations"
+  ],
+  "evidence": [
+    "https://www.theatrejs.com",
+    "https://github.com/theatre-js/theatre/blob/main/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "threlte",
+  "name": "Threlte",
+  "category": "3d-shader",
+  "homepage": "https://threlte.xyz",
+  "repository": "https://github.com/threlte/threlte",
+  "frameworks": [
+    "svelte"
+  ],
+  "technologies": [
+    "WebGL",
+    "three.js"
+  ],
+  "dependency_model": "requires three.js + svelte peer deps",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/threlte/threlte/blob/main/LICENSE.md",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL; heavy bundle",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "declarative Svelte renderer for three.js",
+    "component-based scene graph"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order",
+    "Svelte-only wrapper over three.js"
+  ],
+  "evidence": [
+    "https://threlte.xyz",
+    "https://github.com/threlte/threlte",
+    "https://github.com/threlte/threlte/blob/main/LICENSE.md"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

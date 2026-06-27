@@ -1,0 +1,42 @@
+{
+  "id": "comparison-highlighting",
+  "name": "Comparison highlighting",
+  "problem": "When comparing options side by side, users struggle to see which attributes differ.",
+  "user_intent": [
+    "compare options",
+    "make a decision"
+  ],
+  "suitable_pages": [
+    "pricing",
+    "feature comparison",
+    "plan selection"
+  ],
+  "unsuitable_pages": [
+    "data table"
+  ],
+  "recommended_effects": [
+    "hover-lift",
+    "focus-ring-pulse",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "cursor-trail",
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "neutral",
+    "highlighted",
+    "selected"
+  ],
+  "accessibility_requirements": [
+    "differences conveyed by text/icon not color alone",
+    "highlighted column is announced to assistive tech",
+    "keyboard can move between compared items"
+  ],
+  "performance_budget": "60fps; no layout shift when highlighting",
+  "success_criteria": [
+    "users quickly identify differences between options",
+    "the recommended or selected option is unambiguous"
+  ],
+  "tests": []
+}

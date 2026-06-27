@@ -1,0 +1,54 @@
+{
+  "id": "pointer-events",
+  "name": "Pointer Events API",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/Pointer_events",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "Unified event stream with coalesced and predicted events for high-frequency input; efficient drag/draw handling via pointer capture",
+  "suitable_contexts": [
+    "enterprise",
+    "marketing",
+    "editorial",
+    "mobile",
+    "dense-ui",
+    "drag-and-drop",
+    "drawing-and-canvas"
+  ],
+  "unsuitable_contexts": [
+    "code paths that must run unchanged on very old browsers without a pointer-events polyfill"
+  ],
+  "strengths": [
+    "Baseline everywhere; one unified model for mouse, touch and pen input",
+    "Pointer capture simplifies drag, slider and gesture implementations",
+    "Exposes pressure, tilt, width/height and getCoalescedEvents for rich/high-rate input",
+    "Reduces the need for separate mouse and touch event handling"
+  ],
+  "weaknesses": [
+    "Gesture recognition (pinch, rotate, inertia) must still be built on top",
+    "Keyboard and assistive-tech interaction must be handled separately for accessibility",
+    "Cross-device quirks (hover-capable vs touch) still need feature detection"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/Pointer_events"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "motion-vue",
+  "name": "Motion for Vue",
+  "category": "animation-engine",
+  "homepage": "https://motion.dev/docs/vue",
+  "repository": "https://github.com/motiondivision/motion-vue",
+  "frameworks": [
+    "vue"
+  ],
+  "technologies": [
+    "typescript",
+    "motion"
+  ],
+  "dependency_model": "npm",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/motiondivision/motion-vue/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "hybrid engine, hardware-accelerated; ~bundle weight of Motion core",
+  "suitable_contexts": [
+    "vue web app",
+    "gesture-driven ui"
+  ],
+  "unsuitable_contexts": [
+    "non-vue stacks"
+  ],
+  "strengths": [
+    "Motion (Framer Motion) API ported to Vue",
+    "declarative motion component with springs and layout animation"
+  ],
+  "weaknesses": [
+    "Vue-only",
+    "newer project, bundle weight if overused"
+  ],
+  "evidence": [
+    "https://motion.dev/docs/vue",
+    "https://github.com/motiondivision/motion-vue/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "scrollreveal",
+  "name": "ScrollReveal",
+  "category": "scrolling-transitions",
+  "homepage": "https://scrollrevealjs.org",
+  "repository": "https://github.com/jlmakes/scrollreveal",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "freemium",
+  "license": "GPL-3.0 (dual-licensed; commercial licence required for proprietary use)",
+  "license_reference": "https://www.npmjs.com/package/scrollreveal",
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "stale",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "lightweight reveal-on-scroll using IntersectionObserver",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "simple reveal-on-scroll API",
+    "small footprint"
+  ],
+  "weaknesses": [
+    "LICENCE NUANCE: GPL-3.0 (not MIT) \u2014 copyleft; v4+ requires a paid COMMERCIAL licence for proprietary/closed-source commercial use, so it is NOT freely redistributable into proprietary output \u2014 reference-only for Motif",
+    "scroll-triggered reveals can harm accessibility",
+    "project is largely unmaintained"
+  ],
+  "evidence": [
+    "https://www.npmjs.com/package/scrollreveal",
+    "https://github.com/jlmakes/scrollreveal/issues/345",
+    "https://scrollrevealjs.org"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

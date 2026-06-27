@@ -1,0 +1,33 @@
+{
+  "id": "p5js-flow-field",
+  "name": "Flow Field",
+  "source": "p5js",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla",
+  "styling_technology": "Canvas",
+  "animation_technology": "p5.js draw loop",
+  "dependencies": [
+    "p5"
+  ],
+  "required_assets": [],
+  "browser_requirements": "Canvas-capable browser",
+  "installation_method": "varies",
+  "copy_paste_available": true,
+  "license": "LGPL-2.1",
+  "component_exceptions": "Adapt the interaction concept; do not copy/port the source into another framework.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "no",
+  "responsive_behaviour": "partial",
+  "performance_cost": "high",
+  "complexity": "high",
+  "quality_status": "medium",
+  "usability_mode": "adaptable",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

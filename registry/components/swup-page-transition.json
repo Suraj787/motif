@@ -1,0 +1,35 @@
+{
+  "id": "swup-page-transition",
+  "name": "Page Transition",
+  "source": "swup",
+  "canonical_page": "https://swup.js.org/getting-started/",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla",
+  "styling_technology": "CSS",
+  "animation_technology": "CSS transitions",
+  "dependencies": [
+    "swup"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm swup",
+  "copy_paste_available": false,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "good",
+  "reduced_motion_support": "yes",
+  "responsive_behaviour": "good",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://swup.js.org/getting-started/"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "processing-state",
+  "name": "Processing state",
+  "problem": "A long-running operation gives no feedback, leaving users unsure whether it is working or stalled.",
+  "user_intent": [
+    "complete a task",
+    "wait for a result"
+  ],
+  "suitable_pages": [
+    "form",
+    "checkout",
+    "export",
+    "import"
+  ],
+  "unsuitable_pages": [
+    "marketing-hero"
+  ],
+  "recommended_effects": [
+    "skeleton-shimmer",
+    "spring-scale"
+  ],
+  "rejected_effects": [
+    "magnetic-button",
+    "cursor-trail"
+  ],
+  "interaction_states": [
+    "idle",
+    "processing",
+    "progressing",
+    "complete",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "announce start/progress/completion via aria-live",
+    "disable resubmission while processing",
+    "provide a text status not just a spinner"
+  ],
+  "performance_budget": "non-blocking UI; progress updates at a steady cadence",
+  "success_criteria": [
+    "user always knows the operation is in progress",
+    "completion or failure is clearly communicated"
+  ],
+  "tests": []
+}

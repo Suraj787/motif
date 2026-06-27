@@ -1,0 +1,34 @@
+{
+  "id": "pinned-scroll-storytelling",
+  "name": "Pinned scroll storytelling",
+  "category": "scroll-motion",
+  "objective": "pin a section while content advances through stages tied to scroll progress",
+  "contexts": [
+    "product-tour",
+    "landing-narrative"
+  ],
+  "technologies": [
+    "CSS",
+    "position-sticky",
+    "IntersectionObserver",
+    "scroll-timeline"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "high",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "conditional",
+  "reduced_motion_fallback": "Unpin the section and lay out each stage as normal stacked content shown all at once.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "scroll",
+    "narrative",
+    "pin"
+  ]
+}

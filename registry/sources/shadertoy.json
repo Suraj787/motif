@@ -1,0 +1,48 @@
+{
+  "id": "shadertoy",
+  "name": "Shadertoy",
+  "category": "3d-shader",
+  "homepage": "https://www.shadertoy.com",
+  "repository": "",
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "GLSL"
+  ],
+  "dependency_model": "none (shader gallery / reference)",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "Per-author; default CC BY-NC-SA 3.0 unless author sets otherwise",
+  "license_reference": "https://www.shadertoy.com/terms",
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 4,
+  "maintenance": "maintained",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive fragment shaders; varies wildly per shader",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "vast gallery of GLSL fragment-shader examples",
+    "live in-browser shader editor"
+  ],
+  "weaknesses": [
+    "per-author licensing; reference only",
+    "shaders author-owned, site ToS restricts reuse"
+  ],
+  "evidence": [
+    "https://www.shadertoy.com",
+    "https://www.shadertoy.com/terms",
+    "ToS: shaders owned by author; default license CC BY-NC-SA 3.0"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

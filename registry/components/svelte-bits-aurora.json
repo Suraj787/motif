@@ -1,0 +1,33 @@
+{
+  "id": "svelte-bits-aurora",
+  "name": "Aurora",
+  "source": "svelte-bits",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "svelte",
+  "styling_technology": "CSS",
+  "animation_technology": "WebGL (OGL)",
+  "dependencies": [
+    "ogl"
+  ],
+  "required_assets": [],
+  "browser_requirements": "WebGL-capable browser",
+  "installation_method": "varies",
+  "copy_paste_available": false,
+  "license": "MIT + Commons Clause",
+  "component_exceptions": "Reference/inspiration only; verify per-element licence before any reuse.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "unclear",
+  "modification": "unclear",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "no",
+  "responsive_behaviour": "good",
+  "performance_cost": "high",
+  "complexity": "high",
+  "quality_status": "high",
+  "usability_mode": "reference-only",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

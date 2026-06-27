@@ -1,0 +1,43 @@
+{
+  "id": "row-insertion-removal",
+  "name": "Row insertion and removal",
+  "problem": "Rows appearing or disappearing instantly in a table give no cue about what was added or deleted.",
+  "user_intent": [
+    "manage records",
+    "track changes"
+  ],
+  "suitable_pages": [
+    "data table",
+    "admin list",
+    "inbox"
+  ],
+  "unsuitable_pages": [
+    "landing-narrative"
+  ],
+  "recommended_effects": [
+    "accordion-expand",
+    "crossfade",
+    "optimistic-flash"
+  ],
+  "rejected_effects": [
+    "parallax-layer",
+    "noise-grain-overlay"
+  ],
+  "interaction_states": [
+    "idle",
+    "inserting",
+    "removing",
+    "empty"
+  ],
+  "accessibility_requirements": [
+    "announce insertion/removal via aria-live",
+    "move focus to a sensible neighbor after removal",
+    "no motion-only indication of change"
+  ],
+  "performance_budget": "60fps; height/opacity transitions only; respect reduced motion",
+  "success_criteria": [
+    "added and removed rows are clearly distinguishable",
+    "focus is never lost after a row is removed"
+  ],
+  "tests": []
+}

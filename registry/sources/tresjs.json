@@ -1,0 +1,49 @@
+{
+  "id": "tresjs",
+  "name": "TresJS",
+  "category": "3d-shader",
+  "homepage": "https://docs.tresjs.org",
+  "repository": "https://github.com/Tresjs/tres",
+  "frameworks": [
+    "vue"
+  ],
+  "technologies": [
+    "WebGL",
+    "three.js"
+  ],
+  "dependency_model": "requires three.js + vue peer deps",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/Tresjs/tres/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL; heavy bundle",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "declarative Vue renderer for three.js",
+    "native Vue reactivity integration"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order",
+    "Vue-only wrapper over three.js"
+  ],
+  "evidence": [
+    "https://docs.tresjs.org",
+    "https://github.com/Tresjs/tres",
+    "https://github.com/Tresjs/tres/blob/main/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

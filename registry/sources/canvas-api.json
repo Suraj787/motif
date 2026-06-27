@@ -1,0 +1,56 @@
+{
+  "id": "canvas-api",
+  "name": "Canvas API (2D)",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/Canvas_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [
+    "javascript",
+    "html"
+  ],
+  "dependency_model": "none",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "Immediate-mode raster drawing; handles thousands of shapes/particles far better than DOM/SVG, but redraws are main-thread unless offloaded to an OffscreenCanvas worker",
+  "suitable_contexts": [
+    "data-visualization",
+    "games",
+    "particle-and-generative-effects",
+    "image-processing",
+    "drawing-and-canvas"
+  ],
+  "unsuitable_contexts": [
+    "accessible structured content (no DOM semantics)",
+    "text-heavy or SEO-critical UI",
+    "crisp resolution-independent vector icons (use SVG)"
+  ],
+  "strengths": [
+    "Baseline everywhere; high-throughput immediate-mode 2D rendering",
+    "Scales to thousands of elements/particles where DOM and SVG bog down",
+    "Full pixel access for image processing, filters and generative art",
+    "OffscreenCanvas allows rendering on a worker thread to free the main thread"
+  ],
+  "weaknesses": [
+    "Pixels only: no DOM, no built-in accessibility, hit-testing must be hand-rolled",
+    "Not resolution-independent; needs devicePixelRatio scaling to stay sharp",
+    "All scene state and redraw logic is the developer's responsibility",
+    "Text rendering and selection are far weaker than HTML/SVG"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/Canvas_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "radix-tooltip",
+  "name": "Tooltip",
+  "source": "radix-ui",
+  "canonical_page": "https://www.radix-ui.com/primitives/docs/components/tooltip",
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "unstyled + CSS",
+  "animation_technology": "CSS",
+  "dependencies": [
+    "@radix-ui/react-tooltip"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "npm @radix-ui/react-tooltip",
+  "copy_paste_available": false,
+  "license": "MIT",
+  "component_exceptions": null,
+  "attribution": null,
+  "redistribution_permission": true,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "good",
+  "reduced_motion_support": "yes",
+  "responsive_behaviour": "good",
+  "performance_cost": "low",
+  "complexity": "low",
+  "quality_status": "high",
+  "usability_mode": "installable",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "https://www.radix-ui.com/primitives/docs/components/tooltip"
+  ]
+}

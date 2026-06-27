@@ -1,0 +1,50 @@
+{
+  "id": "babylonjs",
+  "name": "Babylon.js",
+  "category": "3d-shader",
+  "homepage": "https://www.babylonjs.com",
+  "repository": "https://github.com/BabylonJS/Babylon.js",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [
+    "WebGL",
+    "WebGPU"
+  ],
+  "dependency_model": "self-contained engine",
+  "delivery_model": "npm-package",
+  "access_class": "open-source",
+  "license": "Apache-2.0",
+  "license_reference": "https://github.com/BabylonJS/Babylon.js/blob/master/license.md",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "excellent",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "GPU-intensive WebGL/WebGPU; heavy bundle",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "full-featured 3D engine with WebGPU support",
+    "strong tooling and documentation"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order",
+    "large engine footprint"
+  ],
+  "evidence": [
+    "https://www.babylonjs.com",
+    "https://github.com/BabylonJS/Babylon.js",
+    "https://github.com/BabylonJS/Babylon.js/blob/master/license.md"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

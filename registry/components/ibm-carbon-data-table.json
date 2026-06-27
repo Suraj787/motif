@@ -1,0 +1,33 @@
+{
+  "id": "ibm-carbon-data-table",
+  "name": "Data Table",
+  "source": "ibm-carbon",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "react",
+  "styling_technology": "Sass (Carbon styles)",
+  "animation_technology": "CSS",
+  "dependencies": [
+    "@carbon/react"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "varies",
+  "copy_paste_available": true,
+  "license": "Apache-2.0",
+  "component_exceptions": "Adapt the interaction concept; do not copy/port the source into another framework.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "yes",
+  "modification": "yes",
+  "accessibility_status": "good",
+  "reduced_motion_support": "yes",
+  "responsive_behaviour": "good",
+  "performance_cost": "low",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "adaptable",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}

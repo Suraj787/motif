@@ -1,0 +1,42 @@
+{
+  "id": "hoverstates",
+  "name": "Hoverstates",
+  "category": "creative-reference",
+  "homepage": "https://www.hoverstat.es",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "reference (Hoverstates terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 4,
+  "maintenance": "active",
+  "documentation_quality": "fair",
+  "accessibility_maturity": "unknown",
+  "performance_characteristics": "n/a (gallery)",
+  "suitable_contexts": [
+    "experimental layout inspiration",
+    "typography and interactivity study"
+  ],
+  "unsuitable_contexts": [
+    "production component source"
+  ],
+  "strengths": [
+    "curated archive of experimental typography, layout and interactivity"
+  ],
+  "weaknesses": [
+    "treat visual galleries as inspiration, not reusable code"
+  ],
+  "evidence": [
+    "https://www.hoverstat.es"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

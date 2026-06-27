@@ -1,0 +1,24 @@
+{
+  "id": "drag-reorder-svelte",
+  "name": "Drag reorder with keyboard alternative (Svelte)",
+  "pattern": "drag-feedback",
+  "framework": "svelte",
+  "technology": [
+    "Svelte",
+    "HTML5 Drag and Drop",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [],
+  "algorithm": "Pointer drag uses native HTML5 DnD: dragstart records the source index, dragover preventDefaults to allow drop and marks the target, drop moves the item immutably. Keyboard alternative: Space/Enter grabs an item, Arrow keys move it one slot (focus follows via rAF), Escape cancels, Space/Enter drops. Every move emits reorder and is announced on a polite live region.",
+  "implementation_path": "implementations/svelte/drag-reorder.md",
+  "reduced_motion": "Item transition and grabbed scale removed under prefers-reduced-motion; reordering still works without easing.",
+  "responsive_behaviour": "fluid up to 28rem; full-width stacked rows; no fixed pixel motion",
+  "browser_support": "All modern browsers; native DnD for pointer, keyboard path needs no DnD so touch/keyboard-only users are covered.",
+  "accessibility": "Full keyboard reorder alternative; rows operable with role=button, aria-roledescription and aria-grabbed plus position in label; polite role=status live region announces grabs/moves/drops/cancels; drag handle aria-hidden; 44px targets and visible focus.",
+  "tests": [],
+  "maturity": "stable"
+}

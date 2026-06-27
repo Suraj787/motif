@@ -1,0 +1,48 @@
+{
+  "id": "fabricjs",
+  "name": "Fabric.js",
+  "category": "canvas-particles-generative",
+  "homepage": "http://fabricjs.com",
+  "repository": "https://github.com/fabricjs/fabric.js",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "npm",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/fabricjs/fabric.js/blob/master/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "interactive canvas object model; re-renders on interaction",
+  "suitable_contexts": [
+    "marketing",
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "interactive object model for canvas (selection, transform, serialization)",
+    "mature, well-documented API with community react wrappers"
+  ],
+  "weaknesses": [
+    "continuous re-render on interaction drains battery on low-power devices",
+    "large bundle for simple canvas needs"
+  ],
+  "evidence": [
+    "http://fabricjs.com",
+    "https://github.com/fabricjs/fabric.js",
+    "https://github.com/fabricjs/fabric.js/blob/master/LICENSE"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

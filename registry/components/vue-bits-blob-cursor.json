@@ -1,0 +1,33 @@
+{
+  "id": "vue-bits-blob-cursor",
+  "name": "Blob Cursor",
+  "source": "vue-bits",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vue",
+  "styling_technology": "CSS",
+  "animation_technology": "GSAP",
+  "dependencies": [
+    "gsap"
+  ],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "varies",
+  "copy_paste_available": false,
+  "license": "MIT + Commons Clause",
+  "component_exceptions": "Reference/inspiration only; verify per-element licence before any reuse.",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "unclear",
+  "modification": "unclear",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "no",
+  "responsive_behaviour": "partial",
+  "performance_cost": "medium",
+  "complexity": "medium",
+  "quality_status": "high",
+  "usability_mode": "reference-only",
+  "verification_date": "2026-06-27",
+  "evidence": []
+}
