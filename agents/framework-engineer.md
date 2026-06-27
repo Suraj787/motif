@@ -7,7 +7,7 @@ description: Compiles approved patterns, states, and components into a concrete 
 
 ## Scope
 
-Owns Implementation Intelligence — turning approved patterns and states into a native
+Owns Implementation Intelligence, turning approved patterns and states into a native
 plan for the detected stack, Vue and Frappe-Vue first-class.
 
 ## Inputs

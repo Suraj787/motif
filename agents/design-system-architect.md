@@ -7,7 +7,7 @@ description: Extracts, maintains, and enforces the design system and product gen
 
 ## Scope
 
-Owns the design system and the Design Product Genome — tokens, components, and the rules
+Owns the design system and the Design Product Genome, tokens, components, and the rules
 that keep new work consistent and reuse-first.
 
 ## Inputs

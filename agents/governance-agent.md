@@ -7,7 +7,7 @@ description: Records decisions, maintains the design genome and interaction grap
 
 ## Scope
 
-Owns Governance and Learning — the persistent record of what was decided, why, where it
+Owns Governance and Learning, the persistent record of what was decided, why, where it
 came from, and what is owed.
 
 ## Inputs

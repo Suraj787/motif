@@ -1,6 +1,6 @@
 ---
 name: visual-assurance
-description: Use when an interface needs visual validation — every required state renders correctly, responsively, and faithfully to the design system across breakpoints and inputs.
+description: Use when an interface needs visual validation, every required state renders correctly, responsively, and faithfully to the design system across breakpoints and inputs.
 ---
 
 # Visual Assurance

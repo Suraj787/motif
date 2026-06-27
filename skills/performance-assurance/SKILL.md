@@ -1,6 +1,6 @@
 ---
 name: performance-assurance
-description: Use when an interface needs performance validation — animated properties, budgets, payload, and jank — with claims backed by measurement rather than assertion.
+description: Use when an interface needs performance validation, animated properties, budgets, payload, and jank, with claims backed by measurement rather than assertion.
 ---
 
 # Performance Assurance

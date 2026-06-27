@@ -6,7 +6,7 @@ description: Use when you need classification, layout, typography, colour, conte
 # Design Intelligence
 
 **Responsibility:** Turn the product and user models into sound structural and visual
-decisions — the right layout, type, colour, content, and data presentation for the job.
+decisions, the right layout, type, colour, content, and data presentation for the job.
 
 ## When to invoke
 

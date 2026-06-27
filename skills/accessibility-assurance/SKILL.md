@@ -1,6 +1,6 @@
 ---
 name: accessibility-assurance
-description: Use when an interface needs accessibility validation — keyboard operability, focus visibility, semantics, contrast, and reduced-motion — beyond automated checks alone.
+description: Use when an interface needs accessibility validation, keyboard operability, focus visibility, semantics, contrast, and reduced-motion, beyond automated checks alone.
 ---
 
 # Accessibility Assurance

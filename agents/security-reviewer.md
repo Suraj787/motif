@@ -7,7 +7,7 @@ description: Reviews dependencies, snippets, and external sources for licence, s
 
 ## Scope
 
-Owns security assurance — the gate on everything that enters the project from outside:
+Owns security assurance, the gate on everything that enters the project from outside:
 dependencies, registry recipes, and snippets.
 
 ## Inputs

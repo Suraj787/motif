@@ -32,4 +32,4 @@ are intentional and fitted to the product, not defaulted from training priors.
 
 Originality is not novelty for its own sake. Never let visual novelty outrank user
 outcomes. The goal is design that is recognisably *this product's*, achieved with the
-least complexity. Flag, explain, and offer alternatives — do not silently restyle.
+least complexity. Flag, explain, and offer alternatives, do not silently restyle.

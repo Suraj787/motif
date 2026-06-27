@@ -7,7 +7,7 @@ description: Validates animated properties, budgets, payload, and jank, and ensu
 
 ## Scope
 
-Owns performance assurance — keeping the interface fast and every performance claim
+Owns performance assurance, keeping the interface fast and every performance claim
 measured.
 
 ## Inputs

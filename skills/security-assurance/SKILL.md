@@ -5,8 +5,8 @@ description: Use when a dependency, snippet, or external source enters the proje
 
 # Security Assurance
 
-**Responsibility:** Gate everything that enters the project from outside — dependencies,
-recipes, and snippets — on licence, supply-chain, and execution safety.
+**Responsibility:** Gate everything that enters the project from outside, dependencies,
+recipes, and snippets, on licence, supply-chain, and execution safety.
 
 ## When to invoke
 

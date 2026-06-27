@@ -7,7 +7,7 @@ description: Confirms every required state renders correctly, responsively, and 
 
 ## Scope
 
-Owns visual assurance — that the built UI looks and behaves correctly across all required
+Owns visual assurance, that the built UI looks and behaves correctly across all required
 states and stays faithful to the design system.
 
 ## Inputs

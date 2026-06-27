@@ -7,7 +7,7 @@ description: Verifies keyboard operability, focus visibility, semantics, contras
 
 ## Scope
 
-Owns accessibility assurance for IIOS — operability and perceivability for all users.
+Owns accessibility assurance for IIOS, operability and perceivability for all users.
 
 ## Inputs
 

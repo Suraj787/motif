@@ -6,7 +6,7 @@ description: Use when selected patterns and components must be compiled into a c
 # Framework Compiler (Implementation Intelligence)
 
 **Responsibility:** Translate the approved patterns, states, and components into a
-**native-framework plan** for the detected stack — never by importing a foreign
+**native-framework plan** for the detected stack, never by importing a foreign
 framework for a single effect.
 
 ## When to invoke
@@ -21,7 +21,7 @@ framework for a single effect.
 ## Outputs
 
 - A native implementation plan (components, files, props, events, slots) in the target
-  stack — Vue and Frappe-Vue first-class, plus React, Svelte, Angular, or plain web.
+  stack, Vue and Frappe-Vue first-class, plus React, Svelte, Angular, or plain web.
 - An explicit reuse map: existing project components and dependencies used first,
   registry recipes second, new code last.
 - A dependency proposal, if any, routed to Security Assurance for licence/cost review.
