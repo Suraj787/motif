@@ -38,7 +38,7 @@ This example contains **31 nodes** and **40 edges**.
 - The **dense data table** pattern `solves` the health-review task, is
   `evidenced-by` a usability study, and is `implemented` by `ProjectTable`,
   which `uses` the status-pill recipe and is `governed-by` the token constraint.
-- Effects are `governed-by` the reduced-motion constraint — except a decorative
+- Effects are `governed-by` the reduced-motion constraint, except a decorative
   KPI count-up that `conflicts-with` it.
 
 ## Deliberate gaps (so queries return real findings)
@@ -58,17 +58,17 @@ The graph intentionally encodes six divergences that the standard queries surfac
 
 Each query is a traversal over the typed graph. Run with `ii graph query`.
 
-1. **Screens lacking error recovery** — screens with no `has-state -> state-error`.
+1. **Screens lacking error recovery**, screens with no `has-state -> state-error`.
    → returns `screen-task-board`.
-2. **Tasks lacking feedback** — task nodes with no outgoing `produces` edge to an
+2. **Tasks lacking feedback**, task nodes with no outgoing `produces` edge to an
    effect/state. → returns `task-reassign-overdue-work`.
-3. **Components violating the genome** — components with a `conflicts-with` edge to
+3. **Components violating the genome**, components with a `conflicts-with` edge to
    a `constraint`. → returns `component-kpi-card`.
-4. **Effects conflicting with reduced motion** — `effect` nodes with
+4. **Effects conflicting with reduced motion**, `effect` nodes with
    `conflicts-with -> constraint-reduced-motion`. → returns `effect-kpi-count-up`.
-5. **Workflows lacking offline handling** — workflows with no `requires` edge to
+5. **Workflows lacking offline handling**, workflows with no `requires` edge to
    `constraint-offline-capable`. → returns `workflow-weekly-status-review`.
-6. **States lacking tests** — `state` nodes with no `validated-by` edge.
+6. **States lacking tests**, `state` nodes with no `validated-by` edge.
    → returns `state-loading`.
 
 ## CLI

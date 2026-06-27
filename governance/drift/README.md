@@ -2,16 +2,16 @@
 
 **Drift** is the gradual divergence of the realised UI from its governing
 intent over time. Where a **debt finding** is a single point-in-time defect,
-**drift** is the *trend* — the slow accumulation of small deviations that erode
+**drift** is the *trend*, the slow accumulation of small deviations that erode
 the design genome, the interaction graph, and the decisions in the ledger.
 
 Drift is detected by comparing successive snapshots of the codebase, the
 compiled interaction graph, and the debt findings against three baselines:
 
-1. **Design genome** (`../design-genome/`) — tokens, traits, conventions, postures.
-2. **Interaction graph** (`../interaction-graph/`) — required states, feedback,
+1. **Design genome** (`../design-genome/`), tokens, traits, conventions, postures.
+2. **Interaction graph** (`../interaction-graph/`), required states, feedback,
    constraints, governance edges.
-3. **Decision ledger** (`../decision-ledger/`) — active decisions that must hold
+3. **Decision ledger** (`../decision-ledger/`), active decisions that must hold
    until explicitly superseded.
 
 ## Drift signals
@@ -27,7 +27,7 @@ compiled interaction graph, and the debt findings against three baselines:
 | **Score drift** | Interface Debt Score trending up over consecutive snapshots |
 
 Drift is reported as a **direction and rate**, always with the contributing
-findings and graph paths — like the debt score, **never a bare number without a
+findings and graph paths, like the debt score, **never a bare number without a
 breakdown and evidence.** A genome with a low `confidence` widens drift
 tolerances; a high-confidence genome tightens them.
 
@@ -35,7 +35,7 @@ tolerances; a high-confidence genome tightens them.
 
 - New deviations become **debt findings** (`../debt/`).
 - A deviation sanctioned by an entry in the genome `exceptions` array or an
-  `active` decision is **not** drift — it is governed.
+  `active` decision is **not** drift, it is governed.
 - An unsanctioned deviation against an active decision is **decision drift** and
   is escalated, citing the decision it contradicts.
 

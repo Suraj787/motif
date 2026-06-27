@@ -3,7 +3,7 @@
   "problem": "The marketing team wanted animated particle and parallax backgrounds on hero sections across all breakpoints. On mobile this harms LCP, drains battery, and conflicts with reduced-motion preferences.",
   "context": "The marketing-saas-genome permits expressive motion but its component_conventions state 'particle and parallax effects disabled on mobile and reduced-motion', with an LCP target under 2.5s and a 150KB above-the-fold JS budget.",
   "alternatives": [
-    "Particles everywhere including mobile — maximal visual impact, worst performance and accessibility",
+    "Particles everywhere including mobile, maximal visual impact, worst performance and accessibility",
     "Static gradient on mobile, particles on desktop only, all gated by prefers-reduced-motion",
     "Remove particles entirely on all breakpoints"
   ],

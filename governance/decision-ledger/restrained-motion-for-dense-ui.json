@@ -4,7 +4,7 @@
   "context": "The enterprise-pm-genome motion_character is 'restrained and functional; 120-180ms ease-out, motion only to clarify state change or spatial relationship' and prohibits 'novelty-animation'. Users work in the tool daily for long sessions.",
   "alternatives": [
     "Expressive motion system with entrance cascades and count-ups, matching consumer SaaS trends",
-    "No motion at all — risks losing useful state-change and spatial cues",
+    "No motion at all, risks losing useful state-change and spatial cues",
     "Restrained, functional motion: short ease-out transitions only where they clarify state or layering, all gated behind prefers-reduced-motion"
   ],
   "decision": "Adopt a restrained, functional motion budget: 120-180ms ease-out transitions used only to clarify state change or spatial relationship; no decorative count-ups or cascades; every effect honours prefers-reduced-motion.",

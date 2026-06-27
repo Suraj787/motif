@@ -10,7 +10,7 @@ the realised UI honest against that intent over time. It answers three questions
    ledger**, **debt**, and **drift**
 
 Everything here is data: JSON conforming to the schemas in `../schemas/`, plus
-human-readable READMEs. Nothing is enforced by prose alone — every rule resolves
+human-readable READMEs. Nothing is enforced by prose alone, every rule resolves
 to a node, edge, finding, or genome field that the `ii` CLI can validate.
 
 ## Subsystems
@@ -20,10 +20,10 @@ to a node, edge, finding, or genome field that the `ii` CLI can validate.
 | `design-genome/` | `design-genome.schema.json` | Per-product DNA: brand & prohibited traits, colour semantics, typography, geometry, spacing, density, motion, confirmation/error/navigation patterns, accessibility & performance posture, framework & component conventions, exceptions, evidence. |
 | `interaction-graph/` | `graph-node` / `graph-edge` | Typed nodes (user, role, task, workflow, screen, action, state, pattern, effect, recipe, component, constraint, evidence, test) and relations modelling intended behaviour. |
 | `decision-ledger/` | `decision-ledger.schema.json` | Durable record of design decisions: problem, alternatives, decision, rationale, evidence, impacts, status, supersession. |
-| `debt/` | `debt-finding.schema.json` | Interface Debt findings with category, severity, evidence, weight, remediation — and the Interface Debt Score. |
-| `drift/` | — | Trend detection: divergence of the realised UI from the genome, graph, and ledger over time. |
+| `debt/` | `debt-finding.schema.json` | Interface Debt findings with category, severity, evidence, weight, remediation, and the Interface Debt Score. |
+| `drift/` |, | Trend detection: divergence of the realised UI from the genome, graph, and ledger over time. |
 | `exceptions/` | (genome `exceptions`) | Sanctioned, time-boxed deviations from genome rules. A deviation covered here is *governed*, not debt or drift. |
-| `learning/` | — | Captured outcomes (usability results, A/B tests, audits) that raise genome `confidence` and feed back into decisions and patterns. |
+| `learning/` |, | Captured outcomes (usability results, A/B tests, audits) that raise genome `confidence` and feed back into decisions and patterns. |
 
 ## How the pieces connect
 
@@ -57,7 +57,7 @@ This directory ships a full enterprise-project-dashboard example:
 
 > **Never a score, a verdict, or a "fix" without a breakdown and evidence.**
 
-Every governance output — a debt score, a drift signal, a query result — must be
+Every governance output, a debt score, a drift signal, a query result, must be
 traceable to a node, edge, finding, genome field, or ledger entry. See each
 subsystem's README for the relevant `ii` commands:
 `ii graph build|validate|query|explain|render`,

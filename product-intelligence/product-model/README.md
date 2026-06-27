@@ -25,7 +25,7 @@ it exist?** It populates the `product` object of the
    `product-context-analysis` skill): websites optimise persuasion; applications optimise
    task throughput. This single call cascades through every downstream decision.
 4. **Record audience and regulatory sensitivity** because they set the floor for the risk
-   and environment models — an `internal` tool and a `public`, PCI-bound flow demand
+   and environment models, an `internal` tool and a `public`, PCI-bound flow demand
    different defaults.
 
 ## How it is validated
@@ -35,7 +35,7 @@ it exist?** It populates the `product` object of the
 - `type` is specific enough that two reviewers would classify it the same way.
 - `purpose` describes a user outcome, not a UI artefact.
 - Anything claimed here that is not directly evidenced (e.g. an assumed business model)
-  is mirrored into `assumptions` in the manifest — see
+  is mirrored into `assumptions` in the manifest, see
   [`confidence/`](../confidence/README.md).
 
 ## Honesty rules

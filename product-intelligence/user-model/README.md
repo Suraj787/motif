@@ -12,7 +12,7 @@ primary actor plus the secondary roles whose needs constrain the design.
 | Field | Required | Meaning |
 |-------|----------|---------|
 | `role` | yes | The acting role, kebab-case, e.g. `delivery-manager`, `bedside-nurse`, `shopper-purchaser`. |
-| `expertise` | no | Skill with *this tool* and with the *domain*. They can differ — a nurse is a domain expert who may be a software novice. |
+| `expertise` | no | Skill with *this tool* and with the *domain*. They can differ, a nurse is a domain expert who may be a software novice. |
 | `frequency` | no | How often the role uses the product: `daily`, `frequent`, `infrequent`, `on-demand`. Drives learnability vs efficiency. |
 | `goals` | no | What this role is trying to accomplish, as outcomes. Ordered by importance. |
 
@@ -43,7 +43,7 @@ primary actor plus the secondary roles whose needs constrain the design.
 ## Honesty rules
 
 - A persona built from priors ("nurses are usually interrupted") is an **inference**, not
-  a fact — record it in `inferred`, citing the prior.
+  a fact, record it in `inferred`, citing the prior.
 - If the real user mix is unknown (which roles, what proportion), say so in `unresolved`
   rather than inventing a confident segmentation.
 - Never inflate expertise or frequency to justify a design you already want.

@@ -25,7 +25,7 @@
   "hit_area_min_px": 32,
   "responsive_transformations": [
     "Below 1024px viewport width, promote compact to comfortable so targets and spacing grow for smaller screens.",
-    "On any coarse-pointer (touch) device, override to touch regardless of viewport — never serve 32px targets to fingers.",
+    "On any coarse-pointer (touch) device, override to touch regardless of viewport, never serve 32px targets to fingers.",
     "When the user zooms past 150% or sets a large base font, relax row heights toward comfortable to prevent clipping.",
     "Sticky headers and frozen columns retain compact metrics but keep a 32px minimum interactive height."
   ],

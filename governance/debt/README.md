@@ -58,12 +58,12 @@ missing states carry the heaviest severities because they break real tasks.
 | `kpi-card-arbitrary-values` | arbitrary-value | medium | 3 |
 
 **Total = 15**, broken down as: missing-state 8, duplicate-component 4,
-arbitrary-value 3 — always reported with this breakdown, never as "15" alone.
+arbitrary-value 3, always reported with this breakdown, never as "15" alone.
 
 ## CLI
 
 ```bash
-# Compute the score from all findings — always emits the category breakdown
+# Compute the score from all findings, always emits the category breakdown
 ii debt calculate governance/debt
 
 # Explain a single finding: evidence chain, the rule broken, weight derivation
@@ -76,7 +76,7 @@ ii debt trend governance/debt --since 2026-01-01
 ii debt fix-plan governance/debt --order weight-desc
 ```
 
-`calculate` never prints a bare number — it always includes the breakdown and the
+`calculate` never prints a bare number, it always includes the breakdown and the
 evidence behind each contribution. `explain` justifies one finding, `trend` charts
 movement, and `fix-plan` turns findings into an ordered backlog using each
 finding's `remediation`.

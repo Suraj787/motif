@@ -5,6 +5,6 @@
   "attributes": {
     "steps": ["review project health", "reassign overdue work", "export status report"],
     "cadence": "weekly",
-    "note": "deliberately omits an offline-capable requirement — surfaced by the workflows-lacking-offline-handling query"
+    "note": "deliberately omits an offline-capable requirement, surfaced by the workflows-lacking-offline-handling query"
   }
 }

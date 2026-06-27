@@ -31,7 +31,7 @@
   ],
   "notes": [
     "hit_area_min_px of 44 satisfies the WCAG / platform touch-target minimum; this is a hard floor, not a target to shrink under.",
-    "Hover-only affordances are forbidden here — every action must be reachable by tap, with focus and active states for keyboard users.",
+    "Hover-only affordances are forbidden here, every action must be reachable by tap, with focus and active states for keyboard users.",
     "Generous spacing also leaves room for the on-screen keyboard and avoids accidental activation while scrolling.",
     "Pair with reduced or balanced motion; heavy decorative motion drains battery on mobile."
   ]

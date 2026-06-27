@@ -18,17 +18,17 @@ How the interface tells the user what is happening. Pairs with `async-action`, `
 - **Modal / dialog:** only for blocking decisions and destructive confirmations.
 
 ## Loading and waiting
-- 0–1s: no spinner needed; keep the trigger's active state.
-- ~1s+: show feedback (skeleton or spinner); delay skeletons ~150–200ms to avoid flashes on fast responses.
+- 0-1s: no spinner needed; keep the trigger's active state.
+- ~1s+: show feedback (skeleton or spinner); delay skeletons ~150-200ms to avoid flashes on fast responses.
 - ~10s+ or slow-network: show **determinate** progress and, where possible, a cancel option.
 - Use **skeletons** that mirror final layout to reduce shift; never fabricate fake progress.
 
 ## Errors that help
-- Say what happened, why, and the next step (WCAG 3.3.1 / 3.3.3) — in plain language, not error codes alone.
+- Say what happened, why, and the next step (WCAG 3.3.1 / 3.3.3), in plain language, not error codes alone.
 - Keep the user's input intact; offer **retry** for transient failures.
 - Distinguish error from empty: a failed fetch is not "no data".
 
 ## Honesty and restraint
-- Feedback must reflect real system state — no theatre, no celebration for routine actions.
+- Feedback must reflect real system state, no theatre, no celebration for routine actions.
 - Optimistic UI must mark provisional state (**stale**) and visibly roll back on conflict or rejection.
 - Confirmations should be quiet and persistent for routine success; save celebration for rare milestones.

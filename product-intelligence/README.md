@@ -2,7 +2,7 @@
 
 Product Intelligence is the layer of **Interface Intelligence OS** that establishes
 *what the product is, who uses it, what they are trying to do, where they do it, and
-what can go wrong* — **before** any pattern, effect, or pixel is chosen.
+what can go wrong*, **before** any pattern, effect, or pixel is chosen.
 
 Everything downstream (interaction design, effect selection, assurance) is grounded in
 the **Product Context Manifest** produced here. If this layer is wrong, every later
@@ -87,7 +87,7 @@ ii product validate product-intelligence/manifests/<id>.json
 ### `ii product explain`
 
 Renders a human-readable account of a manifest: what we know, what we inferred and from
-what, what we assumed, what remains unresolved, and the resulting confidence — plus how
+what, what we assumed, what remains unresolved, and the resulting confidence, plus how
 those facts will constrain downstream interaction and effect decisions.
 
 ```

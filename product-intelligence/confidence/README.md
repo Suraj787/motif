@@ -15,9 +15,9 @@ much we can rely on them.
 
 | Bucket | Definition | Source | Treat as |
 |--------|------------|--------|----------|
-| `verified` | Directly evidenced — stated in the brief, observed in the product, or measured in telemetry. | Evidence in hand. | Fact. |
-| `inferred` | Derived by reasoning from verified facts or domain priors. Plausible, not confirmed. | Logic over evidence. | Working hypothesis — flag the basis. |
-| `assumptions` | Taken as true to proceed, with no evidence either way. | Convenience / default. | Cheap to be wrong — revisit early. |
+| `verified` | Directly evidenced, stated in the brief, observed in the product, or measured in telemetry. | Evidence in hand. | Fact. |
+| `inferred` | Derived by reasoning from verified facts or domain priors. Plausible, not confirmed. | Logic over evidence. | Working hypothesis, flag the basis. |
+| `assumptions` | Taken as true to proceed, with no evidence either way. | Convenience / default. | Cheap to be wrong, revisit early. |
 | `unresolved` | Known unknowns. Questions whose answers would change the design. | Absence of evidence. | Work to be done; never a silent gap. |
 
 The discipline: **never let a claim drift up a row without new evidence.** An inference
@@ -30,7 +30,7 @@ A manifest that blurs these buckets is dangerous: a reader cannot tell which lin
 trust, so they either over-trust a guess or distrust everything. By contrast, an honest
 manifest lets a reviewer attack exactly the soft claims. The cheapest correction in the
 whole pipeline is a stakeholder reading `ii product explain` and saying "that inference is
-wrong" — but that only works if the inference was labelled as one.
+wrong", but that only works if the inference was labelled as one.
 
 ## The `confidence` number (0-1)
 
@@ -42,11 +42,11 @@ It is not a vibe; it should track the verified/inferred/assumption split:
   (≈ 0.5-0.7).
 - Built largely from priors and `assumptions`, several material `unresolved` → low
   (≈ 0.3-0.5).
-- Almost nothing grounded → very low (< 0.3) — and that is a valid, honest manifest.
+- Almost nothing grounded → very low (< 0.3), and that is a valid, honest manifest.
 
 The worked examples in [`manifests/`](../manifests/) sit at 0.5-0.62 on purpose: they were
 authored from a short brief and domain priors only, with no telemetry, interviews, or
-repository access — so most lines are `inferred` or `assumptions`, and the number says so.
+repository access, so most lines are `inferred` or `assumptions`, and the number says so.
 
 ### Anti-pattern
 
@@ -62,7 +62,7 @@ Reporting 0.9 confidence on a manifest whose `verified` list has two lines and w
    observation, or "inference-only").
 3. Turn every "we don't know" into an explicit `unresolved` line, phrased as the question
    to answer.
-4. Set `confidence` to reflect the resulting balance — and resist rounding it up.
+4. Set `confidence` to reflect the resulting balance, and resist rounding it up.
 
 ## How it is validated
 
