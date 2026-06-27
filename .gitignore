@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# OII runtime working area — quarantine is never committed
+.oii/quarantine/*
+!.oii/quarantine/.gitkeep
+.oii/reviewed/*
+!.oii/reviewed/.gitkeep
+
+# Secrets / local config — never track
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+secrets.*
+*.local
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Harness / HUD state (not part of project)
+.omc/
+.claude/
