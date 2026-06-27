@@ -1,0 +1,16 @@
+# Marketing UI policy — expressive but accountable.
+profile: marketing-expressive
+goals: [comprehension, emotional_impact, conversion_clarity]
+allowed:
+  - one_controlled_ambient_effect
+  - staged_text_or_product_reveal
+  - scroll_reveal_without_hijacking
+restricted:
+  - stacked_glow_effects
+  - excessive_glassmorphism
+  - unnecessary_3d
+must:
+  - reduced_motion_fallback
+  - preserve_conversion_clarity
+  - measure_performance
+max_high_attention_effects_per_viewport: 2

@@ -1,0 +1,22 @@
+# Licensing policy. Mirrors LICENSE_POLICY.md and the LICENCE GATE.
+classes:
+  - redistributable
+  - adaptable-concept
+  - reference-only
+  - rejected
+hard_rules:
+  - never_copy_premium_components
+  - never_reconstruct_paid_components_from_previews
+  - never_remove_attribution
+  - never_copy_unclear_license_code
+  - never_treat_source_available_or_commons_clause_as_permissive
+  - project_license_never_overrides_third_party_obligations
+  - record_provenance_for_every_recipe
+  - label_original_implementations_original
+  - preserve_third_party_notices
+gate:
+  unknown_license: reference-only
+  bundle_requires:
+    permissive_license: true
+    min_trust_tier: 3
+project_license: MIT

@@ -1,0 +1,25 @@
+# Accessibility policy — mandatory, not optional. Mirrors skills/motion-accessibility.
+mandatory:
+  - respect_prefers_reduced_motion
+  - static_or_instant_fallback_for_every_effect
+  - no_motion_only_meaning
+  - keyboard_operable
+  - focus_preserved_and_visible
+  - appropriate_live_region_feedback
+  - no_seizure_risk_flashing            # < 3 flashes per second
+  - no_essential_hover_only_controls
+  - pointer_alternatives_and_coarse_pointer_support
+  - readable_contrast
+  - zoom_support
+  - responsive_support
+  - no_obstructive_forced_autoplay
+automated_checks:
+  - reduced_motion_media_query_present
+  - focusable_elements_reachable
+  - aria_live_present_for_async_status
+human_review_required:
+  - meaning_not_conveyed_by_motion_alone
+  - focus_order_is_logical
+  - announcements_are_useful_not_noisy
+reduced_motion_strategy: >
+  Provide an instant/static end-state. Never merely speed up motion; remove it.

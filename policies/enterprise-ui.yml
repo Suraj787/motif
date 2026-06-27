@@ -1,0 +1,15 @@
+# Enterprise UI policy — restraint first.
+profile: enterprise-strict
+goals: [task_clarity, data_legibility, trustworthiness]
+forbidden:
+  - continuous_decorative_motion_behind_dense_data
+  - confetti_for_frequent_actions
+  - showcase_grade_hero_effects
+  - custom_cursor
+allowed:
+  - restrained_feedback
+  - hierarchy_and_focus_motion
+  - skeleton_and_loading_states
+  - shared_element_navigation_subtle
+max_high_attention_effects_per_viewport: 1
+dependency_budget: minimal
