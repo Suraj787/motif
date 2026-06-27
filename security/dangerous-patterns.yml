@@ -1,0 +1,40 @@
+# Dangerous code patterns. Source of truth mirrored by scanners/source_scanner.py
+# and scanners/behaviour_scanner.py. Not every match is malicious; every match
+# must be reviewed before approval.
+code_execution:
+  - eval
+  - new_Function
+  - settimeout_string_body
+  - dynamic_import_remote_url
+process_and_shell:
+  - child_process
+  - exec_sync
+  - spawn_sync
+remote_loading:
+  - dynamic_script_element
+  - document_write
+  - iframe_injection
+network:
+  - undocumented_fetch
+  - xmlhttprequest
+  - websocket
+browser_capabilities:
+  - document_cookie
+  - local_session_storage
+  - clipboard_access
+  - geolocation
+  - getusermedia_camera_microphone
+  - service_worker_register
+unsafe_dom:
+  - inner_html_assignment
+obfuscation:
+  - long_hex_escape_runs
+  - string_fromcharcode
+  - atob_base64_decode
+malware_markers:
+  - crypto_mining_signatures
+  - remote_script_injection
+secrets:
+  - embedded_private_key
+  - embedded_api_keys
+severity_review_required: true

@@ -1,0 +1,21 @@
+# Strict generic GitHub connector. Last-resort retrieval from official repos only.
+id: generic-github
+kind: generic
+retrieval_preference:
+  - official_tagged_repository_release
+  - official_package_registry
+  - pinned_official_commit
+allowed_hosts:
+  - github.com
+  - raw.githubusercontent.com
+require:
+  pinned_commit_or_tag: true
+  sha256_checksum: true
+  license_file_present: true
+forbid:
+  execute_code: true
+  run_lifecycle_scripts: true
+  follow_unknown_redirects: true
+  download_binaries: true
+on_unknown_license: reference-only
+default_mode: catalogue-only

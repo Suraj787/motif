@@ -1,0 +1,24 @@
+# Network behaviour policy for retrieved components.
+# Prefer self-contained components. The following require explicit justification.
+require_justification:
+  - dynamic_fetch_of_executable_content
+  - remote_javascript_loading
+  - telemetry_or_analytics
+  - undocumented_api_calls
+  - embedded_tracking
+  - persistent_websockets
+reject_if:
+  - loads_remote_executable_script
+  - depends_on_untrusted_host
+  - sends_telemetry_without_disclosure
+ordinary_effect_must_not_require:
+  - cookies
+  - persistent_storage
+  - clipboard
+  - geolocation
+  - camera
+  - microphone
+  - service_worker
+  - analytics
+  - persistent_websockets
+  - remote_executable_scripts

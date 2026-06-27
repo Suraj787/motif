@@ -1,0 +1,25 @@
+# Sandbox policy for the rare cases where execution is genuinely required.
+# Ingestion itself NEVER executes retrieved code (no npm install, no lifecycle
+# scripts, no JS evaluation). When execution is unavoidable, use a disposable
+# sandbox with all of the following:
+no_execution_during_ingestion: true
+sandbox_requirements:
+  no_secrets: true
+  no_host_network_by_default: true
+  no_ssh_keys: true
+  no_github_credentials: true
+  no_home_directory_mount: true
+  cpu_limit: required
+  memory_limit: required
+  timeout: required
+  ephemeral_filesystem: true
+  read_only_base: preferred
+never_during_ingestion:
+  - npm_install
+  - lifecycle_scripts
+  - execute_javascript
+  - run_shell_from_docs
+  - open_downloaded_binaries
+  - expose_environment_variables
+  - expose_home_directory
+  - expose_ssh_or_github_credentials

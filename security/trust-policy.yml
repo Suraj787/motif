@@ -1,0 +1,26 @@
+# Trust tiers. Lower trust requires stronger review. Tier 5 is reference-only or rejected.
+tiers:
+  1: official browser/framework documentation
+  2: established open-source project
+  3: maintained component library with clear ownership
+  4: community contribution
+  5: unknown or unverifiable
+rules:
+  tier_5_max_usability_mode: reference-only
+  unknown_license_max_usability_mode: reference-only
+  bundled_requires_min_tier: 3
+  official_source_preference:
+    - official_tagged_repository_release
+    - official_package_registry
+    - official_component_registry
+    - pinned_official_commit
+    - webpage_source_last_resort
+pinning_required:
+  - version
+  - tag
+  - commit_hash
+  - retrieval_date
+  - sha256_checksum
+residual_risk: >
+  These controls reduce risk but cannot guarantee that third-party code is
+  completely safe. Human review remains required before approval.

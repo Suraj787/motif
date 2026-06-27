@@ -1,0 +1,24 @@
+id: uiverse
+name: Uiverse
+framework: vanilla
+homepage: https://uiverse.io
+repository: https://github.com/uiverse-io/galaxy
+license: MIT (per-element; verify)
+redistribution_class: reference-only
+trust_tier: 4
+mode: catalogue-only            # retrieval only via explicit source refresh
+allowed_paths:
+  - official component pages
+  - official repository (tagged release / pinned commit)
+collect:
+  - canonical_component_page
+  - license_and_attribution
+  - install_method
+forbid:
+  execute_code: true
+  run_lifecycle_scripts: true
+  copy_without_license_check: true
+on_unknown_license: reference-only
+notes: >
+  Component collections are framework-specific. Adapt the interaction CONCEPT
+  for other frameworks (e.g. Vue/Frappe-Vue) rather than porting source in.

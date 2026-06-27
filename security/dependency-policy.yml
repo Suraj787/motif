@@ -1,0 +1,22 @@
+# Dependency policy. Mirrored by scanners/dependency_scanner.py.
+no_automatic_new_dependency: true
+preference_order:
+  - dependency_free_implementation
+  - existing_project_dependency
+  - original_internal_recipe
+  - approved_lightweight_dependency
+  - heavier_dependency_with_justification
+inspect:
+  - direct_dependencies
+  - transitive_dependencies
+  - peer_dependencies
+  - optional_dependencies
+  - lifecycle_scripts
+  - maintainer_identity
+  - typosquatting_risk
+  - deprecation
+  - unresolved_advisories
+  - unexpected_dependency_growth
+  - licence_compatibility
+reject_lifecycle_scripts_without_review: true
+max_unreviewed_dependencies_for_effect: 1
