@@ -60,7 +60,7 @@ def _dependency_plan(recipe_deps: list[str], installed: dict) -> list[dict]:
                          "detail": f"already in project ({installed[dep]})"})
         else:
             plan.append({"dependency": dep, "decision": "needs-approval",
-                         "detail": "new dependency — prefer a dependency-free recipe first"})
+                         "detail": "new dependency, prefer a dependency-free recipe first"})
     if not recipe_deps:
         plan.append({"dependency": None, "decision": "dependency-free",
                      "detail": "no new dependencies required"})
