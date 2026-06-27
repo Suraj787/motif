@@ -49,6 +49,51 @@ code into your project — is the *hard* path here. Instead:
 > OII reduces risk but **cannot guarantee** third-party code is completely safe. Human
 > review remains required. See [`docs/threat-model.md`](docs/threat-model.md).
 
+## Installation
+
+**Requirements:** Python **3.11+** and `git`. Node.js 18+ is optional (only for
+adapter/implementation tooling). The core CLI has **no Python dependencies** — it runs
+on a stock interpreter.
+
+### 1. Get the repository
+
+```bash
+git clone https://github.com/Suraj787/open-interaction-intelligence.git
+cd open-interaction-intelligence
+```
+
+### 2. Use it — pick one
+
+**Option A — run in place (zero install).** From the repo root:
+
+```bash
+python -m oii doctor      # checks environment + registry
+make check                # full local gate (validation + scanners + ranking)
+```
+
+**Option B — install the `oii` command.** Installs an entry point so you can call
+`oii` from anywhere; add `[dev]` for the pytest + ruff toolchain used by CI:
+
+```bash
+python -m pip install -e .          # gives the `oii` command
+python -m pip install -e ".[dev]"   # + pytest, ruff (optional)
+oii doctor
+```
+
+### 3. Use it as a Claude Code Agent Skill
+
+Point Claude Code at this repo (open it as your working directory, or copy/symlink the
+skill folders into your skills path). The root [`SKILL.md`](SKILL.md) is the
+orchestrator; specialist skills live in [`skills/`](skills/). For example:
+
+```bash
+# expose the skills to a Claude Code skills directory (adjust the target path)
+ln -s "$(pwd)/skills" ~/.claude/skills/oii-specialists
+ln -s "$(pwd)/SKILL.md" ~/.claude/skills/open-interaction-intelligence.md
+```
+
+Then verify with `python -m oii validate` (should report `OK`).
+
 ## Quick start
 
 ```bash
