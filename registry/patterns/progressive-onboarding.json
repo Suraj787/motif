@@ -1,0 +1,37 @@
+{
+  "id": "progressive-onboarding",
+  "name": "Progressive onboarding",
+  "problem": "New users are overwhelmed by everything at once.",
+  "user_intent": [
+    "learn",
+    "configure a system"
+  ],
+  "suitable_pages": [
+    "onboarding"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "text-reveal-stagger",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "step",
+    "advancing",
+    "completed",
+    "skipped"
+  ],
+  "accessibility_requirements": [
+    "skippable",
+    "focus managed per step",
+    "progress announced"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "each step has one goal",
+    "user can skip"
+  ],
+  "tests": []
+}

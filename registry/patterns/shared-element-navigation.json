@@ -1,0 +1,37 @@
+{
+  "id": "shared-element-navigation",
+  "name": "Shared-element navigation",
+  "problem": "Navigation loses the user's spatial context.",
+  "user_intent": [
+    "navigate",
+    "review information"
+  ],
+  "suitable_pages": [
+    "list",
+    "record details",
+    "case study"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "shared-element"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "origin",
+    "transitioning",
+    "destination"
+  ],
+  "accessibility_requirements": [
+    "reduced-motion = instant nav",
+    "focus moves to destination",
+    "no trapped scroll"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "element identity preserved",
+    "no long transition"
+  ],
+  "tests": []
+}

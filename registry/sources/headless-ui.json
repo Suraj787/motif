@@ -1,0 +1,41 @@
+{
+  "id": "headless-ui",
+  "name": "Headless UI",
+  "category": "accessible-ui-foundation",
+  "homepage": "https://headlessui.com",
+  "repository": "https://github.com/tailwindlabs/headlessui",
+  "frameworks": [
+    "react",
+    "vue"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/tailwindlabs/headlessui/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "web app",
+    "saas"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "React + Vue",
+    "Tailwind-native"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://headlessui.com",
+    "https://github.com/tailwindlabs/headlessui"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

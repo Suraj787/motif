@@ -1,0 +1,25 @@
+{
+  "id": "optimistic-save-feedback-vue",
+  "name": "Optimistic save feedback (Vue 3)",
+  "pattern": "optimistic-save",
+  "framework": "vue",
+  "technology": [
+    "Vue 3 transition",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [
+    "mdn-web-animations"
+  ],
+  "algorithm": "",
+  "implementation_path": "implementations/vue/optimistic-save.md",
+  "reduced_motion": "State changes are instant; transitions removed under reduced-motion.",
+  "responsive_behaviour": "fluid; no fixed pixel motion",
+  "browser_support": "All modern browsers.",
+  "accessibility": "aria-live polite announces saving/saved/error; status has text, not colour-only.",
+  "tests": [],
+  "maturity": "stable"
+}

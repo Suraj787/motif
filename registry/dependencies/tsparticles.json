@@ -1,0 +1,9 @@
+{
+  "id": "tsparticles",
+  "package": "@tsparticles/engine",
+  "weight_kb_estimate": "~80+",
+  "transitive": "medium",
+  "lifecycle_scripts": false,
+  "risk": "medium",
+  "notes": "Continuous rendering cost; ban on low-power profile."
+}

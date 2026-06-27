@@ -1,0 +1,26 @@
+{
+  "id": "gradient-movement",
+  "name": "Animated gradient",
+  "category": "backgrounds",
+  "objective": "create ambient emotional impact",
+  "contexts": [],
+  "technologies": [
+    "CSS"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "medium",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Static gradient.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "ambient"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oii.dev/schemas/source.schema.json",
+  "title": "OII Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "name", "category", "homepage", "repository", "frameworks",
+    "license", "redistribution", "trust_tier", "maintenance",
+    "last_reviewed", "confidence", "status"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "category": {
+      "type": "string",
+      "enum": [
+        "animated-component-collection", "accessible-ui-foundation",
+        "animation-engine", "browser-native", "scrolling-transitions",
+        "canvas-particles-generative", "3d-shader", "svg-icon-motion",
+        "creative-reference", "enterprise-design-system"
+      ]
+    },
+    "homepage": { "type": "string", "format": "uri" },
+    "repository": { "type": ["string", "null"] },
+    "frameworks": { "type": "array", "items": { "type": "string" } },
+    "technologies": { "type": "array", "items": { "type": "string" } },
+    "dependency_model": { "type": "string" },
+    "delivery_model": {
+      "type": "string",
+      "enum": ["copy-paste", "npm-package", "registry-cli", "cdn", "reference", "mixed"]
+    },
+    "access_class": {
+      "type": "string",
+      "enum": ["free", "open-source", "source-available", "freemium", "paid"]
+    },
+    "license": { "type": "string" },
+    "license_reference": { "type": ["string", "null"] },
+    "redistribution": {
+      "type": "string",
+      "enum": ["redistributable", "adaptable-concept", "reference-only", "rejected"]
+    },
+    "attribution_required": { "type": "boolean" },
+    "trust_tier": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "maintenance": { "type": "string", "enum": ["active", "maintained", "slow", "stale", "unknown"] },
+    "documentation_quality": { "type": "string", "enum": ["excellent", "good", "fair", "poor", "unknown"] },
+    "accessibility_maturity": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+    "performance_characteristics": { "type": "string" },
+    "suitable_contexts": { "type": "array", "items": { "type": "string" } },
+    "unsuitable_contexts": { "type": "array", "items": { "type": "string" } },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "weaknesses": { "type": "array", "items": { "type": "string" } },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "last_reviewed": { "type": "string", "format": "date" },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+    "status": { "type": "string", "enum": ["verified", "pending-verification", "rejected"] }
+  }
+}

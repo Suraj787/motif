@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oii.dev/schemas/evaluation.schema.json",
+  "title": "OII Evaluation Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "category", "kind", "prompt", "expected_behaviour", "judgement"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "category": {
+      "type": "string",
+      "enum": ["positive", "rejection", "framework", "accessibility", "performance", "source-governance", "license", "security"]
+    },
+    "kind": { "type": "string", "enum": ["automated", "human-judgement"] },
+    "prompt": { "type": "string" },
+    "context": { "type": "string" },
+    "expected_behaviour": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "must_reject": { "type": "boolean" },
+    "expected_pattern": { "type": ["string", "null"] },
+    "fixture": { "type": ["string", "null"] },
+    "expected_findings": { "type": "array", "items": { "type": "string" } },
+    "judgement": { "type": "string" }
+  }
+}

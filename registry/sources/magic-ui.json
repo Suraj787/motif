@@ -1,0 +1,40 @@
+{
+  "id": "magic-ui",
+  "name": "Magic UI",
+  "category": "animated-component-collection",
+  "homepage": "https://magicui.design",
+  "repository": "https://github.com/magicuidesign/magicui",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/magicuidesign/magicui/blob/main/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app"
+  ],
+  "strengths": [
+    "polished marketing effects"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://magicui.design",
+    "https://github.com/magicuidesign/magicui"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "low",
+  "status": "verified"
+}

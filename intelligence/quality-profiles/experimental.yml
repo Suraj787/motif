@@ -1,0 +1,47 @@
+profile: experimental
+description: >
+  Immersive and experiential showcases, product launches, award-seeking pieces.
+  Highest motion licence in OII. Spectacle is the goal - but accessibility,
+  reduced-motion, and graceful fallbacks become HARD requirements, not options.
+
+goals:
+  - product-identity
+  - novelty
+  - emotional-impact
+  - comprehension
+  - usability
+
+preferred_patterns:
+  - webgl-shader-set-pieces
+  - 3d-scenes
+  - canvas-particle-systems
+  - scroll-storytelling
+  - signature-hero-motion
+  - kinetic-typography
+
+restricted_effects:
+  - spectacle-that-buries-the-offer-or-cta   # still forbidden
+  - no-fallback-experiences                  # forbidden: must degrade gracefully
+  - motion-only-status
+
+continuous_motion_policy: allowed   # must respect reduced-motion and pause off-screen
+
+dependency_budget:
+  policy: liberal
+  add_library: three-webgl-gsap-canvas-all-permitted
+  notes: Heaviest tools allowed last; still justify each against a cheaper option.
+
+performance_budget:
+  target_fps: 60-on-capable-hardware
+  mandatory_low_power_fallback: true
+  detect_device_capability: true
+  graceful_degradation: required
+
+max_high_attention_effects_per_viewport: 4
+
+reduced_motion_policy: mandatory   # full static/low-motion alternate experience required
+
+mobile_constraints:
+  pointer_only_effects: provide-fallback
+  serve_reduced_experience_on_low_power: true
+  honor_touch_targets: true

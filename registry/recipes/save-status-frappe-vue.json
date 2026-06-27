@@ -1,0 +1,25 @@
+{
+  "id": "save-status-frappe-vue",
+  "name": "Pending/saving/saved status (Frappe-Vue)",
+  "pattern": "pending-saving-saved",
+  "framework": "frappe-vue",
+  "technology": [
+    "Vue 3",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [
+    "reka-ui"
+  ],
+  "algorithm": "",
+  "implementation_path": "implementations/frappe-vue/save-status.md",
+  "reduced_motion": "No spinner motion under reduced-motion; static label swap.",
+  "responsive_behaviour": "fluid; no fixed pixel motion",
+  "browser_support": "All modern browsers.",
+  "accessibility": "aria-live polite; integrates with Frappe form save lifecycle without new deps.",
+  "tests": [],
+  "maturity": "stable"
+}

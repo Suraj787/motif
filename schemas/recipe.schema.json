@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oii.dev/schemas/recipe.schema.json",
+  "title": "OII Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "name", "pattern", "framework", "provenance_type", "license",
+    "reduced_motion", "accessibility", "browser_support", "maturity"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "pattern": { "type": "string", "description": "pattern id" },
+    "framework": {
+      "type": "string",
+      "enum": ["browser-native", "react", "vue", "svelte", "angular", "vanilla", "frappe-vue"]
+    },
+    "technology": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "cost": { "type": "string", "enum": ["none", "low", "medium", "high"] },
+    "license": { "type": "string" },
+    "provenance_type": { "type": "string", "enum": ["original", "browser-native", "adapted-concept"] },
+    "source_references": { "type": "array", "items": { "type": "string" } },
+    "algorithm": { "type": "string" },
+    "implementation_path": { "type": ["string", "null"] },
+    "reduced_motion": { "type": "string" },
+    "responsive_behaviour": { "type": "string" },
+    "browser_support": { "type": "string" },
+    "accessibility": { "type": "string" },
+    "tests": { "type": "array", "items": { "type": "string" } },
+    "maturity": { "type": "string", "enum": ["stable", "beta", "experimental"] }
+  }
+}

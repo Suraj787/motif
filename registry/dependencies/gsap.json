@@ -1,0 +1,9 @@
+{
+  "id": "gsap",
+  "package": "gsap",
+  "weight_kb_estimate": "~50+ with plugins",
+  "transitive": "low",
+  "lifecycle_scripts": false,
+  "risk": "medium",
+  "notes": "Licence nuance; justify before adding; avoid in enterprise UI."
+}

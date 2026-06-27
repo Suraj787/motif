@@ -1,0 +1,41 @@
+{
+  "id": "drag-feedback",
+  "name": "Drag-and-drop feedback",
+  "problem": "Users cannot tell what is draggable or where it will land.",
+  "user_intent": [
+    "complete a task",
+    "collaborate"
+  ],
+  "suitable_pages": [
+    "kanban",
+    "list",
+    "table"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "spring-scale",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "pointer-spotlight"
+  ],
+  "interaction_states": [
+    "idle",
+    "grabbed",
+    "dragging",
+    "valid-drop",
+    "invalid-drop",
+    "dropped"
+  ],
+  "accessibility_requirements": [
+    "keyboard drag alternative",
+    "live-region position updates",
+    "not pointer-only"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "drop target obvious",
+    "no layout jank"
+  ],
+  "tests": []
+}

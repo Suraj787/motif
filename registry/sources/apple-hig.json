@@ -1,0 +1,37 @@
+{
+  "id": "apple-hig",
+  "name": "Apple Human Interface Guidelines",
+  "category": "enterprise-design-system",
+  "homepage": "https://developer.apple.com/design/human-interface-guidelines",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "guidance (Apple terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "consumer saas"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [],
+  "weaknesses": [
+    "reference only; respect Apple terms"
+  ],
+  "evidence": [
+    "https://developer.apple.com/design/human-interface-guidelines"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

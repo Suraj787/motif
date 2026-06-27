@@ -1,0 +1,276 @@
+{
+  "sources": [
+    {
+      "id": "aceternity-ui",
+      "name": "Aceternity UI"
+    },
+    {
+      "id": "animejs",
+      "name": "Anime.js"
+    },
+    {
+      "id": "apple-hig",
+      "name": "Apple Human Interface Guidelines"
+    },
+    {
+      "id": "autoanimate",
+      "name": "AutoAnimate"
+    },
+    {
+      "id": "css-scroll-driven",
+      "name": "CSS Scroll-driven Animations"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP"
+    },
+    {
+      "id": "headless-ui",
+      "name": "Headless UI"
+    },
+    {
+      "id": "ibm-carbon",
+      "name": "IBM Carbon"
+    },
+    {
+      "id": "lenis",
+      "name": "Lenis"
+    },
+    {
+      "id": "magic-ui",
+      "name": "Magic UI"
+    },
+    {
+      "id": "material-design",
+      "name": "Material Design"
+    },
+    {
+      "id": "mdn-web-animations",
+      "name": "Web Animations API (MDN)"
+    },
+    {
+      "id": "motion",
+      "name": "Motion (Framer Motion)"
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI"
+    },
+    {
+      "id": "react-aria",
+      "name": "React Aria"
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits"
+    },
+    {
+      "id": "reka-ui",
+      "name": "Reka UI"
+    },
+    {
+      "id": "rough-notation",
+      "name": "Rough Notation"
+    },
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn/ui"
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js"
+    },
+    {
+      "id": "tsparticles",
+      "name": "tsParticles"
+    },
+    {
+      "id": "uiverse",
+      "name": "Uiverse"
+    }
+  ],
+  "components": [
+    {
+      "id": "aceternity-aurora-bg",
+      "name": "Aurora Background"
+    },
+    {
+      "id": "headless-ui-combobox",
+      "name": "Combobox"
+    },
+    {
+      "id": "magic-ui-marquee",
+      "name": "Marquee"
+    },
+    {
+      "id": "radix-dialog",
+      "name": "Dialog"
+    },
+    {
+      "id": "react-aria-listbox",
+      "name": "ListBox"
+    },
+    {
+      "id": "reka-ui-popover",
+      "name": "Popover"
+    },
+    {
+      "id": "shadcn-button",
+      "name": "Button"
+    },
+    {
+      "id": "tsparticles-preset",
+      "name": "Particles preset"
+    },
+    {
+      "id": "uiverse-eval-button",
+      "name": "Obfuscated 'button' (REJECTED fixture)"
+    },
+    {
+      "id": "uiverse-loader-x",
+      "name": "Community Loader"
+    }
+  ],
+  "effects": [
+    {
+      "id": "aurora-background",
+      "name": "Aurora background"
+    },
+    {
+      "id": "blur-reveal",
+      "name": "Blur reveal"
+    },
+    {
+      "id": "counter-rollup",
+      "name": "Counter roll-up"
+    },
+    {
+      "id": "crossfade",
+      "name": "Crossfade"
+    },
+    {
+      "id": "gradient-movement",
+      "name": "Animated gradient"
+    },
+    {
+      "id": "magnetic-button",
+      "name": "Magnetic button"
+    },
+    {
+      "id": "optimistic-flash",
+      "name": "Optimistic success flash"
+    },
+    {
+      "id": "perspective-tilt",
+      "name": "Perspective tilt"
+    },
+    {
+      "id": "pointer-spotlight",
+      "name": "Pointer spotlight"
+    },
+    {
+      "id": "scroll-progress",
+      "name": "Scroll progress indicator"
+    },
+    {
+      "id": "shared-element",
+      "name": "Shared-element transition"
+    },
+    {
+      "id": "skeleton-shimmer",
+      "name": "Skeleton shimmer"
+    },
+    {
+      "id": "spring-scale",
+      "name": "Spring scale"
+    },
+    {
+      "id": "text-reveal-stagger",
+      "name": "Staggered text reveal"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "command-palette-reveal",
+      "name": "Command-palette reveal"
+    },
+    {
+      "id": "destructive-confirmation",
+      "name": "Destructive confirmation"
+    },
+    {
+      "id": "drag-feedback",
+      "name": "Drag-and-drop feedback"
+    },
+    {
+      "id": "empty-state-guidance",
+      "name": "Empty-state guidance"
+    },
+    {
+      "id": "inline-validation",
+      "name": "Inline validation"
+    },
+    {
+      "id": "kanban-movement",
+      "name": "Kanban card movement"
+    },
+    {
+      "id": "notification-entrance",
+      "name": "Notification entrance"
+    },
+    {
+      "id": "optimistic-save",
+      "name": "Optimistic save feedback"
+    },
+    {
+      "id": "pending-saving-saved",
+      "name": "Pending / saving / saved status"
+    },
+    {
+      "id": "progressive-onboarding",
+      "name": "Progressive onboarding"
+    },
+    {
+      "id": "scroll-reveal",
+      "name": "Scroll reveal"
+    },
+    {
+      "id": "shared-element-navigation",
+      "name": "Shared-element navigation"
+    },
+    {
+      "id": "skeleton-loading",
+      "name": "Skeleton loading"
+    },
+    {
+      "id": "streaming-indication",
+      "name": "Streaming / processing indication"
+    },
+    {
+      "id": "success-confirmation",
+      "name": "Success confirmation"
+    },
+    {
+      "id": "upload-progress",
+      "name": "Upload progress"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "blur-reveal-on-scroll-browser-native",
+      "name": "Blur reveal on scroll (browser-native)"
+    },
+    {
+      "id": "optimistic-save-feedback-vue",
+      "name": "Optimistic save feedback (Vue 3)"
+    },
+    {
+      "id": "save-status-frappe-vue",
+      "name": "Pending/saving/saved status (Frappe-Vue)"
+    },
+    {
+      "id": "skeleton-loading-react",
+      "name": "Skeleton loading (React)"
+    }
+  ]
+}

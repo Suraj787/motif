@@ -1,0 +1,9 @@
+{
+  "id": "three",
+  "package": "three",
+  "weight_kb_estimate": "~150+",
+  "transitive": "low",
+  "lifecycle_scripts": false,
+  "risk": "medium",
+  "notes": "Heavy; last-resort per implementation order; pause offscreen render."
+}

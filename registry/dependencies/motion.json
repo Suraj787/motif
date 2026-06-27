@@ -1,0 +1,9 @@
+{
+  "id": "motion",
+  "package": "motion",
+  "weight_kb_estimate": "~30-60 (tree-shakeable)",
+  "transitive": "low",
+  "lifecycle_scripts": false,
+  "risk": "low",
+  "notes": "Prefer existing project dep or CSS first; reduced-motion aware."
+}

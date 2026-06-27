@@ -1,0 +1,53 @@
+profile: low-power-device
+description: >
+  OVERLAY profile, not a base. Applied on top of any base profile when targeting
+  weak hardware, constrained CPUs/GPUs, or battery-sensitive contexts. Constraints
+  are INTERSECTED with the base profile; the stricter value always wins.
+
+overlay: true
+applies_over: any-base-profile
+resolution: most-restrictive-wins
+
+goals:
+  - performance
+  - usability
+  - comprehension
+  - accessibility
+
+preferred_patterns:
+  - css-transitions-only
+  - skeleton-screens
+  - simple-fades
+  - static-fallbacks-for-rich-effects
+
+restricted_effects:
+  - webgl-shaders            # forbidden
+  - 3d-scenes                # forbidden
+  - canvas-particles         # forbidden
+  - parallax                 # forbidden
+  - backdrop-filter-glass    # forbidden (expensive)
+  - continuous-backgrounds   # forbidden
+  - heavy-gsap-timelines
+
+continuous_motion_policy: forbidden
+
+dependency_budget:
+  policy: native-only
+  add_library: avoid
+  notes: No animation libraries; CSS/native transitions only.
+
+performance_budget:
+  target_fps: 30-floor
+  max_animation_duration_ms: 250
+  no_long_main_thread_tasks: true
+  minimize_repaints: true
+  prefer_transform_opacity_only: true
+
+max_high_attention_effects_per_viewport: 1
+
+reduced_motion_policy: mandatory
+
+mobile_constraints:
+  pointer_only_effects: forbidden
+  serve_static_alternates_for_rich_media: true
+  honor_touch_targets: true

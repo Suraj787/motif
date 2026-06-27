@@ -1,0 +1,41 @@
+{
+  "id": "aceternity-ui",
+  "name": "Aceternity UI",
+  "category": "animated-component-collection",
+  "homepage": "https://ui.aceternity.com",
+  "repository": null,
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "copy-paste",
+  "access_class": "freemium",
+  "license": "unknown / per-component",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 4,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app"
+  ],
+  "strengths": [
+    "high-fidelity hero effects"
+  ],
+  "weaknesses": [
+    "licence unclear per component \u2192 reference-only until verified"
+  ],
+  "evidence": [
+    "https://ui.aceternity.com"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "low",
+  "status": "pending-verification"
+}

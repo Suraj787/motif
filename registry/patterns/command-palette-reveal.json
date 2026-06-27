@@ -1,0 +1,38 @@
+{
+  "id": "command-palette-reveal",
+  "name": "Command-palette reveal",
+  "problem": "Power users need fast keyboard-first navigation.",
+  "user_intent": [
+    "navigate",
+    "complete a task"
+  ],
+  "suitable_pages": [
+    "command palette"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "crossfade",
+    "spring-scale"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "closed",
+    "opening",
+    "open",
+    "filtering",
+    "closing"
+  ],
+  "accessibility_requirements": [
+    "focus moves to input on open",
+    "Escape closes + restores focus",
+    "arrow-key navigation"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "opens < 100ms",
+    "fully keyboard operable"
+  ],
+  "tests": []
+}

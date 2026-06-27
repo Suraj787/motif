@@ -1,0 +1,38 @@
+{
+  "id": "upload-progress",
+  "name": "Upload progress",
+  "problem": "Users cannot tell if an upload is working or stuck.",
+  "user_intent": [
+    "enter information",
+    "monitor status"
+  ],
+  "suitable_pages": [
+    "form"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "scroll-progress",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "selecting",
+    "uploading",
+    "processing",
+    "done",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "progress announced",
+    "cancellable",
+    "not motion-only"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "determinate where possible",
+    "error recoverable"
+  ],
+  "tests": []
+}

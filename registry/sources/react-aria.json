@@ -1,0 +1,38 @@
+{
+  "id": "react-aria",
+  "name": "React Aria",
+  "category": "accessible-ui-foundation",
+  "homepage": "https://react-spectrum.adobe.com/react-aria",
+  "repository": "https://github.com/adobe/react-spectrum",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "Apache-2.0",
+  "license_reference": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "best-in-class a11y hooks"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://react-spectrum.adobe.com/react-aria",
+    "https://github.com/adobe/react-spectrum"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "animejs",
+  "name": "Anime.js",
+  "category": "animation-engine",
+  "homepage": "https://animejs.com",
+  "repository": "https://github.com/juliangarnier/anime",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/juliangarnier/anime/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "lightweight timeline"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://animejs.com",
+    "https://github.com/juliangarnier/anime"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "empty-state-guidance",
+  "name": "Empty-state guidance",
+  "problem": "Empty screens give no next action.",
+  "user_intent": [
+    "discover content",
+    "complete a task"
+  ],
+  "suitable_pages": [
+    "empty state",
+    "list",
+    "dashboard"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "empty",
+    "populated"
+  ],
+  "accessibility_requirements": [
+    "clear primary action",
+    "readable without motion"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "explains why empty + what to do"
+  ],
+  "tests": []
+}

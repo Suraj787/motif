@@ -1,0 +1,26 @@
+{
+  "id": "crossfade",
+  "name": "Crossfade",
+  "category": "transitions",
+  "objective": "preserve continuity between states",
+  "contexts": [],
+  "technologies": [
+    "CSS opacity"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Instant swap with no opacity transition.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "continuity"
+  ]
+}

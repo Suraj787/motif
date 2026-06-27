@@ -1,0 +1,55 @@
+profile: ecommerce-conversion
+description: >
+  Storefronts and product pages. Lively, confident browsing; calm and
+  trustworthy at cart and checkout. Conversion and trust lead.
+
+goals:
+  - usability
+  - feedback
+  - comprehension
+  - product-identity
+  - performance
+
+preferred_patterns:
+  - product-image-reveal (no jank)
+  - hover-affordance on cards
+  - add-to-cart feedback
+  - skeleton-screens
+  - synchronized-comparison
+  - calm-confirmation (checkout)
+
+restricted_effects:
+  - distracting-motion-near-checkout   # forbidden
+  - layout-jank-on-price-or-image      # forbidden
+  - scroll-hijacking                   # forbidden
+  - confetti-on-add-to-cart
+  - autoplay-carousels-too-fast
+
+continuous_motion_policy: discouraged   # none at all on cart/checkout
+
+dependency_budget:
+  policy: existing-deps-first
+  add_library: lightweight-only-when-justified
+  notes: Performance protects conversion; avoid heavy libs above the fold.
+
+performance_budget:
+  target_fps: 60
+  max_animation_duration_ms: 350
+  no_layout_jank: true
+  reserve_space_for_async_content: true
+  protect_core_web_vitals: true
+
+max_high_attention_effects_per_viewport: 2   # 0 on checkout
+
+reduced_motion_policy: mandatory
+
+page_overrides:
+  checkout:
+    inherit: enterprise-strict-like-restraint
+    max_high_attention_effects_per_viewport: 0
+    continuous_motion_policy: forbidden
+
+mobile_constraints:
+  pointer_only_effects: provide-fallback
+  honor_touch_targets: true
+  fast_on_mid_range_devices: true

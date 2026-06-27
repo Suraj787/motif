@@ -1,0 +1,45 @@
+{
+  "id": "lenis",
+  "name": "Lenis",
+  "category": "scrolling-transitions",
+  "homepage": "https://lenis.darkroom.engineering",
+  "repository": "https://github.com/darkroomengineering/lenis",
+  "frameworks": [
+    "vanilla",
+    "react",
+    "vue"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/darkroomengineering/lenis/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "accessibility-first"
+  ],
+  "strengths": [
+    "smooth scroll"
+  ],
+  "weaknesses": [
+    "can harm accessibility if it hijacks scroll \u2014 use cautiously"
+  ],
+  "evidence": [
+    "https://lenis.darkroom.engineering",
+    "https://github.com/darkroomengineering/lenis"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ibm-carbon",
+  "name": "IBM Carbon",
+  "category": "enterprise-design-system",
+  "homepage": "https://carbondesignsystem.com",
+  "repository": "https://github.com/carbon-design-system/carbon",
+  "frameworks": [
+    "react",
+    "vue",
+    "angular"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "Apache-2.0",
+  "license_reference": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "enterprise motion tokens"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://carbondesignsystem.com",
+    "https://github.com/carbon-design-system/carbon"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

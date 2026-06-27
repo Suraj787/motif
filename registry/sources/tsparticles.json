@@ -1,0 +1,46 @@
+{
+  "id": "tsparticles",
+  "name": "tsParticles",
+  "category": "canvas-particles-generative",
+  "homepage": "https://particles.js.org",
+  "repository": "https://github.com/tsparticles/tsparticles",
+  "frameworks": [
+    "vanilla",
+    "react",
+    "vue",
+    "svelte"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/tsparticles/tsparticles/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing"
+  ],
+  "unsuitable_contexts": [
+    "low-power-device",
+    "enterprise app"
+  ],
+  "strengths": [
+    "configurable particles"
+  ],
+  "weaknesses": [
+    "continuous rendering cost on low-power devices"
+  ],
+  "evidence": [
+    "https://particles.js.org",
+    "https://github.com/tsparticles/tsparticles"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

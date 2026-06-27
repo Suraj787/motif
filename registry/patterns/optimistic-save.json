@@ -1,0 +1,40 @@
+{
+  "id": "optimistic-save",
+  "name": "Optimistic save feedback",
+  "problem": "User cannot tell whether an edit was accepted.",
+  "user_intent": [
+    "complete a task",
+    "enter information"
+  ],
+  "suitable_pages": [
+    "form",
+    "record details",
+    "settings"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "optimistic-flash",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "magnetic-button"
+  ],
+  "interaction_states": [
+    "idle",
+    "saving",
+    "saved",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "aria-live polite announcement of saving/saved/error",
+    "no motion-only status",
+    "keyboard unaffected"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "state reflects intent within 100ms",
+    "error state is recoverable"
+  ],
+  "tests": []
+}

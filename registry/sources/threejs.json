@@ -1,0 +1,45 @@
+{
+  "id": "threejs",
+  "name": "Three.js",
+  "category": "3d-shader",
+  "homepage": "https://threejs.org",
+  "repository": "https://github.com/mrdoob/three.js",
+  "frameworks": [
+    "vanilla",
+    "react",
+    "vue"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/mrdoob/three.js/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "immersive"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app",
+    "low-power-device"
+  ],
+  "strengths": [
+    "mature WebGL engine"
+  ],
+  "weaknesses": [
+    "heavy; last-resort per implementation order"
+  ],
+  "evidence": [
+    "https://threejs.org",
+    "https://github.com/mrdoob/three.js"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

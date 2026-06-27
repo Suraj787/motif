@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oii.dev/schemas/pattern.schema.json",
+  "title": "OII Pattern",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "problem", "user_intent", "interaction_states", "accessibility_requirements", "success_criteria"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "problem": { "type": "string" },
+    "user_intent": { "type": "array", "items": { "type": "string" } },
+    "suitable_pages": { "type": "array", "items": { "type": "string" } },
+    "unsuitable_pages": { "type": "array", "items": { "type": "string" } },
+    "recommended_effects": { "type": "array", "items": { "type": "string" } },
+    "rejected_effects": { "type": "array", "items": { "type": "string" } },
+    "interaction_states": { "type": "array", "items": { "type": "string" } },
+    "accessibility_requirements": { "type": "array", "items": { "type": "string" } },
+    "performance_budget": { "type": "string" },
+    "success_criteria": { "type": "array", "items": { "type": "string" } },
+    "tests": { "type": "array", "items": { "type": "string" } }
+  }
+}

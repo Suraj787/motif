@@ -1,0 +1,46 @@
+profile: editorial-storytelling
+description: >
+  Publications, long-form articles, case studies. Restrained reading body with
+  expressive set-pieces where the narrative genuinely calls for them.
+
+goals:
+  - comprehension
+  - usability
+  - product-identity
+  - feedback
+  - performance
+
+preferred_patterns:
+  - scroll-linked-reveal (respecting user pace)
+  - narrative-set-pieces (key moments)
+  - cause-effect motion
+  - shared-element on media expand
+  - scroll-progress
+
+restricted_effects:
+  - scroll-hijacking-that-traps-reader   # forbidden; scroll-linked only, never scroll-stealing
+  - motion-interrupting-reading-flow
+  - heavy-assets-blocking-article-load
+  - autoplay-audio-video
+
+continuous_motion_policy: limited   # only in deliberate set-pieces, paused off-screen
+
+dependency_budget:
+  policy: moderate
+  add_library: justified-gsap-or-canvas-for-set-pieces
+  notes: Body text stays dependency-light; heavy motion isolated to set-pieces.
+
+performance_budget:
+  target_fps: 60
+  defer_offscreen_animation: true
+  lazy_load_media: true
+  protect_reading_first_paint: true
+
+max_high_attention_effects_per_viewport: 2
+
+reduced_motion_policy: mandatory   # set-pieces degrade to static imagery
+
+mobile_constraints:
+  pointer_only_effects: provide-fallback
+  reduce_set_piece_complexity_on_mobile: true
+  honor_touch_targets: true

@@ -1,0 +1,10 @@
+{
+  "id": "gsap-standard",
+  "spdx": "LicenseRef-GSAP-Standard",
+  "redistribution": "restricted",
+  "attribution": "per GreenSock terms",
+  "commercial_use": "conditional",
+  "modification": "limited",
+  "bundleable": false,
+  "notes": "Re-verify current GreenSock terms before any bundling."
+}

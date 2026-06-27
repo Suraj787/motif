@@ -1,0 +1,27 @@
+{
+  "id": "pointer-spotlight",
+  "name": "Pointer spotlight",
+  "category": "cards",
+  "objective": "create emotional impact / guide attention",
+  "contexts": [],
+  "technologies": [
+    "CSS",
+    "Pointer Events"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "poor",
+  "reduced_motion_fallback": "Static surface, no pointer-tracking glow.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "cursor"
+  ]
+}

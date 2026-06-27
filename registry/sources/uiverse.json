@@ -1,0 +1,38 @@
+{
+  "id": "uiverse",
+  "name": "Uiverse",
+  "category": "animated-component-collection",
+  "homepage": "https://uiverse.io",
+  "repository": "https://github.com/uiverse-io/galaxy",
+  "frameworks": [
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "copy-paste",
+  "access_class": "free",
+  "license": "MIT (community-submitted; verify per element)",
+  "license_reference": "https://github.com/uiverse-io/galaxy/blob/main/LICENSE",
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 4,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "prototype"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [],
+  "weaknesses": [
+    "community submissions vary; verify each element"
+  ],
+  "evidence": [
+    "https://uiverse.io",
+    "https://github.com/uiverse-io/galaxy"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "low",
+  "status": "pending-verification"
+}

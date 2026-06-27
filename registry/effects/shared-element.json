@@ -1,0 +1,27 @@
+{
+  "id": "shared-element",
+  "name": "Shared-element transition",
+  "category": "transitions",
+  "objective": "preserve spatial continuity on navigation",
+  "contexts": [],
+  "technologies": [
+    "View Transitions API"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "medium",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Instant navigation with no morph.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "navigation",
+    "continuity"
+  ]
+}

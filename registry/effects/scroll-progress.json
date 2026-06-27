@@ -1,0 +1,26 @@
+{
+  "id": "scroll-progress",
+  "name": "Scroll progress indicator",
+  "category": "scroll",
+  "objective": "monitor status / orient the reader",
+  "contexts": [],
+  "technologies": [
+    "CSS scroll-driven"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Static or omitted; rely on scrollbar.",
+  "enterprise_suitability": "conditional",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "scroll"
+  ]
+}

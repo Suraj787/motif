@@ -1,0 +1,38 @@
+{
+  "id": "mdn-web-animations",
+  "name": "Web Animations API (MDN)",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/API/Web_Animations_API",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "any"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "no dependency",
+    "standardised"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/API/Web_Animations_API"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

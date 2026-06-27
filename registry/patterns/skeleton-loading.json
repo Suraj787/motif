@@ -1,0 +1,38 @@
+{
+  "id": "skeleton-loading",
+  "name": "Skeleton loading",
+  "problem": "Blank screen during data fetch feels broken/slow.",
+  "user_intent": [
+    "review information",
+    "monitor status"
+  ],
+  "suitable_pages": [
+    "dashboard",
+    "list",
+    "table",
+    "record details"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "skeleton-shimmer"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "loading",
+    "loaded",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "aria-busy on the region",
+    "no motion-only meaning",
+    "reduced-motion disables shimmer"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "layout matches final content",
+    "no cumulative layout shift on load"
+  ],
+  "tests": []
+}

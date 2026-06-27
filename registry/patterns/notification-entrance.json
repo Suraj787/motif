@@ -1,0 +1,35 @@
+{
+  "id": "notification-entrance",
+  "name": "Notification entrance",
+  "problem": "Toasts appear/disappear abruptly or block work.",
+  "user_intent": [
+    "monitor status"
+  ],
+  "suitable_pages": [
+    "notifications"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "crossfade",
+    "spring-scale"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "enter",
+    "visible",
+    "exit"
+  ],
+  "accessibility_requirements": [
+    "role=status / aria-live",
+    "dismissible",
+    "does not steal focus"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "non-blocking",
+    "auto-dismiss configurable"
+  ],
+  "tests": []
+}

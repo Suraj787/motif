@@ -1,0 +1,53 @@
+profile: enterprise-strict
+description: >
+  Dense internal tools, ERP, CRM, financial apps. Power users, high frequency,
+  correctness and speed over delight. Maximum restraint.
+
+goals:
+  - usability
+  - comprehension
+  - feedback
+  - performance
+  - maintainability
+
+preferred_patterns:
+  - inline-validation
+  - system-feedback (toasts, save indicators)
+  - skeleton-screens
+  - layout-flip-continuity
+  - shared-element-transition (list to detail)
+  - command-palette
+
+restricted_effects:
+  - counters-on-financial-values   # forbidden
+  - animated-backgrounds           # forbidden in work areas
+  - particles-auroras-beams        # forbidden
+  - parallax
+  - scroll-hijacking               # forbidden
+  - custom-cursor                  # forbidden
+  - tilt-magnetism
+  - confetti                       # forbidden on routine actions
+  - 3d-webgl                       # forbidden
+  - continuous-chart-animation
+
+continuous_motion_policy: forbidden
+
+dependency_budget:
+  policy: native-only-strongly-preferred
+  add_library: only-with-explicit-justification
+  notes: Prefer CSS and Vue/Frappe-Vue native transitions; no GSAP/Three.js.
+
+performance_budget:
+  target_fps: 60
+  max_animation_duration_ms: 300
+  main_thread: no-long-tasks-on-interaction
+  no_layout_jank: true
+
+max_high_attention_effects_per_viewport: 1
+
+reduced_motion_policy: mandatory   # fade or instant fallback for every animation
+
+mobile_constraints:
+  pointer_only_effects: forbidden
+  honor_touch_targets: true
+  density_preserved: true

@@ -1,0 +1,9 @@
+{
+  "id": "lenis",
+  "package": "lenis",
+  "weight_kb_estimate": "~10",
+  "transitive": "low",
+  "lifecycle_scripts": false,
+  "risk": "medium",
+  "notes": "Can hijack scroll \u2192 accessibility risk; forbid in accessibility-first profile."
+}

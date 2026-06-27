@@ -1,0 +1,27 @@
+{
+  "id": "optimistic-flash",
+  "name": "Optimistic success flash",
+  "category": "feedback",
+  "objective": "confirm completion immediately",
+  "contexts": [],
+  "technologies": [
+    "CSS"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Show final saved state instantly without a flash.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "feedback",
+    "save"
+  ]
+}

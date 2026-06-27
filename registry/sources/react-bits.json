@@ -1,0 +1,42 @@
+{
+  "id": "react-bits",
+  "name": "React Bits",
+  "category": "animated-component-collection",
+  "homepage": "https://reactbits.dev",
+  "repository": "https://github.com/DavidHDev/react-bits",
+  "frameworks": [
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "low",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing"
+  ],
+  "unsuitable_contexts": [
+    "enterprise app"
+  ],
+  "strengths": [
+    "large animated component gallery"
+  ],
+  "weaknesses": [
+    "React-only; adapt concept for Vue, do not port React in"
+  ],
+  "evidence": [
+    "https://reactbits.dev",
+    "https://github.com/DavidHDev/react-bits"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "low",
+  "status": "verified"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "perspective-tilt",
+  "name": "Perspective tilt",
+  "category": "cards",
+  "objective": "strengthen affordance",
+  "contexts": [],
+  "technologies": [
+    "CSS transform"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "poor",
+  "reduced_motion_fallback": "No tilt; flat hover state.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "3d-lite"
+  ]
+}

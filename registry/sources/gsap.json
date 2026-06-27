@@ -1,0 +1,46 @@
+{
+  "id": "gsap",
+  "name": "GSAP",
+  "category": "animation-engine",
+  "homepage": "https://gsap.com",
+  "repository": "https://github.com/greensock/GSAP",
+  "frameworks": [
+    "vanilla",
+    "react",
+    "vue",
+    "svelte"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "freemium",
+  "license": "GSAP-Standard (now free)",
+  "license_reference": "https://github.com/greensock/GSAP/blob/main/LICENSE",
+  "redistribution": "adaptable-concept",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [
+    "dense enterprise UI"
+  ],
+  "strengths": [
+    "powerful timeline + ScrollTrigger"
+  ],
+  "weaknesses": [
+    "licence nuance: re-verify current terms before bundling"
+  ],
+  "evidence": [
+    "https://gsap.com",
+    "https://github.com/greensock/GSAP"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "low",
+  "status": "pending-verification"
+}

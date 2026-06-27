@@ -1,0 +1,26 @@
+{
+  "id": "blur-reveal-on-scroll-browser-native",
+  "name": "Blur reveal on scroll (browser-native)",
+  "pattern": "scroll-reveal",
+  "framework": "browser-native",
+  "technology": [
+    "CSS scroll-driven",
+    "IntersectionObserver"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "browser-native",
+  "source_references": [
+    "css-scroll-driven",
+    "mdn-web-animations"
+  ],
+  "algorithm": "",
+  "implementation_path": "implementations/browser-native/blur-reveal.md",
+  "reduced_motion": "Content rendered sharp and visible immediately; no blur/transform.",
+  "responsive_behaviour": "fluid; no fixed pixel motion",
+  "browser_support": "Modern evergreen; IO fallback for older; scroll-driven CSS where supported.",
+  "accessibility": "No motion-only meaning; content present without JS.",
+  "tests": [],
+  "maturity": "stable"
+}

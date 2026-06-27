@@ -1,0 +1,26 @@
+{
+  "id": "magnetic-button",
+  "name": "Magnetic button",
+  "category": "cards",
+  "objective": "strengthen affordance / delight",
+  "contexts": [],
+  "technologies": [
+    "Pointer Events"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "medium",
+  "performance_cost": "medium",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "poor",
+  "reduced_motion_fallback": "Standard button with no magnetic pull.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "cursor"
+  ]
+}

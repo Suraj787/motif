@@ -1,0 +1,40 @@
+{
+  "id": "css-scroll-driven",
+  "name": "CSS Scroll-driven Animations",
+  "category": "browser-native",
+  "homepage": "https://developer.mozilla.org/docs/Web/CSS/animation-timeline",
+  "repository": null,
+  "frameworks": [
+    "browser-native"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "browser standard (no licence needed)",
+  "license_reference": null,
+  "redistribution": "redistributable",
+  "attribution_required": false,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "marketing",
+    "editorial"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "GPU-friendly scroll reveal without JS"
+  ],
+  "weaknesses": [
+    "progressive enhancement needed for older browsers"
+  ],
+  "evidence": [
+    "https://developer.mozilla.org/docs/Web/CSS/animation-timeline"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

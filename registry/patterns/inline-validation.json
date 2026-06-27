@@ -1,0 +1,38 @@
+{
+  "id": "inline-validation",
+  "name": "Inline validation",
+  "problem": "Errors surface only after submit, frustrating users.",
+  "user_intent": [
+    "enter information",
+    "prevent errors"
+  ],
+  "suitable_pages": [
+    "form",
+    "login",
+    "onboarding"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "perspective-tilt"
+  ],
+  "interaction_states": [
+    "untouched",
+    "valid",
+    "invalid",
+    "validating"
+  ],
+  "accessibility_requirements": [
+    "error linked via aria-describedby",
+    "not colour-only",
+    "focus stays usable"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "error appears near the field",
+    "no layout jump"
+  ],
+  "tests": []
+}

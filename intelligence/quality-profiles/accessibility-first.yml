@@ -1,0 +1,63 @@
+profile: accessibility-first
+description: >
+  OVERLAY profile, not a base. Applied on top of any base profile when inclusion
+  leads every decision (public sector, healthcare, education, regulated, or any
+  product committing to WCAG-grade accessibility). Constraints are INTERSECTED
+  with the base profile; the stricter value always wins and cannot be loosened.
+
+overlay: true
+applies_over: any-base-profile
+resolution: most-restrictive-wins
+
+goals:
+  - accessibility
+  - usability
+  - comprehension
+  - feedback
+
+preferred_patterns:
+  - keyboard-operable-everything
+  - visible-focus-states
+  - status-via-text-color-and-icon   # never motion alone
+  - inline-validation
+  - skeleton-screens
+  - simple-fades
+
+restricted_effects:
+  - motion-only-status        # forbidden
+  - autoplay-motion           # forbidden
+  - parallax                  # forbidden (motion sickness)
+  - scroll-hijacking          # forbidden
+  - custom-cursor             # forbidden
+  - flashing-or-strobing      # forbidden (seizure risk)
+  - low-contrast-glassmorphism
+
+continuous_motion_policy: forbidden
+
+dependency_budget:
+  policy: existing-deps-first
+  add_library: only-if-accessible-and-justified
+  notes: Any motion must have an accessible, non-motion equivalent.
+
+performance_budget:
+  target_fps: 60
+  max_animation_duration_ms: 300
+  no_layout_jank: true
+
+max_high_attention_effects_per_viewport: 1
+
+reduced_motion_policy: mandatory-and-default
+# Honor prefers-reduced-motion; where unknown, prefer the reduced variant.
+# Every animation must have a non-motion equivalent that conveys the same meaning.
+
+accessibility_requirements:
+  keyboard_operable: required
+  visible_focus: required
+  contrast_minimum: WCAG-AA-or-better
+  no_seizure_triggers: required
+  screen_reader_announcements_for_state_changes: required
+
+mobile_constraints:
+  pointer_only_effects: forbidden
+  honor_touch_targets: minimum-44px
+  content_never_hidden_behind_motion: true

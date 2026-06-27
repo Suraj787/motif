@@ -1,0 +1,38 @@
+{
+  "id": "pending-saving-saved",
+  "name": "Pending / saving / saved status",
+  "problem": "Background save has no visible lifecycle.",
+  "user_intent": [
+    "enter information",
+    "monitor status"
+  ],
+  "suitable_pages": [
+    "form",
+    "record details"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "spring-scale",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "pending",
+    "saving",
+    "saved",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "aria-live region",
+    "text label not colour-only",
+    "reduced-motion safe"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "status legible without colour",
+    "no blocking modal"
+  ],
+  "tests": []
+}

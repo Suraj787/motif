@@ -1,0 +1,27 @@
+{
+  "id": "counter-rollup",
+  "name": "Counter roll-up",
+  "category": "text-reveal",
+  "objective": "attract attention to a metric",
+  "contexts": [],
+  "technologies": [
+    "WAAPI",
+    "JS"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Show the final number immediately.",
+  "enterprise_suitability": "conditional",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "numbers"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "scroll-reveal",
+  "name": "Scroll reveal",
+  "problem": "Long pages feel flat; sections need gentle entrance.",
+  "user_intent": [
+    "discover content",
+    "learn",
+    "evaluate a product"
+  ],
+  "suitable_pages": [
+    "hero",
+    "features",
+    "case study"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "blur-reveal",
+    "text-reveal-stagger",
+    "scroll-progress"
+  ],
+  "rejected_effects": [
+    "aurora-background",
+    "magnetic-button"
+  ],
+  "interaction_states": [
+    "below-fold",
+    "revealing",
+    "revealed"
+  ],
+  "accessibility_requirements": [
+    "content readable without JS",
+    "reduced-motion shows content instantly",
+    "no scroll hijacking"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "content never hidden if JS fails",
+    "no jank"
+  ],
+  "tests": []
+}

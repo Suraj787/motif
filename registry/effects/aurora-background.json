@@ -1,0 +1,28 @@
+{
+  "id": "aurora-background",
+  "name": "Aurora background",
+  "category": "backgrounds",
+  "objective": "create premium ambient impact",
+  "contexts": [],
+  "technologies": [
+    "CSS",
+    "Canvas"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "high",
+  "performance_cost": "high",
+  "accessibility_risk": "medium",
+  "mobile_suitability": "conditional",
+  "reduced_motion_fallback": "Static gradient or solid background.",
+  "enterprise_suitability": "discouraged",
+  "marketing_suitability": "conditional",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "ambient",
+    "hero"
+  ]
+}

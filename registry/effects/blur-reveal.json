@@ -1,0 +1,28 @@
+{
+  "id": "blur-reveal",
+  "name": "Blur reveal",
+  "category": "text-reveal",
+  "objective": "guide attention on entrance",
+  "contexts": [],
+  "technologies": [
+    "CSS",
+    "IntersectionObserver"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Render content sharp and fully visible immediately; no blur transition.",
+  "enterprise_suitability": "conditional",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "scroll",
+    "reveal"
+  ]
+}

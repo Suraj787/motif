@@ -1,0 +1,48 @@
+profile: portfolio-creative
+description: >
+  Portfolios and agency sites. The site is itself a demonstration of craft.
+  Signature, expressive motion is the point - but it must still be navigable,
+  accessible, and fast enough.
+
+goals:
+  - product-identity
+  - comprehension
+  - usability
+  - novelty
+  - performance
+
+preferred_patterns:
+  - signature-hero-motion
+  - shared-element-transition (work to detail)
+  - expressive-backgrounds
+  - kinetic-typography
+  - scroll-storytelling
+  - canvas-or-webgl-set-pieces
+
+restricted_effects:
+  - novelty-over-navigability       # forbidden: work must remain reachable
+  - work-samples-slow-to-appear
+  - scroll-hijacking-without-controls
+  - motion-only-status
+
+continuous_motion_policy: allowed   # must pause off-screen and under reduced-motion
+
+dependency_budget:
+  policy: liberal
+  add_library: gsap-canvas-three-allowed-when-justified
+  notes: Heavier motion accepted; still prefer the cheapest tool that achieves the look.
+
+performance_budget:
+  target_fps: 60
+  defer_offscreen_animation: true
+  provide_low_fidelity_fallback: true
+  budget_initial_payload: true
+
+max_high_attention_effects_per_viewport: 3
+
+reduced_motion_policy: mandatory   # signature motion degrades to strong static design
+
+mobile_constraints:
+  pointer_only_effects: provide-fallback
+  reduce_complexity_on_mobile: true
+  honor_touch_targets: true

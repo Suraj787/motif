@@ -1,0 +1,36 @@
+{
+  "id": "kanban-movement",
+  "name": "Kanban card movement",
+  "problem": "Cards jump between columns without continuity.",
+  "user_intent": [
+    "monitor status",
+    "collaborate"
+  ],
+  "suitable_pages": [
+    "kanban"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "shared-element",
+    "spring-scale"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "idle",
+    "moving",
+    "settled"
+  ],
+  "accessibility_requirements": [
+    "keyboard move support",
+    "status not colour-only",
+    "reduced-motion = instant move"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "card position change is legible",
+    "no dropped frames"
+  ],
+  "tests": []
+}

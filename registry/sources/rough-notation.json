@@ -1,0 +1,40 @@
+{
+  "id": "rough-notation",
+  "name": "Rough Notation",
+  "category": "svg-icon-motion",
+  "homepage": "https://roughnotation.com",
+  "repository": "https://github.com/rough-stuff/rough-notation",
+  "frameworks": [
+    "vanilla",
+    "react"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/rough-stuff/rough-notation/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 3,
+  "maintenance": "maintained",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "editorial",
+    "documentation"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "annotation highlight effect"
+  ],
+  "weaknesses": [],
+  "evidence": [
+    "https://roughnotation.com",
+    "https://github.com/rough-stuff/rough-notation"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

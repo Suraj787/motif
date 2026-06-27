@@ -1,0 +1,33 @@
+{
+  "id": "uiverse-eval-button",
+  "name": "Obfuscated 'button' (REJECTED fixture)",
+  "source": "uiverse",
+  "canonical_page": null,
+  "repository_path": null,
+  "preview_available": true,
+  "framework": "vanilla",
+  "styling_technology": "CSS",
+  "animation_technology": "CSS",
+  "dependencies": [],
+  "required_assets": [],
+  "browser_requirements": "modern evergreen",
+  "installation_method": "varies",
+  "copy_paste_available": false,
+  "license": "unknown",
+  "component_exceptions": "Rejected: ships eval()/obfuscated script and unknown licence (see evals/fixtures).",
+  "attribution": null,
+  "redistribution_permission": false,
+  "commercial_use": "no",
+  "modification": "no",
+  "accessibility_status": "unknown",
+  "reduced_motion_support": "unknown",
+  "responsive_behaviour": "unknown",
+  "performance_cost": "low",
+  "complexity": "low",
+  "quality_status": "low",
+  "usability_mode": "rejected",
+  "verification_date": "2026-06-27",
+  "evidence": [
+    "evals/fixtures/eval-button"
+  ]
+}

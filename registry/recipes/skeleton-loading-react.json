@@ -1,0 +1,25 @@
+{
+  "id": "skeleton-loading-react",
+  "name": "Skeleton loading (React)",
+  "pattern": "skeleton-loading",
+  "framework": "react",
+  "technology": [
+    "React",
+    "CSS"
+  ],
+  "dependencies": [],
+  "cost": "none",
+  "license": "MIT",
+  "provenance_type": "original",
+  "source_references": [
+    "shadcn-ui"
+  ],
+  "algorithm": "",
+  "implementation_path": "implementations/react/skeleton-loading.md",
+  "reduced_motion": "Shimmer disabled under prefers-reduced-motion; static placeholder.",
+  "responsive_behaviour": "fluid; no fixed pixel motion",
+  "browser_support": "All modern browsers.",
+  "accessibility": "aria-busy on region; skeleton matches final layout to avoid CLS.",
+  "tests": [],
+  "maturity": "stable"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "success-confirmation",
+  "name": "Success confirmation",
+  "problem": "Completion is unclear after a long action.",
+  "user_intent": [
+    "complete a task",
+    "confirm completion"
+  ],
+  "suitable_pages": [
+    "confirmation state",
+    "form"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "optimistic-flash",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "in-progress",
+    "success",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "announced to screen readers",
+    "brief (no long animation)",
+    "not colour-only"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "confirmation is short",
+    "no confetti for frequent actions"
+  ],
+  "tests": []
+}

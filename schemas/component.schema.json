@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oii.dev/schemas/component.schema.json",
+  "title": "OII Component",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "name", "source", "framework", "license", "usability_mode",
+    "accessibility_status", "verification_date"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "source": { "type": "string", "description": "source id" },
+    "canonical_page": { "type": ["string", "null"] },
+    "repository_path": { "type": ["string", "null"] },
+    "preview_available": { "type": "boolean" },
+    "framework": { "type": "string" },
+    "styling_technology": { "type": "string" },
+    "animation_technology": { "type": "string" },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "required_assets": { "type": "array", "items": { "type": "string" } },
+    "browser_requirements": { "type": "string" },
+    "installation_method": { "type": "string" },
+    "copy_paste_available": { "type": "boolean" },
+    "license": { "type": "string" },
+    "component_exceptions": { "type": ["string", "null"] },
+    "attribution": { "type": ["string", "null"] },
+    "redistribution_permission": { "type": "boolean" },
+    "commercial_use": { "type": "string", "enum": ["yes", "no", "unclear"] },
+    "modification": { "type": "string", "enum": ["yes", "no", "unclear"] },
+    "accessibility_status": { "type": "string", "enum": ["good", "partial", "poor", "unknown"] },
+    "reduced_motion_support": { "type": "string", "enum": ["yes", "no", "unknown"] },
+    "responsive_behaviour": { "type": "string", "enum": ["good", "partial", "poor", "unknown"] },
+    "performance_cost": { "type": "string", "enum": ["low", "medium", "high"] },
+    "complexity": { "type": "string", "enum": ["low", "medium", "high"] },
+    "quality_status": { "type": "string", "enum": ["high", "medium", "low"] },
+    "usability_mode": {
+      "type": "string",
+      "enum": ["bundled", "installable", "adaptable", "reference-only", "rejected"]
+    },
+    "verification_date": { "type": "string", "format": "date" },
+    "evidence": { "type": "array", "items": { "type": "string" } }
+  }
+}

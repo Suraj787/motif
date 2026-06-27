@@ -1,0 +1,26 @@
+{
+  "id": "spring-scale",
+  "name": "Spring scale",
+  "category": "cards",
+  "objective": "strengthen affordance / feedback",
+  "contexts": [],
+  "technologies": [
+    "CSS transform"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Instant scale to final state; no spring.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "feedback"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "motion",
+  "name": "Motion (Framer Motion)",
+  "category": "animation-engine",
+  "homepage": "https://motion.dev",
+  "repository": "https://github.com/motiondivision/motion",
+  "frameworks": [
+    "react",
+    "vue",
+    "vanilla"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "mixed",
+  "access_class": "open-source",
+  "license": "MIT",
+  "license_reference": "https://github.com/motiondivision/motion/blob/main/LICENSE",
+  "redistribution": "redistributable",
+  "attribution_required": true,
+  "trust_tier": 2,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "medium",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "saas",
+    "marketing"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "declarative spring/layout animation",
+    "reduced-motion aware"
+  ],
+  "weaknesses": [
+    "bundle weight if overused"
+  ],
+  "evidence": [
+    "https://motion.dev",
+    "https://github.com/motiondivision/motion"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "medium",
+  "status": "verified"
+}

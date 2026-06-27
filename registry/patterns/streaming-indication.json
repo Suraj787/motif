@@ -1,0 +1,38 @@
+{
+  "id": "streaming-indication",
+  "name": "Streaming / processing indication",
+  "problem": "AI or long responses appear frozen.",
+  "user_intent": [
+    "monitor status",
+    "review information"
+  ],
+  "suitable_pages": [
+    "dashboard",
+    "record details"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "skeleton-shimmer",
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "idle",
+    "streaming",
+    "complete",
+    "error"
+  ],
+  "accessibility_requirements": [
+    "live-region updates throttled",
+    "not motion-only",
+    "stop control available"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "user sees progress",
+    "no seizure-risk flashing"
+  ],
+  "tests": []
+}

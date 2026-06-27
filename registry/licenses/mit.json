@@ -1,0 +1,10 @@
+{
+  "id": "mit",
+  "spdx": "MIT",
+  "redistribution": "allowed",
+  "attribution": "notice required",
+  "commercial_use": "yes",
+  "modification": "yes",
+  "bundleable": true,
+  "notes": "Preserve copyright + permission notice."
+}

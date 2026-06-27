@@ -1,0 +1,26 @@
+{
+  "id": "skeleton-shimmer",
+  "name": "Skeleton shimmer",
+  "category": "loading",
+  "objective": "reduce perceived waiting",
+  "contexts": [],
+  "technologies": [
+    "CSS"
+  ],
+  "frameworks": [
+    "browser-native"
+  ],
+  "dependencies": [],
+  "complexity": "low",
+  "performance_cost": "low",
+  "accessibility_risk": "low",
+  "mobile_suitability": "good",
+  "reduced_motion_fallback": "Static skeleton placeholder, no shimmer sweep.",
+  "enterprise_suitability": "recommended",
+  "marketing_suitability": "recommended",
+  "provenance": "original",
+  "testing": [],
+  "tags": [
+    "loading"
+  ]
+}

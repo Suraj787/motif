@@ -1,0 +1,39 @@
+{
+  "id": "material-design",
+  "name": "Material Design",
+  "category": "enterprise-design-system",
+  "homepage": "https://m3.material.io",
+  "repository": null,
+  "frameworks": [
+    "any"
+  ],
+  "technologies": [],
+  "dependency_model": "varies",
+  "delivery_model": "reference",
+  "access_class": "free",
+  "license": "guidance (CC-BY / Google terms)",
+  "license_reference": null,
+  "redistribution": "reference-only",
+  "attribution_required": true,
+  "trust_tier": 1,
+  "maintenance": "active",
+  "documentation_quality": "good",
+  "accessibility_maturity": "high",
+  "performance_characteristics": "varies by component",
+  "suitable_contexts": [
+    "enterprise app"
+  ],
+  "unsuitable_contexts": [],
+  "strengths": [
+    "motion principles + duration/easing guidance"
+  ],
+  "weaknesses": [
+    "guidance only \u2014 do not copy assets"
+  ],
+  "evidence": [
+    "https://m3.material.io"
+  ],
+  "last_reviewed": "2026-06-27",
+  "confidence": "high",
+  "status": "verified"
+}

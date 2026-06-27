@@ -1,0 +1,38 @@
+{
+  "id": "destructive-confirmation",
+  "name": "Destructive confirmation",
+  "problem": "Irreversible actions are too easy to trigger.",
+  "user_intent": [
+    "complete a task",
+    "prevent errors"
+  ],
+  "suitable_pages": [
+    "record details",
+    "settings",
+    "table"
+  ],
+  "unsuitable_pages": [],
+  "recommended_effects": [
+    "crossfade"
+  ],
+  "rejected_effects": [
+    "aurora-background"
+  ],
+  "interaction_states": [
+    "idle",
+    "confirming",
+    "committed",
+    "cancelled"
+  ],
+  "accessibility_requirements": [
+    "focus trapped in dialog",
+    "Escape cancels",
+    "clear consequence text"
+  ],
+  "performance_budget": "60fps; no layout thrash",
+  "success_criteria": [
+    "requires explicit confirm",
+    "no accidental commit"
+  ],
+  "tests": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "cc-by-4-0",
+  "spdx": "CC-BY-4.0",
+  "redistribution": "allowed with attribution",
+  "attribution": "required",
+  "commercial_use": "yes",
+  "modification": "yes",
+  "bundleable": false,
+  "notes": "Typically guidance/assets; treat as reference for code."
+}
