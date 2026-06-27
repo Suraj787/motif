@@ -1,9 +1,9 @@
-# Competitive & Comparable Landscape — Interface Intelligence OS
+# Competitive & Comparable Landscape, Interface Intelligence OS
 
 > The goal of this analysis is **not to attack** the tools below. Most of them are
 > excellent at what they do, and IIOS reuses or interoperates with several of them. The
-> goal is to locate the **layer IIOS occupies** — design judgment, product understanding,
-> state/assurance discipline, and interface governance for AI coding agents — and to be
+> goal is to locate the **layer IIOS occupies**, design judgment, product understanding,
+> state/assurance discipline, and interface governance for AI coding agents, and to be
 > honest about what is worth *importing* rather than recreating.
 >
 > Dates/facts are grounded against the [research ledger](./research-ledger.md). Where a
@@ -45,7 +45,7 @@ flowchart LR
 ```
 
 IIOS is not another generator. It is the **judgment, completeness, assurance and
-governance layer** that sits *around* generation, build, and verification — deciding what
+governance layer** that sits *around* generation, build, and verification, deciding what
 should be built, refusing what shouldn't, and recording why.
 
 ---
@@ -60,7 +60,7 @@ should be built, refusing what shouldn't, and recording why.
 - **Source / data model.** Curated, opinionated catalogue (styles, palettes, pairings).
 - **Framework coverage.** Broad (React, Next, Vue, Svelte, SwiftUI, RN, Flutter, Tailwind,
   shadcn, HTML/CSS).
-- **Agent integration.** Native — designed as an agent skill.
+- **Agent integration.** Native, designed as an agent skill.
 - **A11y / security / licensing / validation / governance.** A11y appears as guideline
   content rather than enforced checks; no secure-ingestion or licence-gate model; no
   built-in validator or decision ledger *(inference, based on its described scope)*.
@@ -78,13 +78,13 @@ should be built, refusing what shouldn't, and recording why.
   isolated specialists with their own tools/context. Introduced/expanded through 2025.
 - **Architecture.** Markdown + YAML-frontmatter files; orchestrator + specialists.
 - **Agent integration.** It *is* the integration surface.
-- **A11y / security / validation / governance.** Out of scope — it is a runtime, not a
+- **A11y / security / validation / governance.** Out of scope, it is a runtime, not a
   domain authority.
 - **Gaps IIOS addresses.** IIOS provides the *domain content and guarantees* that ride on
   this runtime: the orchestrator skill, 15 bounded specialist agents, deterministic tools,
   and the governance loop.
-- **Worth importing.** The pattern itself — orchestrator skill + bounded subagents +
-  deterministic tools — is exactly how IIOS is delivered. IIOS builds *on* it, not against
+- **Worth importing.** The pattern itself, orchestrator skill + bounded subagents +
+  deterministic tools, is exactly how IIOS is delivered. IIOS builds *on* it, not against
   it. (See [ledger #17](./research-ledger.md).)
 
 ## 3. v0 (Vercel)
@@ -132,9 +132,9 @@ should be built, refusing what shouldn't, and recording why.
 - **A11y / security / validation / governance.** Design-tool-centric; not an enforced
   a11y/perf assurance layer or a governance ledger *(inference)*.
 - **Gaps IIOS addresses.** The handoff from "looks right in Figma" to "is accessible,
-  performant, state-complete and licence-clean in code" — exactly IIOS's assurance scope.
+  performant, state-complete and licence-clean in code", exactly IIOS's assurance scope.
 - **Worth importing.** Design-intent preservation and the DTCG token bridge (Figma is a
-  DTCG adopter — see [ledger #6](./research-ledger.md)).
+  DTCG adopter, see [ledger #6](./research-ledger.md)).
 
 ## 6. shadcn/ui + registries
 
@@ -144,12 +144,12 @@ should be built, refusing what shouldn't, and recording why.
 - **Architecture.** CLI + registry JSON; code lands in your repo.
 - **Source / data model.** Registry items (files, deps, metadata).
 - **A11y.** Strong (Radix/React Aria lineage). **Security.** Registry trust is the user's
-  responsibility — arbitrary third-party registries are unsanitised by default *(inference;
+  responsibility, arbitrary third-party registries are unsanitised by default *(inference;
   this is the exact risk IIOS's ingestion pipeline addresses)*.
 - **Gaps IIOS addresses.** Secure ingestion + scanning + licence gate over arbitrary
   registries; judgment about *whether* a component fits the product context; assurance.
 - **Worth importing.** The **registry format** (IIOS already speaks it) and the
-  own-your-source philosophy — clean-room/adaptable implementations rather than runtime
+  own-your-source philosophy, clean-room/adaptable implementations rather than runtime
   black boxes.
 
 ## 7. Storybook
@@ -158,7 +158,7 @@ should be built, refusing what shouldn't, and recording why.
   and an **a11y addon built on axe-core** (catches up to ~57% of WCAG issues); visual and
   test-runner integration.
 - **Architecture.** Dev-time component explorer + addons + CI test runner.
-- **A11y / validation.** First-class — this is a model for *how* IIOS assurance should
+- **A11y / validation.** First-class, this is a model for *how* IIOS assurance should
   plug into a dev workflow.
 - **Gaps IIOS addresses.** Storybook verifies what you *built*; IIOS governs *what to
   build* and enforces **state completeness** before code (states as a spec, not just
@@ -175,14 +175,14 @@ should be built, refusing what shouldn't, and recording why.
 - **Gaps IIOS addresses.** Playwright is an *execution* substrate; IIOS supplies the
   *what to assert* (state matrix, a11y/perf/motion budgets) and records evidence.
 - **Worth importing.** Use Playwright as the assurance execution engine rather than
-  building a runner — wrap, don't recreate.
+  building a runner, wrap, don't recreate.
 
 ## 9. axe-core
 
 - **What it does well.** The **global standard** automated a11y engine (MPL‑2.0, Deque),
-  ~90 rules across WCAG 2.0/2.1/2.2 A–AAA, explicit "incomplete"/manual-review signalling,
+  ~90 rules across WCAG 2.0/2.1/2.2 A-AAA, explicit "incomplete"/manual-review signalling,
   enormous adoption.
-- **Honesty it models.** It openly states it catches only ~57% of issues — the same
+- **Honesty it models.** It openly states it catches only ~57% of issues, the same
   intellectual honesty IIOS requires of its own assurance claims.
 - **Gaps IIOS addresses.** axe checks rendered DOM; IIOS adds *design-time* a11y judgment,
   motion/reduced-motion, target-size and state coverage, and ties findings to evidence.
@@ -193,7 +193,7 @@ should be built, refusing what shouldn't, and recording why.
 
 - **What they do well.** Decades of accumulated, opinionated design judgment: tokens,
   components, motion, accessibility guidance, content style.
-- **Source / licensing — the nuance IIOS lives on.** Code and guidance/assets often carry
+- **Source / licensing, the nuance IIOS lives on.** Code and guidance/assets often carry
   **different** terms: Polaris is *modified-MIT with a field-of-use restriction*; Salesforce
   SLDS splits BSD‑3 code from CC‑BY‑NC‑ND assets; Material/Apple HIG guidance is
   reference-only; Carbon/Fluent/Primer code is permissive but brand/assets are reserved
@@ -202,7 +202,7 @@ should be built, refusing what shouldn't, and recording why.
   licences are easy to violate by copying assets with code. IIOS's licence gate and
   `adaptable-concept` vs `redistributable` dispositions are designed precisely for this.
 - **Worth importing.** Their *principles and token structures* (via DTCG) as design
-  intelligence — as guidance, honouring each system's terms; never bulk-copying assets.
+  intelligence, as guidance, honouring each system's terms; never bulk-copying assets.
 
 ## 11. "Agent-ready design systems" (emerging)
 
@@ -213,7 +213,7 @@ should be built, refusing what shouldn't, and recording why.
   not by itself prevent premature fidelity, missing states, convergence, or licence drift,
   nor does it govern long-horizon quality. IIOS is the governance/assurance layer that
   consumes agent-ready systems safely.
-- **Worth importing.** The contract direction itself — IIOS treats DTCG tokens and the
+- **Worth importing.** The contract direction itself, IIOS treats DTCG tokens and the
   shadcn registry format as first-class interop surfaces.
 
 ---
@@ -232,10 +232,10 @@ should be built, refusing what shouldn't, and recording why.
 | Decision ledger + drift/debt governance | ✗ | ✗ | ✗ | ✗ | ✅ |
 | Framework-neutral (Vue/Frappe-Vue first-class) | ➖ | ➖ | ✅ | ➖ | ✅ |
 
-Legend: ✅ strong · ➖ partial/indirect · ✗ not a goal. Generator/registry cells reflect
-*positioning*, not quality — these are excellent tools IIOS is built to cooperate with.
+Legend: ✅ strong, ➖ partial/indirect, ✗ not a goal. Generator/registry cells reflect
+*positioning*, not quality, these are excellent tools IIOS is built to cooperate with.
 
 **Bottom line.** The market is crowded at *generation* and maturing at *distribution* and
 *verification*. It is thin at **judgment, completeness, originality, and governance for
-agents** — and that is the layer IIOS adds, while importing (not recreating) the registry
+agents**, and that is the layer IIOS adds, while importing (not recreating) the registry
 format, axe-core, Playwright, Storybook patterns, DTCG tokens, and curated design knowledge.

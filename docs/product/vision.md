@@ -1,10 +1,10 @@
-# Vision — Interface Intelligence OS
+# Vision, Interface Intelligence OS
 
 ## The one-sentence vision
 
 **Interface Intelligence OS (IIOS) is the open-source design-judgment, product-understanding,
 interaction-engineering, implementation-assurance, and interface-governance layer that an AI
-coding agent runs *through* — so the interfaces it produces are intentional, complete,
+coding agent runs *through*, so the interfaces it produces are intentional, complete,
 accessible, performant, licence-clean, and coherent over time.**
 
 ## The shift it makes
@@ -34,7 +34,7 @@ flowchart LR
 
 ## What "OS" means here
 
-Not an operating system in the kernel sense — an **operating layer** for interface work:
+Not an operating system in the kernel sense, an **operating layer** for interface work:
 a set of cooperating engines, a shared context model, deterministic tools, and a governance
 loop that any agent can run on. It carries forward the validated **secure interaction
 foundation** (registry, scanners, licence gate, controlled installer) shipped as Motif
@@ -42,24 +42,24 @@ v1.0.0, and surrounds it with five more engines.
 
 ## The six engines
 
-1. **Design Intelligence** — styles, colour, typography, layout, UX principles; proposes
+1. **Design Intelligence**, styles, colour, typography, layout, UX principles; proposes
    distinctive-but-appropriate design instead of the modal default.
-2. **Product Intelligence** — a Context Manifest and Product Design Genome: *who* the user
+2. **Product Intelligence**, a Context Manifest and Product Design Genome: *who* the user
    is, *what* the product is, *what* must be understood/felt/accomplished.
-3. **Interaction Intelligence** — the foundation: secure pattern/effect selection, the
+3. **Interaction Intelligence**, the foundation: secure pattern/effect selection, the
    Interaction Specification Graph, and the least-complex-interaction rule.
-4. **Implementation** — framework-neutral, own-your-source generation (browser-native, Vue,
+4. **Implementation**, framework-neutral, own-your-source generation (browser-native, Vue,
    Frappe-Vue, React, Svelte) with a fidelity ladder and a compilation pipeline.
-5. **Assurance** — state completeness, accessibility, performance, and motion verified with
+5. **Assurance**, state completeness, accessibility, performance, and motion verified with
    recorded evidence; honest about automated-coverage limits.
-6. **Governance & Learning** — decision ledger, interface debt/drift, originality auditing,
+6. **Governance & Learning**, decision ledger, interface debt/drift, originality auditing,
    and the long-horizon coherence loop.
 
 ## Principles in one breath
 
-Honesty over hype · least complexity that works · accessibility and reduced-motion are
-mandatory · security and licensing are non-negotiable · framework neutrality with Vue and
-Frappe-Vue first-class · deterministic tools for decisions, agents for judgment · every
+Honesty over hype, least complexity that works, accessibility and reduced-motion are
+mandatory, security and licensing are non-negotiable, framework neutrality with Vue and
+Frappe-Vue first-class, deterministic tools for decisions, agents for judgment, every
 decision recorded. (Full list: [`principles.md`](./principles.md).)
 
 ## What success looks like
@@ -70,7 +70,7 @@ decision recorded. (Full list: [`principles.md`](./principles.md).)
 - A reviewer can open the **decision ledger** and see *why* each choice was made and what
   was rejected.
 - No third-party code reaches a repo without passing the **licence and security gate**.
-- Quality **does not degrade** over a long agent session — drift is detected and corrected.
+- Quality **does not degrade** over a long agent session, drift is detected and corrected.
 
 ## What it explicitly is *not*
 
@@ -81,5 +81,5 @@ system, or "just another generator." See [`non-goals.md`](./non-goals.md).
 
 This vision describes the destination. The [roadmap](./roadmap.md) and the project
 capability matrix mark every capability as **implemented**, **experimental**, or
-**planned** — today only the secure interaction foundation is fully implemented. IIOS will
+**planned**, today only the secure interaction foundation is fully implemented. IIOS will
 not claim a capability it has not built.

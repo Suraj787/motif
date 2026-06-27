@@ -1,4 +1,4 @@
-# Roadmap — Interface Intelligence OS
+# Roadmap, Interface Intelligence OS
 
 > Honest, capability-matrix-driven. Each release lists what is **implemented**,
 > **experimental**, or **planned**. Status reflects `PROJECT_STATUS.md`, `PHASE_STATUS.md`,
@@ -15,21 +15,20 @@ timeline
 
 ---
 
-## v0.1.0 — Foundation (shipped as **Motif**, on `main`) — **implemented**
+## v0.1.0, Foundation (shipped as **Motif**, on `main`), **implemented**
 
 The validated secure interaction foundation. Carried forward unchanged as the Interaction
 Intelligence Engine + Secure Component Supply Chain.
 
-- Secure source supply chain; 5 static scanners; security policies — **implemented**
-- Registry: ~90 sources, 64 components, 30 effects, 28 patterns, 14 recipes — **implemented**
+- Secure source supply chain; 5 static scanners; security policies, **implemented**
+- Registry: ~90 sources, 64 components, 30 effects, 28 patterns, 14 recipes, **implemented**
 - Transparent ranking; controlled installer (framework detection, dependency plan, scan,
-  snapshot, rollback, provenance) — **implemented**
-- Adapters + clean-room implementations (browser-native, Vue, Frappe-Vue, React, Svelte) —
-  **implemented**
-- 7 JSON Schemas; `make check` gate; CI — **implemented**
+  snapshot, rollback, provenance), **implemented**
+- Adapters + clean-room implementations (browser-native, Vue, Frappe-Vue, React, Svelte), **implemented**
+- 7 JSON Schemas; `make check` gate; CI, **implemented**
 - Released and tagged (v0.1.0, v1.0.0); public repo. (`main` stays shippable as Motif.)
 
-## v0.2.0 — Interface Intelligence layer (**this release**) — foundations
+## v0.2.0, Interface Intelligence layer (**this release**), foundations
 
 Goal per ADR 0003: build *functioning foundations* for the five new engines, evolving in
 place on the `interface-intelligence-os` branch. Honest mix of statuses:
@@ -59,7 +58,7 @@ place on the `interface-intelligence-os` branch. Honest mix of statuses:
 Definition of done for v0.2.0: each new engine has a real, validated foundation; the
 capability matrix is the source of truth; `make check` stays green; nothing is overclaimed.
 
-## v0.3.0 — Compilation + Assurance — **planned**
+## v0.3.0, Compilation + Assurance, **planned**
 
 Turn foundations into enforced pipelines.
 
@@ -72,10 +71,10 @@ Turn foundations into enforced pipelines.
 - **Decision ledger + drift/debt** wired into the governance loop.
 - **InterfaceBench** runnable with a published rubric.
 
-## v1.0.0 — Stable Interface Intelligence OS — **planned**
+## v1.0.0, Stable Interface Intelligence OS, **planned**
 
 - All six engines matured and integrated; the `ii` CLI is the primary, stable interface.
-- Source landscape broadly verified (core ledger grown within the 15–25 band; candidates
+- Source landscape broadly verified (core ledger grown within the 15-25 band; candidates
   curated); volatile facts on a re-check cadence.
 - InterfaceBench scores published reproducibly.
 - Security model audited; assurance honest about coverage.

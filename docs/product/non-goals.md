@@ -1,4 +1,4 @@
-# Non-Goals — Interface Intelligence OS
+# Non-Goals, Interface Intelligence OS
 
 Defining what IIOS **is not** is as important as defining what it is. These boundaries keep
 the project honest and focused, and they prevent it from being mistaken for the simpler
@@ -14,7 +14,7 @@ things it is often confused with.
 - **…a list of effect websites.** Galleries (Awwwards, Codrops, SiteInspire, …) are
   treated as `reference-only` inspiration, never as automatically reusable code.
 - **…a prompt that adds "nice" UI.** It is a reasoning and governance system with
-  deterministic tooling, schemas, and a decision ledger — not a single clever prompt.
+  deterministic tooling, schemas, and a decision ledger, not a single clever prompt.
 - **…a component library.** It does not compete with Radix, shadcn/ui, or a design system;
   it reasons *over* such foundations and emits own-your-source implementations.
 - **…a single design system.** It is design-system-neutral and can conform output to
@@ -52,14 +52,14 @@ things it is often confused with.
 8. **Depend on heavyweight runtime infrastructure.** The core uses only the standard
    library so it runs and can be audited anywhere.
 9. **Ship features it can't stand behind.** Anything not responsibly completed is marked
-   experimental or planned — never claimed as implemented. Inflating maturity is a non-goal.
+   experimental or planned, never claimed as implemented. Inflating maturity is a non-goal.
 
 ---
 
 ## Out of scope (for now)
 
-- Native mobile (iOS/Android) UI generation — web and web-app first.
+- Native mobile (iOS/Android) UI generation, web and web-app first.
 - Visual design *rendering* (it is not a canvas/editor); it reasons and emits code/specs.
-- Hosting, billing, or a SaaS control plane — IIOS is the open layer, not a service.
+- Hosting, billing, or a SaaS control plane, IIOS is the open layer, not a service.
 
 These may be revisited on the [roadmap](./roadmap.md), but they are explicitly not promised.

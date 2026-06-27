@@ -1,4 +1,4 @@
-# ADR 0003 — Evolve Motif into Interface Intelligence OS
+# ADR 0003, Evolve Motif into Interface Intelligence OS
 
 - Status: Accepted
 - Date: 2026-06-28

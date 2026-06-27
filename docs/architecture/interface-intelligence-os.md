@@ -1,4 +1,4 @@
-# Architecture — Interface Intelligence OS
+# Architecture, Interface Intelligence OS
 
 > The six-engine architecture of IIOS, with diagrams for module structure, context flow,
 > decision flow, the secure-ingestion trust boundary, the compilation pipeline, the
@@ -25,10 +25,10 @@ flowchart TB
   end
   subgraph Tools["Deterministic tools (ii CLI, stdlib-only)"]
     CLI["ii / oii / motif CLI [impl/plan]"]
-    VAL["validate · rank · scan [impl]"]
+    VAL["validate, rank, scan [impl]"]
   end
   subgraph Engines["Six engines"]
-    PI["Product Intelligence<br/>Context Manifest · Genome [plan]"]
+    PI["Product Intelligence<br/>Context Manifest, Genome [plan]"]
     DI["Design Intelligence<br/>style·colour·type·layout·UX [exp]"]
     II["Interaction Intelligence<br/>patterns·effects·spec graph [impl]"]
     IMP["Implementation<br/>adapters·compiler·fidelity [impl/plan]"]
@@ -65,7 +65,7 @@ whenever third-party material is involved.
 
 ## 2. Context flow
 
-Information flows from product understanding down to implementation — never the reverse.
+Information flows from product understanding down to implementation, never the reverse.
 This enforces *reason from context, not aesthetics* and *fidelity follows certainty*.
 
 ```mermaid
@@ -119,7 +119,7 @@ flowchart TB
 
 The foundation's defining property: untrusted-by-default ingestion. Nothing third-party is
 executed, and nothing crosses into the trusted registry without passing every gate.
-**[impl]** — this is shipped in Motif v1.0.0.
+**[impl]**, this is shipped in Motif v1.0.0.
 
 ```mermaid
 flowchart LR
@@ -182,12 +182,12 @@ the compiler will not emit L2 high-fidelity before L1 state-completeness is sati
 
 ## 6. Assurance pipeline
 
-Verification with recorded evidence — and honest coverage statements. **[partial → v0.3]**.
+Verification with recorded evidence, and honest coverage statements. **[partial → v0.3]**.
 
 ```mermaid
 flowchart TB
   art["Candidate UI / spec"] --> SC["State completeness check [plan]"]
-  SC --> A11Y["Accessibility: axe-core rules → WCAG 2.2 SC [partial]<br/>contrast · target-size · focus · keyboard"]
+  SC --> A11Y["Accessibility: axe-core rules → WCAG 2.2 SC [partial]<br/>contrast, target-size, focus, keyboard"]
   A11Y --> RM["Reduced-motion check [impl: policy]"]
   RM --> PERF["Performance: INP-aware + motion budgets [partial]"]
   PERF --> EV["Evidence record<br/>(rule → finding → standard)"]
@@ -232,11 +232,11 @@ The architectural line that makes IIOS auditable: **judgment** is for agents; an
 
 ```mermaid
 flowchart TB
-  subgraph AgentSide["Agents — judgment & synthesis (non-deterministic)"]
+  subgraph AgentSide["Agents, judgment & synthesis (non-deterministic)"]
     O["Orchestrator"]
     P["Specialists: product, design, interaction,<br/>state, a11y, perf, originality, …"]
   end
-  subgraph ToolSide["Deterministic tools — ii CLI (stdlib, repeatable)"]
+  subgraph ToolSide["Deterministic tools, ii CLI (stdlib, repeatable)"]
     V["validate (schemas)"]
     R["rank (transparent)"]
     SC["scan (5 scanners + licence gate)"]

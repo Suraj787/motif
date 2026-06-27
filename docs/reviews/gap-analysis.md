@@ -1,4 +1,4 @@
-# Gap analysis — Motif foundation vs Interface Intelligence OS
+# Gap analysis, Motif foundation vs Interface Intelligence OS
 
 Compares the current repository state against the target Interface Intelligence OS
 architecture and the capabilities of strong design-intelligence skills (e.g. UI UX Pro

@@ -1,4 +1,4 @@
-# Personas — Interface Intelligence OS
+# Personas, Interface Intelligence OS
 
 IIOS serves one **primary** user (the AI coding agent) and four **human** stakeholders who
 direct, consume, or extend its output. Designing for all five keeps the system both
@@ -6,7 +6,7 @@ agent-native and accountable to people.
 
 ---
 
-## 1. The AI coding agent — *primary user*
+## 1. The AI coding agent, *primary user*
 
 **Who.** A coding agent (e.g. Claude Code with skills/subagents) building or modifying a UI
 on a human's behalf.
@@ -72,7 +72,7 @@ loop that maintains coherence.
 supply-chain risk, licence violations, or unauditable decisions; satisfy compliance.
 
 **Pain without IIOS.** AI output is a legal/quality risk surface (WebAIM Million: 94.8% of
-pages fail WCAG — see [problem P4](../research/problem-evidence.md)); no audit trail; opaque
+pages fail WCAG, see [problem P4](../research/problem-evidence.md)); no audit trail; opaque
 third-party code.
 
 **What IIOS gives them.** A documented security model, a licence gate, accessibility/
@@ -85,7 +85,7 @@ open, self-hostable, dependency-free core they can inspect.
 
 ## 5. The open-source contributor
 
-**Who.** A developer extending IIOS — adding sources, design data, specialist agents,
+**Who.** A developer extending IIOS, adding sources, design data, specialist agents,
 adapters, or assurance checks.
 
 **Goals.** Contribute confidently within clear contracts; have changes validated

@@ -1,4 +1,4 @@
-# Principles — Interface Intelligence OS
+# Principles, Interface Intelligence OS
 
 These are the core product principles. They are decision rules, not slogans: when two paths
 conflict, the higher principle wins. They govern every engine and every release.
@@ -10,13 +10,13 @@ conflict, the higher principle wins. They govern every engine and every release.
 Every capability is labelled **implemented**, **experimental**, or **planned**, and the
 labels are kept true. IIOS never fabricates facts, version numbers, benchmarks, licences,
 coverage figures, or source counts. Where a check is partial (e.g. automated accessibility
-catches only part of the issues — see [problem-evidence](../research/problem-evidence.md)),
+catches only part of the issues, see [problem-evidence](../research/problem-evidence.md)),
 it says so and flags the rest for human review. An honest "partial" beats a fabricated
 "complete".
 
 ## 2. Reason from product context, not from aesthetics
 
-Start from *who the user is and what must be understood, felt, or accomplished* — then
+Start from *who the user is and what must be understood, felt, or accomplished*, then
 choose the interface. The chain is `product purpose → user intent → screen → objective →
 pattern → effect → implementation`, never "make it look impressive first."
 
@@ -54,8 +54,7 @@ path, and effects that degrade performance are rejected. (See
 
 Untrusted-by-default ingestion, static scanning, and a licence gate (`unknown →
 reference-only`; source-available/Commons-Clause are *not* permissive). Third-party install
-scripts never run against the user's repo. IIOS reduces risk but does not eliminate it —
-human review remains required.
+scripts never run against the user's repo. IIOS reduces risk but does not eliminate it, human review remains required.
 
 ## 9. Originality by default
 
@@ -70,14 +69,14 @@ source it emits (clean-room or adapted), rather than depending on opaque runtime
 
 ## 11. Deterministic tools decide; agents judge
 
-Anything that must be repeatable, auditable, or safety-affecting — validation, scanning,
-licence gating, ranking, scoring — runs in **deterministic, dependency-free tooling**.
+Anything that must be repeatable, auditable, or safety-affecting, validation, scanning,
+licence gating, ranking, scoring, runs in **deterministic, dependency-free tooling**.
 Agents handle judgment and synthesis. The boundary is explicit and enforced.
 
 ## 12. Record every decision
 
 Every selection is written to a decision ledger with rationale, provenance, and the
-rejected alternatives, so a human can audit *why* — and so quality can be defended and
+rejected alternatives, so a human can audit *why*, and so quality can be defended and
 maintained over time.
 
 ## 13. Maintain coherence over long horizons
@@ -87,8 +86,8 @@ decisions and accumulating inconsistency ("interface debt") are detected and cor
 
 ## 14. Reuse, do not rebuild
 
-Import proven layers — axe-core for a11y rules, Playwright for execution, the shadcn
-registry format for distribution, DTCG for tokens, curated design knowledge — rather than
+Import proven layers, axe-core for a11y rules, Playwright for execution, the shadcn
+registry format for distribution, DTCG for tokens, curated design knowledge, rather than
 recreating them. Build the *judgment and governance* layer that is missing.
 
 ## 15. Open, self-hostable, dependency-free core

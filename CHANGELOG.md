@@ -11,7 +11,7 @@ Toward v0.3.0: live `ii compile plan/apply`, workflow simulation (Playwright),
 visual-regression assurance, drift trend tracking, external provider imports, and the
 automated InterfaceBench runner.
 
-## [0.2.0] - 2026-06-28 — Interface Intelligence OS
+## [0.2.0] - 2026-06-28, Interface Intelligence OS
 
 Evolves the Motif secure interaction foundation (tagged below as 1.0.0) into Interface
 Intelligence OS: the intelligence, compilation, assurance, and governance layer for AI
