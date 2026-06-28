@@ -167,7 +167,7 @@ def _link_node_modules(worktree_fixture: pathlib.Path, original_fixture: pathlib
 
 
 def golden(target, route: str | None = None, require_browser: bool = False,
-           evidence_dir: pathlib.Path | None = None) -> dict:
+           evidence_dir: pathlib.Path | None = None, use_browser: bool | None = None) -> dict:
     """The golden audit-and-repair loop.
 
     Deterministic steps always run. Browser steps execute when Playwright is available and
@@ -196,7 +196,9 @@ def golden(target, route: str | None = None, require_browser: bool = False,
     rplan = plan(finding, claim_rec, ctx)
     steps.append({"step": "repair-plan", "status": "passed"})
 
-    browser_ok = browser_mod.available()[0]
+    # use_browser=None auto-detects; False forces the deterministic path (used by the
+    # runtime-independent `make check` self-check); True requires a runtime.
+    browser_ok = browser_mod.available()[0] if use_browser is None else use_browser
     # --- before state (browser) ---
     before_app = app_mod.start(target, approve=True) if browser_ok else None
     before_url = _route_url(before_app.url, route) if (before_app and before_app.status == "started") else None

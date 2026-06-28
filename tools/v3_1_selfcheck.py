@@ -67,7 +67,9 @@ check("browser capture reports not-executed without runtime", (cap["status"] == 
 check("doctor --browser is honest", browser_mod.doctor()["available"] == avail)
 
 # 6. Golden deterministic repair loop (worktree apply -> verify -> exact rollback)
-res = repair_mod.golden("evals/fixtures/sample-vue-app", "/projects")
+# Force the deterministic path so this gate is runtime-independent (the real browser
+# proof is the separate --require-browser scenario in the browser CI job).
+res = repair_mod.golden("evals/fixtures/sample-vue-app", "/projects", use_browser=False)
 sd = {s["step"]: s["status"] for s in res["steps"]}
 check("golden: detect passed", sd.get("detect") == "passed")
 check("golden: apply-in-worktree passed", sd.get("apply-in-worktree") == "passed")
