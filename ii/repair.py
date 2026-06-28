@@ -156,8 +156,9 @@ def _route_url(base_url: str, route: str | None) -> str:
 
 def _link_node_modules(worktree_fixture: pathlib.Path, original_fixture: pathlib.Path) -> None:
     """Symlink the original fixture's node_modules into the worktree so the repaired app
-    can start without a second install. The original is never modified."""
-    src = original_fixture / "node_modules"
+    can start without a second install. The original is never modified. The symlink target
+    must be ABSOLUTE so it resolves correctly from the worktree location."""
+    src = (original_fixture / "node_modules").resolve()
     dst = worktree_fixture / "node_modules"
     if src.exists() and not dst.exists():
         try:
@@ -176,7 +177,7 @@ def golden(target, route: str | None = None, require_browser: bool = False,
     """
     from . import apprunner as app_mod
     steps = []
-    target = pathlib.Path(target)
+    target = pathlib.Path(target).resolve()
     edir = pathlib.Path(evidence_dir) if evidence_dir else (target / ".motif" / "evidence" / "golden")
     (edir / "before").mkdir(parents=True, exist_ok=True)
     (edir / "after").mkdir(parents=True, exist_ok=True)
@@ -225,7 +226,9 @@ def golden(target, route: str | None = None, require_browser: bool = False,
         _link_node_modules(wt_fixture, target)
         after_app = app_mod.start(wt_fixture, approve=True)
         after_url = _route_url(after_app.url, route) if after_app.status == "started" else None
-        steps.append({"step": "start-repaired-app", "status": "passed" if after_app.status == "started" else after_app.status})
+        steps.append({"step": "start-repaired-app",
+                      "status": "passed" if after_app.status == "started" else after_app.status,
+                      "reason": after_app.reason})
         acap = (browser_mod.capture(after_url, edir / "after") if after_url
                 else {"status": "not-executed", "reason": "repaired app did not start"})
         after_status = acap["status"]
