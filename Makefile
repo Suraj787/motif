@@ -1,9 +1,12 @@
-.PHONY: check validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck test lint index doctor install uninstall secrets clean \
+.PHONY: check validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck test lint index doctor install uninstall sources-selfcheck secrets clean \
 	check-runtime check-atlas check-mcp check-bench check-guardian check-evidence check-browser check-repair check-v3-1 bench-golden
 
 # One command that mirrors CI. Dependency-free by default.
-check: validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck secrets
+check: validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck sources-selfcheck secrets
 	@echo "==> make check: OK"
+
+sources-selfcheck:
+	@python3 tools/sources_selfcheck.py
 
 validate:
 	@python3 -m motif validate
