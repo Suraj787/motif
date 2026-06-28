@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Motif CLI shim: runs the dependency-free core via `python -m ii` from anywhere.
+# No pip install required. Works when symlinked onto your PATH.
+set -euo pipefail
+
+# Resolve this script's real location (following symlinks) to find the repo root.
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$(cd -P "$(dirname "$SOURCE")" >/dev/null 2>&1 && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ "$SOURCE" != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+REPO="$(cd -P "$(dirname "$SOURCE")/.." >/dev/null 2>&1 && pwd)"
+
+PY="${MOTIF_PYTHON:-python3}"
+exec env PYTHONPATH="$REPO${PYTHONPATH:+:$PYTHONPATH}" "$PY" -m ii "$@"

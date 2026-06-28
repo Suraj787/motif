@@ -115,23 +115,36 @@ originality signals); it accounts for design-system provenance and product conte
 a combination of cliche signals for a high band, and does not determine whether a UI was made
 by AI.
 
-## Installation
+## Quick start (no pip)
 
-Requirements: Python 3.11+ and `git`. Node.js 18+ is optional. The core CLI has no Python
-dependencies.
+The core is dependency-free, so setup is one command. Requirements: Python 3.11+ and `git`.
 
 ```bash
-git clone https://github.com/Suraj787/motif.git motif
-cd motif
-python -m ii doctor          # run in place, zero install
-# or install the entry points:
-python -m pip install -e .   # gives `ii`, `oii`, `motif`
-ii doctor
+git clone https://github.com/Suraj787/motif.git motif && cd motif
+make install        # or: bash install.sh
 ```
 
-Use it as a Claude Code Agent Skill by pointing Claude Code at this repo. The root
-[`SKILL.md`](SKILL.md) is the orchestrator (an 18-step workflow with hard rules); specialist
-skills live in [`skills/`](skills/).
+`make install` wires three things (each optional, reversible with `make uninstall`):
+
+1. a `motif` (and `ii`/`oii`) command on your PATH, so you can audit any project from any
+   terminal, with no pip and no build;
+2. a Claude Code skill at `~/.claude/skills/motif`, so you can type `/motif` in Claude Code;
+3. the read-only Motif MCP server registered with Claude Code, so `motif.*` evidence and audit
+   tools are available in any session.
+
+Then:
+
+```bash
+motif doctor
+motif evidence query --product-form dashboard --ability colour-vision-deficiency
+motif evidence evaluate --product-form dashboard --workflow daily-operation ./your-app
+```
+
+Prefer a packaged install instead? `python -m pip install -e .` also gives the `ii`, `oii`,
+and `motif` entry points. Or run in place with no setup at all: `python -m ii doctor`.
+
+The root [`SKILL.md`](SKILL.md) is the orchestrator (an 18-step workflow with hard rules);
+specialist skills live in [`skills/`](skills/).
 
 ## Repository map
 

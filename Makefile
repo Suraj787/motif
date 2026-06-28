@@ -1,4 +1,4 @@
-.PHONY: check validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck test lint index doctor secrets clean \
+.PHONY: check validate ii-validate selfcheck ii-selfcheck v3-selfcheck v3-1-selfcheck test lint index doctor install uninstall secrets clean \
 	check-runtime check-atlas check-mcp check-bench check-guardian check-evidence check-browser check-repair check-v3-1 bench-golden
 
 # One command that mirrors CI. Dependency-free by default.
@@ -47,6 +47,13 @@ index:
 
 doctor:
 	@python3 -m motif doctor
+
+# Easy setup: motif/ii/oii on PATH, /motif Claude Code skill, read-only MCP server. No pip.
+install:
+	@bash install.sh
+
+uninstall:
+	@bash install.sh --uninstall
 
 # Refuse to ship tracked secrets, scans the repo (excludes .git/node_modules/.motif).
 secrets:
