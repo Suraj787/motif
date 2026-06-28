@@ -11,7 +11,7 @@ Motif is the intelligence and governance layer that answers those
 questions.
 
 [![CI](https://github.com/Suraj787/motif/actions/workflows/ci.yml/badge.svg)](https://github.com/Suraj787/motif/actions)
-&nbsp;Licence: MIT. Status: v3.0.0 "Evidence-Grounded Interface Engineering" (interaction core shipped as v1.0.0; intelligence platform as v2.0.0)
+&nbsp;Licence: MIT. Status: v3.1.0 "Source Intelligence and Safe Reuse" (interaction core shipped as v1.0.0; intelligence platform as v2.0.0)
 
 > Defining principle: first determine what the user needs to understand, feel, decide, or
 > accomplish, then choose the least complex interface and interaction that achieves it.
@@ -114,6 +114,31 @@ reports **aesthetic-convergence risk** (generic-pattern concentration with conte
 originality signals); it accounts for design-system provenance and product context, requires
 a combination of cliche signals for a high band, and does not determine whether a UI was made
 by AI.
+
+### Source intelligence and safe reuse (v3.1)
+
+A version-controlled registry of third-party UI sources (component libraries, design systems,
+templates, inspiration, competitors) plus opt-in discovery, deterministic assurance, reuse
+classification, adaptation plans, quarantine, and privacy-preserving contribution.
+
+```bash
+motif sources list --framework react            # offline registry (inclusion is not endorsement)
+motif sources search "data grid" --framework vue
+motif sources compare radix-ui ariakit          # compare on recorded evidence
+motif sources verify radix-ui                    # deterministic offline assurance
+motif sources recommend --need "command palette" --product-form enterprise-app --framework react --ability keyboard-only
+motif sources adapt-plan radix-ui --target ./app # plan for the implementation agent
+motif sources discover --query "..." --opt-in    # discovery is OFF by default; opt-in only
+motif sources doctor                             # safety status (no network by default)
+```
+
+Safety by design (see [ADR-SRC-001](docs/adr/ADR-SRC-001-federated-source-discovery-and-contribution.md)):
+discovery is disabled by default and opt-in; normal audit/repair/CI make no network calls;
+seed sources are **unverified** until proven from primary sources; discovered web content is
+treated as inert, hostile data; installed copies cannot write the central registry
+(contribution is a bundle or PR, never auto-merged). Registry inclusion is not endorsement,
+licence approval, or any certification. The generated catalogue lives at
+[`source-registry/CATALOGUE.md`](source-registry/CATALOGUE.md).
 
 ## Quick start (no pip)
 

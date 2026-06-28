@@ -261,3 +261,34 @@ An applicable claim is not a finding; a finding is not automatically a blocking 
 Implemented and exposed via `motif evidence evaluate` and the MCP `motif.evaluate_findings`
 tool. Validated by regression tests and on BOSS (52 applicability-only blocking corrected to 1
 evidence-backed blocking).
+
+---
+
+## Source Intelligence and safe reuse (v3.1.0)
+
+### Implemented
+- Version-controlled source registry (218 seed sources across 11 categories) with a strict
+  schema, stable IDs, and generated indexes/catalogue (`source-registry/CATALOGUE.md`).
+- Offline local search, compare, and recommend (ranks by recorded evidence, not visuals).
+- Deterministic Source Assurance (identity/licence/security/accessibility/maintenance signals,
+  never one opaque trust score); reuse-mode classification; adaptation-plan generation.
+- Quarantine model; contribution-bundle generation with privacy stripping; PR preparation.
+- `motif sources` CLI and seven read-only MCP tools; a source-registry CI workflow.
+- Safety self-check in `make check` (offline default, opt-in discovery, seeds unverified, no
+  direct reuse without verification, discovered content inert, contribution privacy).
+
+### Experimental
+- Live web/GitHub/npm/Storybook discovery providers (offline fixtures and explicit opt-in
+  only; no network is wired in this build).
+- Automated primary-source verification; component-level browser testing of candidates; PR
+  automation; implementation-agent handoff for real component installation.
+
+### Unsupported / never
+- Silent crawling; network during install/audit/repair/CI; automatic central-registry writes;
+  automatic trust upgrades; unrestricted installation; copying paid or proprietary source code;
+  licence, security, or accessibility certification.
+
+### Honesty
+Every seed source is `seed-unreviewed` with `verified_from_primary_source: false` and
+`trust_level: unverified`. No marketing claim is recorded as a verified fact. Registry
+inclusion is not endorsement.
