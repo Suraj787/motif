@@ -1,0 +1,37 @@
+name: source-registry
+
+# Central contribution CI: validates source records and the safety invariants. CI may
+# recommend a status, but a human maintainer must approve (ADR-SRC-001). No network.
+on:
+  push:
+    branches: [main]
+    paths: ["source-registry/**", "ii/sources.py", "tools/sources_selfcheck.py", "tests/test_sources.py"]
+  pull_request:
+    paths: ["source-registry/**", "ii/sources.py", "tools/sources_selfcheck.py", "tests/test_sources.py"]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Source registry safety self-check (offline, dependency-free)
+        run: python3 tools/sources_selfcheck.py
+      - name: Schema + dedup validation
+        run: python3 -m ii sources validate
+      - name: Confirm discovery is disabled by default
+        run: |
+          python3 -m ii sources doctor
+          python3 - <<'PY'
+          import json, sys
+          pol = json.load(open("source-registry/policies/network-policy.json"))
+          assert pol["discovery_enabled_by_default"] is False, "discovery must be off by default"
+          assert pol["allow_direct_central_registry_write"] is False, "no direct central writes"
+          assert pol["allow_auto_merge_contributions"] is False, "no auto-merge"
+          print("safety policy OK")
+          PY
