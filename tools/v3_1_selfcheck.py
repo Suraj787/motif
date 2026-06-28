@@ -48,8 +48,20 @@ check("golden claim disallows compliance claim", g.get("legal", {}).get("complia
 qr = ev.query({"product_forms": ["web-app", "dashboard"], "purposes": ["monitor"],
                "abilities": ["colour-vision-deficiency"], "risks": [{"type": "financial", "severity": 3}]})
 check("query returns applicable claims", len(qr["applicable_claims"]) >= 1)
-check("query surfaces a blocking normative pattern", len(qr["blocked_patterns"]) >= 1)
+# an applicable claim is not a finding: a pure context query produces requirements to
+# evaluate, never evidence-free blocking violations.
+check("pure query produces no evidence-free blocking", len(qr["blocked_patterns"]) == 0)
+check("pure query surfaces normative requirements to evaluate", len(qr["normative_requirements"]) >= 1)
 check("query exposes sources + required validations", qr["sources"] and qr["required_validations"])
+# evaluate(): blocking requires detector evidence
+from ii import findings as _F  # noqa: E402
+_fix_findings = _F.audit_project("evals/fixtures/sample-vue-app")
+_ev = ev.evaluate({"product_forms": ["web-app", "dashboard"], "purposes": ["monitor"],
+                   "abilities": ["colour-vision-deficiency"]}, _fix_findings)
+check("evaluate blocks only with detector evidence", all(b.get("evidence_findings") for b in _ev["blocking_violations"]))
+check("evaluate separates needs-evaluation from violations", _ev["summary"]["needs_evaluation"] > _ev["summary"]["blocking"])
+check("evaluate routes non-machine claims to human review", _ev["summary"]["human_review_required"] >= 1)
+check("evaluate with no findings yields no blocking", len(ev.evaluate({"product_forms": ["web-app"]}, [])["blocking_violations"]) == 0)
 # hypotheses never block, stale cannot newly block
 hyp = [c for c in ev.load_claims() if c["claim"]["force"] == "hypothesis"]
 check("hypotheses are not in any blocked set", all(

@@ -275,7 +275,8 @@ def golden(target, route: str | None = None, require_browser: bool = False,
 
     return {
         "steps": steps, "finding": finding, "claim": claim, "plan": rplan,
-        "query": {"blocked_patterns": qr["blocked_patterns"], "required_validations": qr["required_validations"],
+        "query": {"normative_requirements": qr["normative_requirements"],
+                  "required_validations": qr["required_validations"],
                   "sources": qr["sources"], "confidence": qr["confidence"]},
         "deterministic_ok": deterministic_ok,
         "browser_proven": browser_proven,

@@ -239,3 +239,25 @@ and is not a fully autonomous redesign. Human and assistive-technology review re
 - Originality confidence is capped at moderate (no runtime or cross-project comparison).
 - Remaining experimental coverage: cross-project similarity, visual-hierarchy quality, and
   rendered/runtime confirmation are not implemented.
+
+---
+
+## Claim / finding / enforcement separation (v3.0.0 final)
+
+An applicable claim is not a finding; a finding is not automatically a blocking violation.
+
+- **claim_status:** `applicable` | `not_applicable` | `needs_evaluation`. A pure context
+  query returns applicable claims and `normative_requirements` flagged `needs_evaluation`,
+  never evidence-free blocking.
+- **finding_status:** `detected` | `suspected` | `human_review_required` | `confirmed` |
+  `dismissed`, produced by `evidence.evaluate(ctx, findings)` by correlating detector findings
+  to claim categories.
+- **enforcement:** `informational` | `warning` | `blocking`. A claim blocks only when it is an
+  applicable normative tier-1 high-confidence machine-detectable claim, a correlated detector
+  finding provides evidence at sufficient confidence, the enforcement mode is machine-supported,
+  and no unresolved contradiction prevents enforcement. Blocking is deduplicated by root
+  category. Non-machine-detectable claims route to `human_review_required` and never auto-block.
+
+Implemented and exposed via `motif evidence evaluate` and the MCP `motif.evaluate_findings`
+tool. Validated by regression tests and on BOSS (52 applicability-only blocking corrected to 1
+evidence-backed blocking).

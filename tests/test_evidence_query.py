@@ -109,20 +109,56 @@ def test_match_explanation_present():
         assert "matched_dimensions" in r and "wildcard_dimensions" in r and r["reason"]
 
 
-# --- normative / hypotheses / stale ---------------------------------------------------
-def test_hypotheses_never_block():
+# --- applicable claim is NOT a finding (claim/finding/enforcement separation) ---------
+def test_pure_query_emits_no_evidence_free_blocking():
     for name, ctx in CONTEXTS.items():
         q = ev.query(ctx)
-        blocked = {b["claim"] for b in q["blocked_patterns"]}
-        for cid in blocked:
-            assert ev._claim(cid)["claim"]["force"] != "hypothesis"
+        assert q["blocked_patterns"] == [], f"{name} produced blocking without detector evidence"
+        # normative requirements are present but flagged needs_evaluation, not violations
+        for r in q["normative_requirements"]:
+            assert r["claim_status"] == "needs_evaluation"
 
 
-def test_stale_claims_cannot_newly_block():
-    for name, ctx in CONTEXTS.items():
-        q = ev.query(ctx)
-        for b in q["blocked_patterns"]:
-            assert not ev.is_stale(ev._claim(b["claim"]))
+def test_evaluate_blocks_only_with_detector_evidence():
+    ctx = CONTEXTS["boss-enterprise"]
+    none = ev.evaluate(ctx, [])
+    assert none["blocking_violations"] == [], "no findings must mean no blocking"
+    finding = {"id": "f1", "rule": "focus-outline-removed", "type": "accessibility", "confidence": 0.8}
+    one = ev.evaluate(ctx, [finding])
+    assert len(one["blocking_violations"]) >= 1
+    for b in one["blocking_violations"]:
+        assert b["evidence_findings"] and b["evidence_confidence"] >= 0.7
+        assert ev._claim(b["claim"])["claim"]["force"] != "hypothesis"
+        assert not ev.is_stale(ev._claim(b["claim"]))
+
+
+def test_low_confidence_finding_is_suspected_not_blocking():
+    ctx = CONTEXTS["boss-enterprise"]
+    weak = {"id": "f2", "rule": "missing-reduced-motion", "type": "accessibility", "confidence": 0.6}
+    e = ev.evaluate(ctx, [weak])
+    assert all(b["category"] != "reduced-motion" for b in e["blocking_violations"])
+
+
+def test_human_only_claims_never_auto_block():
+    ctx = CONTEXTS["boss-enterprise"]
+    e = ev.evaluate(ctx, [{"id": "f", "rule": "focus-outline-removed", "confidence": 0.9}])
+    for h in e["human_review_required"]:
+        assert not ev._machine_detectable(ev._claim(h["claim"]))
+    block_claims = {b["claim"] for b in e["blocking_violations"]}
+    hr_claims = {h["claim"] for h in e["human_review_required"]}
+    assert not (block_claims & hr_claims)
+
+
+def test_blocking_deduped_by_root_category():
+    ctx = CONTEXTS["boss-enterprise"]
+    e = ev.evaluate(ctx, [{"id": "f", "rule": "focus-outline-removed", "confidence": 0.9}])
+    cats = [b["category"] for b in e["blocking_violations"]]
+    assert len(cats) == len(set(cats)), "one blocking per root category, not per duplicate claim"
+
+
+def test_enforcement_modes_are_supported():
+    for c in ev.load_claims():
+        assert ev.enforcement_mode(c) in {"blocking", "warning", "human_review", "informational"}
 
 
 def test_sources_and_limitations_exposed():
