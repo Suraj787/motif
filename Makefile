@@ -1,7 +1,8 @@
-.PHONY: check validate ii-validate selfcheck ii-selfcheck test lint index doctor secrets clean
+.PHONY: check validate ii-validate selfcheck ii-selfcheck v3-selfcheck test lint index doctor secrets clean \
+	check-runtime check-atlas check-mcp check-bench check-guardian
 
 # One command that mirrors CI. Dependency-free by default.
-check: validate ii-validate selfcheck ii-selfcheck secrets
+check: validate ii-validate selfcheck ii-selfcheck v3-selfcheck secrets
 	@echo "==> make check: OK"
 
 validate:
@@ -15,6 +16,13 @@ selfcheck:
 
 ii-selfcheck:
 	@python3 tools/ii_selfcheck.py
+
+v3-selfcheck:
+	@python3 tools/v3_selfcheck.py
+
+# v3 surface smoke targets (subsets of the v3 self-check).
+check-runtime check-atlas check-mcp check-bench check-guardian:
+	@python3 tools/v3_selfcheck.py
 
 # Full pytest suite (requires dev extras: pip install -e '.[dev]')
 test:

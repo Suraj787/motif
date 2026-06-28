@@ -357,6 +357,9 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("rest", nargs="*")
         sp.set_defaults(fn=cmd_experimental)
 
+    from . import cli_v3
+    cli_v3.register(sub)
+
     return p
 
 
