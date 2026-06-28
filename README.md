@@ -49,7 +49,7 @@ ii model-product                        # scaffold a Product Context Manifest
 ii context validate                     # validate manifests (uncertainty stays explicit)
 ii genome validate|explain|diff <name>  # Product Design Genome
 ii graph validate|query <name>          # Interaction Specification Graph (surfaces real gaps)
-ii originality audit <path>             # Aesthetic Convergence Score over real source
+ii originality audit <path> [--product-form ...]   # aesthetic-convergence risk over real source
 ii states matrix|validate|inspect       # State Completeness Engine
 ii motion validate ; ii density validate
 ii debt calculate <path>                # explainable Interface Debt Score
