@@ -7,9 +7,48 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-Toward v0.3.0: live `ii compile plan/apply`, workflow simulation (Playwright),
-visual-regression assurance, drift trend tracking, external provider imports, and the
-automated InterfaceBench runner.
+Toward v3.1: live Playwright/axe runtime assurance, Visual Twin rendering, semantic
+visual comparison, the full screen compiler apply, and trend tracking.
+
+## [3.0.0] - 2026-06-28 "Motif Live"
+
+Activates the intelligence and governance platform into a runtime, execution, assurance,
+and continuous-governance product. Same repo, same name. `motif` is the command (`ii`,
+`oii` aliases). All v2 commands and schemas are preserved (see docs/migration/v2-to-v3.md).
+
+### Added (implemented, covered by `make check`)
+
+- **Motif Runtime**: project state under `.motif/`, run records, framework/route/component
+  detection, isolated git worktrees. `motif init` first-run experience.
+- **Create / Improve / run / autopilot** orchestration loops (deterministic steps run;
+  browser steps are experimental and skipped, never faked).
+- **Unified Findings** model + lifecycle + CLI (`motif findings audit|list|show|accept|fix|
+  verify|suppress`), with suppressions requiring reason/scope/author/expiry.
+- **Policy as code** (`motif policy ...`), **project memory** incl. rejected-approach
+  (`motif memory ...`), **contextual recommendation** (`motif recommend`), **concept
+  generation** (`motif concepts generate`).
+- **Motif Atlas**: a static public catalogue generated from the one registry
+  (`motif atlas build`, 183 pages). **Design-system extraction** (`motif system extract`).
+- **Motif Studio**: a local read-only viewer over `.motif/` + registry (`motif studio`).
+- **Motif Guardian**: diff scanning + policy gate (`motif guard staged|branch`) and a
+  GitHub Action that comments on PRs.
+- **MCP server** (`motif mcp serve`): dependency-free JSON-RPC over stdio, 11 read tools +
+  guarded write tools + audit log; write actions require `--allow-write`.
+- **Compiler plan** (`motif compile plan`), **InterfaceBench runner** (`motif bench`,
+  automated measures kept separate from model/human evaluation), a **Vue fixture app** for
+  static runtime inspection, and 7 new schemas (32 total).
+
+### Experimental / planned (honestly marked, NOT claimed)
+
+Visual Twin rendering, Playwright/axe runtime assurance, live preview, interactive Studio
+apply, semantic pixel/visual comparison, the full screen compiler apply/pr, and trend
+tracking all require a browser runtime not present in this environment. See
+`docs/capability-matrix.md` and `docs/reviews/motif-v3-gap-analysis.md`.
+
+### Compatibility
+
+All v2 CLI commands, `ii`/`oii` aliases, schemas, and registries are preserved; no schema
+removed. `.motif/` runtime state is gitignored. Migration guide: `docs/migration/v2-to-v3.md`.
 
 ## [2.0.0] - 2026-06-28
 
@@ -138,7 +177,8 @@ This is representative breadth, not full coverage. Licence facts are confidence-
 `pending-verification`. Live network connectors are specified but not implemented in this
 release.
 
-[Unreleased]: https://github.com/Suraj787/motif/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/Suraj787/motif/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/Suraj787/motif/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/Suraj787/motif/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/Suraj787/motif/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/Suraj787/motif/releases/tag/v0.1.0

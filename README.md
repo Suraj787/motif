@@ -11,7 +11,7 @@ Motif is the intelligence and governance layer that answers those
 questions.
 
 [![CI](https://github.com/Suraj787/motif/actions/workflows/ci.yml/badge.svg)](https://github.com/Suraj787/motif/actions)
-&nbsp;Licence: MIT. Status: v2.0.0 (Motif's interaction core shipped as v1.0.0)
+&nbsp;Licence: MIT. Status: v3.0.0 "Motif Live" (interaction core shipped as v1.0.0; intelligence platform as v2.0.0)
 
 > Defining principle: first determine what the user needs to understand, feel, decide, or
 > accomplish, then choose the least complex interface and interaction that achieves it.
@@ -62,6 +62,27 @@ make check                              # full local gate (mirrors CI)
 ```
 
 `motif` is the primary command; `ii` and `oii` are aliases. All three expose the full platform.
+
+### Motif Live (v3, runtime and governance)
+
+```bash
+motif init                        # first run: inspect, create .motif/, first audit
+motif improve --target ./app --goal "Make project risk easier to scan"
+motif findings audit|list         # unified findings with evidence + lifecycle
+motif policy init|check           # policy as code (blocking thresholds)
+motif memory add --type rejected-approach --content "..."   # auditable project memory
+motif atlas build                 # static public catalogue from the registry
+motif system extract              # extract the project's design system
+motif guard branch --base main    # Guardian: scan a diff against policy
+motif mcp serve                   # MCP server (read tools + guarded writes)
+motif studio                      # local read-only Studio viewer
+motif bench --target ./app        # InterfaceBench automated measures
+```
+
+The browser-runtime surfaces (Visual Twin rendering, Playwright assurance, live preview,
+semantic visual diff, interactive apply) are marked experimental and never fake output.
+See the [capability matrix](docs/capability-matrix.md) and
+[v3 architecture](docs/architecture/motif-v3-live-architecture.md).
 
 ## Installation
 

@@ -89,3 +89,45 @@ work.
 | External dataset import (e.g. UI UX Pro Max-style) | planned | normalise + cross-check |
 
 The README links here. Anything not listed as implemented is not claimed to work.
+
+---
+
+## Motif v3.0.0 "Motif Live" (added this release)
+
+Status legend unchanged. Browser-runtime parts are experimental because no browser
+runtime (Playwright) is installed; they degrade to "not executed" rather than faking
+output. Command is `motif` (`ii`/`oii` aliases). All covered by `make check` v3 self-check.
+
+| Capability | Status | Entry point |
+|---|---|---|
+| First-run experience | implemented | `motif init` |
+| Flagship loop (create/improve/audit/govern/benchmark) | partial | `motif run --mode ...` |
+| Create workflow | partial | `motif create --goal ...` |
+| Improve workflow | partial | `motif improve --target ... --goal ...` |
+| Autopilot with approval gates | partial | `motif autopilot --goal ...` (stops at plan/preview/delivery) |
+| Motif Runtime (state, run records, detection, worktree) | implemented | `.motif/runs/`, `motif init` |
+| Visual Twin (static manifest) | partial | `motif twin build|inspect` |
+| Visual Twin rendering (screenshots, a11y tree, traces) | experimental | needs Playwright |
+| Unified Findings model + lifecycle | implemented | `motif findings audit|list|show|accept|fix|verify|suppress` |
+| Policy as code | implemented | `motif policy init|validate|check|explain` |
+| Project memory (incl. rejected-approach) | implemented | `motif memory list|add|invalidate|explain` |
+| Motif Atlas (static catalogue site) | implemented | `motif atlas build` (183 pages from the registry) |
+| Design-system extraction | implemented | `motif system extract|violations` |
+| Motif Studio (local read-only viewer) | implemented | `motif studio` / `--build-only` |
+| Motif Studio (interactive apply) | experimental | needs runtime |
+| Motif Guardian (diff scan + policy) | implemented | `motif guard staged|branch`, `.github/workflows/guardian.yml` |
+| MCP server (read tools + guarded writes, audit log) | implemented | `motif mcp serve [--allow-write]` |
+| Contextual recommendation | implemented | `motif recommend <pattern> --profile` |
+| Concept generation | implemented | `motif concepts generate` |
+| Concept visual preview | experimental | needs runtime |
+| Compiler `plan` | implemented | `motif compile plan --component --target` |
+| Compiler `preview`/`apply`/`pr` (screen compiler) | experimental/planned | apply via the installer; full compiler v3.1 |
+| Semantic visual comparison | experimental | `motif compare` (needs rendered screenshots) |
+| InterfaceBench runner (automated measures) | partial | `motif bench` |
+| Playwright/axe runtime assurance | experimental/planned | needs a browser runtime |
+| Trend tracking (debt/drift/a11y/perf) | planned | `motif drift` (experimental), debt trend planned |
+
+Honest boundary: the deterministic Motif Live platform (runtime state, findings, policy,
+memory, Atlas, Studio viewer, MCP, Guardian, design-system extraction, recommendation,
+compile plan, run/create/improve/init orchestration) is implemented and tested. Every
+capability requiring a live browser is marked experimental and never reports faked results.
