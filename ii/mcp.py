@@ -12,6 +12,7 @@ import datetime
 from motif import registry
 from . import data, graph as graph_mod, genome as genome_mod, debt as debt_mod
 from . import originality as orig_mod, runtime, findings as findings_mod, recommend as rec_mod
+from . import evidence as ev_mod
 
 SERVER_INFO = {"name": "motif", "version": "3.0.0"}
 
@@ -40,6 +41,18 @@ def _tools():
                                   lambda a: {"recorded": a.get("id"), "note": "stub write tool"}, True),
         "motif.plan_change": ("Plan a controlled change (write-class, dry-run).",
                               lambda a: {"plan": "dry-run", "target": a.get("target", "."), "note": "use the installer for apply"}, True),
+        "motif.get_applicable_claims": ("UX evidence claims applicable to a context vector.",
+                                        lambda a: ev_mod.query(a.get("context", {})), False),
+        "motif.get_required_validations": ("Validations required for a context vector.",
+                                           lambda a: {"required_validations": ev_mod.query(a.get("context", {}))["required_validations"]}, False),
+        "motif.explain_ux_claim": ("Explain a UX evidence claim with source, tier, limitations.",
+                                   lambda a: ev_mod.explain(a.get("claim_id", "")), False),
+        "motif.check_ux_myth": ("Check a statement against the UX myth register.",
+                                lambda a: ev_mod.check_myth(a.get("text", "")), False),
+        "motif.get_evidence_pack": ("Return a grounded evidence pack by id.",
+                                    lambda a: next((p for p in ev_mod._load("packs") if p["id"] == a.get("pack_id")), {"error": "not found"}), False),
+        "motif.list_ux_conflicts": ("List UX evidence contradictions for a context.",
+                                    lambda a: {"conflicts": ev_mod.query(a.get("context", {}))["conflicts"]}, False),
     }
 
 
@@ -73,6 +86,11 @@ RESOURCES = {
     "motif://registry/patterns": lambda: [r.data for r in registry.load_records("patterns")],
     "motif://registry/components": lambda: [r.data for r in registry.load_records("components")],
     "motif://atlas/index": lambda: {k: v for k, v in data.validate_all_data()[0].items()},
+    "motif://ux-evidence/ontology": lambda: sorted(p.stem for p in (ev_mod.UXE / "ontology").glob("*.yml")),
+    "motif://ux-evidence/claims": lambda: [c["id"] for c in ev_mod.load_claims()],
+    "motif://ux-evidence/myths": lambda: [m["id"] for m in ev_mod._load("myths")],
+    "motif://ux-evidence/packs": lambda: [p["id"] for p in ev_mod._load("packs")],
+    "motif://ux-evidence/sources": lambda: [s["id"] for s in ev_mod._load("sources")],
 }
 
 

@@ -6,7 +6,22 @@ and reports. Blocking findings produce a non-zero exit so CI can gate a pull req
 from __future__ import annotations
 import subprocess
 import pathlib
-from . import findings as findings_mod, policy as policy_mod
+from . import findings as findings_mod, policy as policy_mod, evidence as ev_mod
+
+# Map deterministic finding rules to the applicable UX evidence claim (when one exists).
+_RULE_TO_CLAIM = {
+    "status-colour-only": "claim-status-colour-001",
+    "hardcoded-hex": None,
+    "arbitrary-value": None,
+}
+
+
+def _evidence_for(rule: str):
+    cid = _RULE_TO_CLAIM.get(rule)
+    if not cid:
+        return None
+    c = ev_mod.explain(cid)
+    return None if "error" in c else c
 
 _UI_EXT = {".vue", ".jsx", ".tsx", ".svelte", ".css", ".scss", ".html"}
 
@@ -57,6 +72,11 @@ def report(result: dict, fmt: str = "text") -> str:
             loc = f["location"].get("file", "")
             lines.append(f"  - **{f['severity']}** `{f['rule']}` in `{loc}` "
                          f"({f['recommendations'][0] if f['recommendations'] else ''})")
+            ev = _evidence_for(f["rule"])
+            if ev:
+                lines.append(f"    - Evidence: `{ev['id']}` tier {ev['tier']} "
+                             f"(confidence {ev['confidence']}); required validation: "
+                             f"{', '.join(ev.get('validation', [])) or 'n/a'}")
         lines.append("")
         lines.append("Blocking ❌" if result["blocking"] else "No blocking findings ✅")
         return "\n".join(lines)
