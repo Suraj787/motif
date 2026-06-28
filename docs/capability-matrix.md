@@ -166,3 +166,37 @@ Honest boundary: the entire UX Evidence Graph and the deterministic repair loop
 implemented and tested by `make check` (146 self-checks). The browser-executed capture and
 runtime validation are real code behind the optional `[browser]` extra and report
 `not-executed` here; v3.1.0 is held from tagging until a browser CI run passes.
+
+---
+
+## Browser verification (proven in GitHub Actions CI, 2026-06-28)
+
+The `browser-golden-loop` workflow ran the golden audit-and-repair loop in real Chromium
+148 on `ubuntu-latest` with `--require-browser` (any `not-executed` browser stage fails the
+job). It passed: `outcome: browser-verified`. Status updated from experimental to implemented
+for the proven capabilities; broader coverage remains experimental/planned.
+
+### Implemented (browser-proven on the bundled Vue fixture)
+- application startup and HTTP readiness; clean process teardown
+- before/after screenshot capture (real PNGs)
+- accessibility representation (aria snapshot) and axe runtime checks
+- runtime colour-only status detection; before-state axe violation observed
+- evidence-grounded repair applied in an isolated git worktree
+- runtime finding closure (the repaired status label rendered in the browser)
+- regression check (no new blocking axe violations)
+- exact rollback; source branch and fixture byte-for-byte unchanged
+- before/after HTML + JSON evidence report; CI artifact upload
+- golden browser benchmark (`motif bench --scenario vue-dashboard-evidence-repair --require-browser`)
+
+### Experimental
+- arbitrary application authentication; multi-route crawling
+- semantic visual comparison; broad repair classes; interactive Studio apply
+- non-Vue repair support
+
+### Planned
+- focus / reduced-motion / target-size repair classes
+- authenticated workflows; cross-browser testing; wider framework support
+
+Honest scope: the loop is proven against the bundled Vue benchmark app. It does not audit
+arbitrary applications, does not prove full accessibility (axe passing is not certification),
+and is not a fully autonomous redesign. Human and assistive-technology review remain required.
