@@ -131,3 +131,38 @@ Honest boundary: the deterministic Motif Live platform (runtime state, findings,
 memory, Atlas, Studio viewer, MCP, Guardian, design-system extraction, recommendation,
 compile plan, run/create/improve/init orchestration) is implemented and tested. Every
 capability requiring a live browser is marked experimental and never reports faked results.
+
+---
+
+## Motif v3.1.0 "Evidence-Grounded Runtime" (added this release)
+
+Status legend unchanged. The browser runtime cannot be installed in this environment
+(pip is broken), so browser-executed steps return `not-executed` and are never faked.
+Per ADR-UXE-001, v3.1.0 is not tagged until a browser CI run passes the golden loop.
+
+| Capability | Status | Entry point |
+|---|---|---|
+| UX Evidence Graph schemas (claim/source/myth/contradiction/validation/pack/context-vector) | implemented | `ux-evidence/schemas/` |
+| Ontology (9 dimensions, controlled vocab) | implemented | `ux-evidence/ontology/` |
+| 110 executable evidence claims (Tier 1-3, sourced, with validation + freshness) | implemented | `ux-evidence/claims/` |
+| 13 sources, 12 myths, 5 contradictions, 8 validation methods, 3 packs | implemented | `ux-evidence/` |
+| Deterministic query engine (context vector -> claims, merge rules, conflicts) | implemented | `motif evidence query` |
+| Evidence CLI (validate/index/query/explain/sources/check-myth/contradictions/stale/pack) | implemented | `motif evidence ...` |
+| Evidence MCP tools (6) + resources (5) | implemented | `motif mcp serve` |
+| Context vector with provenance + confidence reduction on assumptions | implemented | query `_assumptions`, repair context |
+| `motif doctor --browser` | implemented | reports browser unavailable here |
+| App runner (detect/start/readiness/stop, no-secret env, policy-gated) | implemented (logic) | `motif app start|status|stop` (start gated; not-executed here) |
+| Browser evidence capture (screenshot/axe/a11y snapshot) | experimental | `ii/browser.py` (optional `motif[browser]`; not-executed here) |
+| Colour-only-status detection | implemented (static) | `motif repair golden` |
+| Evidence-grounded repair plan | implemented | `motif repair golden` |
+| Controlled repair apply in isolated worktree + exact rollback | implemented | `motif repair golden` |
+| Browser before/after validation + finding-closed-in-browser | experimental | not-executed without a runtime (static verify implemented) |
+| Before/after evidence report (HTML + JSON) | implemented | `.motif/evidence/<run>/report.html` |
+| Golden InterfaceBench scenario | implemented (deterministic) | `motif bench --scenario vue-dashboard-evidence-repair` |
+| Guardian uses evidence graph for findings | implemented | `motif guard branch --format markdown` |
+
+Honest boundary: the entire UX Evidence Graph and the deterministic repair loop
+(detect -> evidence -> plan -> worktree apply -> verify -> exact rollback -> report) are
+implemented and tested by `make check` (146 self-checks). The browser-executed capture and
+runtime validation are real code behind the optional `[browser]` extra and report
+`not-executed` here; v3.1.0 is held from tagging until a browser CI run passes.

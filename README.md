@@ -11,7 +11,7 @@ Motif is the intelligence and governance layer that answers those
 questions.
 
 [![CI](https://github.com/Suraj787/motif/actions/workflows/ci.yml/badge.svg)](https://github.com/Suraj787/motif/actions)
-&nbsp;Licence: MIT. Status: v3.0.0 "Motif Live" (interaction core shipped as v1.0.0; intelligence platform as v2.0.0)
+&nbsp;Licence: MIT. Status: v3.1.0 "Evidence-Grounded Runtime" (interaction core shipped as v1.0.0; intelligence platform as v2.0.0)
 
 > Defining principle: first determine what the user needs to understand, feel, decide, or
 > accomplish, then choose the least complex interface and interaction that achieves it.
@@ -83,6 +83,20 @@ The browser-runtime surfaces (Visual Twin rendering, Playwright assurance, live 
 semantic visual diff, interactive apply) are marked experimental and never fake output.
 See the [capability matrix](docs/capability-matrix.md) and
 [v3 architecture](docs/architecture/motif-v3-live-architecture.md).
+
+### Evidence-grounded runtime (v3.1)
+
+```bash
+motif evidence query --product-form dashboard --purpose monitor --ability colour-vision-deficiency --risk financial:3
+motif evidence explain claim-status-colour-001     # source, tier, limitations, validation
+motif evidence check-myth "three click rule"
+motif repair golden --target evals/fixtures/sample-vue-app --route /projects   # detect -> evidence -> worktree fix -> verify -> exact rollback -> report
+motif doctor --browser                              # browser runtime status (optional motif[browser] extra)
+```
+
+A version-controlled UX Evidence Graph (110 Tier 1-3 claims with sources, limitations, and
+validation) grounds the audit-and-repair decisions. Browser capture/validation is an
+optional extra and reports `not-executed` without a runtime, never faked.
 
 ## Installation
 
