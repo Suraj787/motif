@@ -177,9 +177,119 @@ def applies(claim, ctx) -> tuple[bool, int]:
 
 
 def _blocking(claim) -> bool:
+    """Whether a claim COULD block if a violation were detected (capability, not a verdict)."""
     ev = claim.get("evidence", {})
     return (claim["claim"]["force"] == "normative" and ev.get("tier") == 1
             and ev.get("confidence") == "high" and not is_stale(claim))
+
+
+# detector finding rule -> the evidence-claim category it can substantiate. Only these rules
+# provide machine evidence that an applicable claim is actually violated.
+DETECTOR_RULE_CATEGORY = {
+    "status-colour-only": "use-of-colour",
+    "focus-outline-removed": "focus-indicator",
+    "missing-reduced-motion": "reduced-motion",
+}
+_MIN_BLOCK_CONFIDENCE = 0.7
+
+
+def _machine_detectable(claim) -> bool:
+    d = claim.get("detection", {})
+    return bool(d.get("static") or d.get("browser"))
+
+
+def enforcement_mode(claim) -> str:
+    """The enforcement a claim would take IF a violation is detected. This is a capability of
+    the claim, never an assertion that the interface currently violates it.
+
+      blocking        normative tier-1 high-confidence and machine-detectable
+      warning         other normative / strong-recommendation, machine-detectable
+      human_review    not machine-detectable (needs a human or model reviewer)
+      informational   contextual / hypothesis guidance
+    """
+    if not _machine_detectable(claim):
+        return "human_review"
+    force = claim["claim"]["force"]
+    ev = claim.get("evidence", {})
+    if force == "normative" and ev.get("tier") == 1 and ev.get("confidence") == "high" and not is_stale(claim):
+        return "blocking"
+    if force in ("normative", "strong-recommendation"):
+        return "warning"
+    return "informational"
+
+
+def _unresolved_contradiction(claim_id) -> bool:
+    for ct in _load("contradictions"):
+        if claim_id in ct.get("competing_claims", []) and ct.get("human_decision_required"):
+            return True
+    return False
+
+
+def evaluate(ctx: dict, findings: list[dict] | None = None) -> dict:
+    """Separate applicable claims from actual findings and enforcement.
+
+    An applicable claim is not a finding. A finding is not automatically a blocking
+    violation. A normative claim blocks only when a detector provides sufficient evidence
+    that the interface violates it, the enforcement mode is machine-supported, and no
+    unresolved contradiction prevents enforcement.
+    """
+    q = query(ctx)
+    findings = findings or []
+    # correlate detector findings to claim categories (evidence of an actual violation)
+    detected: dict[str, list] = {}
+    for f in findings:
+        cat = DETECTOR_RULE_CATEGORY.get(f.get("rule"))
+        if cat:
+            detected.setdefault(cat, []).append(f)
+
+    blocking, warnings_out, human_review, needs_eval, informational = [], [], [], [], []
+    seen_block_cat = set()
+    for cid in q["applicable_claims"]:
+        c = _claim(cid)
+        mode = enforcement_mode(c)
+        cat = c["claim"]["category"]
+        evid = detected.get(cat, [])
+        base = {"claim": cid, "category": cat, "enforcement_mode": mode,
+                "statement": c["claim"]["statement"]}
+        if mode == "human_review":
+            human_review.append({**base, "finding_status": "human_review_required",
+                                 "claim_status": "needs_evaluation"})
+            continue
+        if not evid:
+            # applicable but no detector evidence: a requirement to evaluate, NOT a violation
+            (needs_eval if mode in ("blocking", "warning") else informational).append(
+                {**base, "claim_status": "needs_evaluation", "enforcement_if_violated": mode})
+            continue
+        conf = max(f.get("confidence", 0) for f in evid)
+        ev_ids = [f["id"] for f in evid]
+        unresolved = _unresolved_contradiction(cid)
+        confirmed = conf >= _MIN_BLOCK_CONFIDENCE and not unresolved
+        entry = {**base, "claim_status": "applicable", "evidence_findings": ev_ids,
+                 "evidence_confidence": round(conf, 2),
+                 "finding_status": "confirmed" if confirmed else "suspected"}
+        if mode == "blocking" and confirmed and cat not in seen_block_cat:
+            seen_block_cat.add(cat)
+            blocking.append({**entry, "enforcement": "blocking"})
+        elif mode == "blocking" and confirmed:
+            warnings_out.append({**entry, "enforcement": "warning",
+                                 "note": "same root issue as an existing blocking violation"})
+        else:
+            warnings_out.append({**entry, "enforcement": "warning"})
+
+    return {
+        "applicable_claims": len(q["applicable_claims"]),
+        "blocking_violations": blocking,
+        "warnings": warnings_out,
+        "needs_evaluation": needs_eval,
+        "human_review_required": human_review,
+        "informational": informational,
+        "confidence": q["confidence"],
+        "summary": {"applicable": len(q["applicable_claims"]),
+                    "detected_findings": sum(len(v) for v in detected.values()),
+                    "blocking": len(blocking), "warnings": len(warnings_out),
+                    "needs_evaluation": len(needs_eval),
+                    "human_review_required": len(human_review)},
+    }
 
 
 def query(ctx: dict, explain: bool = False) -> dict:
@@ -195,7 +305,7 @@ def query(ctx: dict, explain: bool = False) -> dict:
     # rank: specificity desc, then tier asc (stronger sources first), then id for stability
     matched.sort(key=lambda x: (-x[0]["specificity"], x[1]["evidence"]["tier"], x[1]["id"]))
 
-    applicable, recs, warnings, blocked, validations, sources, limitations = [], [], [], [], set(), set(), []
+    applicable, recs, warnings, requirements, validations, sources, limitations = [], [], [], [], set(), set(), []
     for m, c in matched:
         force = c["claim"]["force"]
         stale = is_stale(c)
@@ -205,18 +315,23 @@ def query(ctx: dict, explain: bool = False) -> dict:
         limitations.extend(c.get("evidence", {}).get("limitations", []))
         validations.update(c.get("validation", {}).get("methods", []))
         do = c.get("recommendation", {}).get("do", [])
-        is_block = _blocking(c) and not stale
+        mode = enforcement_mode(c)
+        # an applicable normative requirement is something to evaluate, NOT a current violation
+        claim_status = "needs_evaluation" if mode in ("blocking", "warning", "human_review") else "applicable"
         if force == "hypothesis":
             warnings.append({"claim": c["id"], "why": "hypothesis (never blocks)"})
         elif stale:
             warnings.append({"claim": c["id"], "why": "stale claim cannot newly block"})
-        if is_block:
-            blocked.append({"claim": c["id"], "category": c["claim"]["category"],
-                            "requirement": c["claim"]["statement"]})
+        if mode == "blocking":
+            requirements.append({"claim": c["id"], "category": c["claim"]["category"],
+                                 "requirement": c["claim"]["statement"],
+                                 "claim_status": "needs_evaluation",
+                                 "enforcement_if_violated": "blocking"})
         recs.append({"claim": c["id"], "force": force, "specificity": spec,
                      "tier": c["evidence"]["tier"], "do": do,
                      "match_type": m["match_type"], "matched_dimensions": m["matched_dimensions"],
-                     "wildcard_dimensions": m["wildcard_dimensions"], "blocking": is_block,
+                     "wildcard_dimensions": m["wildcard_dimensions"],
+                     "claim_status": claim_status, "enforcement_if_violated": mode,
                      "sources": c.get("evidence", {}).get("sources", []),
                      "limitations": c.get("evidence", {}).get("limitations", []),
                      "reason": m["reason"]})
@@ -240,7 +355,10 @@ def query(ctx: dict, explain: bool = False) -> dict:
         "applicable_claims": applicable,
         "ranked_recommendations": recs[:30],
         "warnings": warnings,
-        "blocked_patterns": blocked,
+        # applicable normative requirements to evaluate; NOT detected violations. Actual
+        # blocking violations come only from evaluate(ctx, findings) with detector evidence.
+        "normative_requirements": requirements,
+        "blocked_patterns": [],
         "required_validations": sorted(validations),
         "confidence": {"overall": overall,
                        "note": "lowered: critical context (risk/abilities) is an assumption" if critical_assumed else ""},

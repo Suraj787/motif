@@ -43,6 +43,11 @@ def _tools():
                               lambda a: {"plan": "dry-run", "target": a.get("target", "."), "note": "use the installer for apply"}, True),
         "motif.get_applicable_claims": ("UX evidence claims applicable to a context vector.",
                                         lambda a: ev_mod.query(a.get("context", {})), False),
+        "motif.evaluate_findings": ("Separate applicable claims from actual findings: returns "
+                                    "evidence-backed blocking violations, warnings, needs-evaluation, "
+                                    "and human-review items for a target and context vector.",
+                                    lambda a: ev_mod.evaluate(a.get("context", {}),
+                                                              __import__("ii.findings", fromlist=["audit_project"]).audit_project(a.get("target", "."))), False),
         "motif.get_required_validations": ("Validations required for a context vector.",
                                            lambda a: {"required_validations": ev_mod.query(a.get("context", {}))["required_validations"]}, False),
         "motif.explain_ux_claim": ("Explain a UX evidence claim with source, tier, limitations.",

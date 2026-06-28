@@ -357,6 +357,21 @@ def cmd_evidence(a) -> int:
         explain = getattr(a, "explain_matching", False)
         _jp(ev_mod.query(ctx, explain=explain))
         return 0
+    if act == "evaluate":
+        ctx = {}
+        for dim, vals in (("product_forms", a.product_form), ("purposes", a.purpose),
+                          ("workflows", a.workflow), ("expertise", a.expertise),
+                          ("abilities", a.ability), ("devices", a.device),
+                          ("environments", a.environment)):
+            if vals:
+                ctx[dim] = vals.split(",")
+        if a.risk:
+            ctx["risks"] = [{"type": r.split(":")[0], "severity": int(r.split(":")[1]) if ":" in r else 3}
+                            for r in a.risk.split(",")]
+        from . import findings as findings_mod
+        fnd = findings_mod.audit_project(a.value or ".")
+        _jp(ev_mod.evaluate(ctx, fnd))
+        return 0
     if act == "explain":
         _jp(ev_mod.explain(a.value or ""))
         return 0
@@ -466,7 +481,7 @@ def register(sub) -> None:
               (("--workflow",), {}), (("--expertise",), {}), (("--ability",), {}),
               (("--risk",), {}), (("--device",), {}), (("--environment",), {}),
               (("--explain-matching",), {"action": "store_true", "dest": "explain_matching"})])
-    sp.add_argument("action", choices=["validate", "index", "query", "explain", "sources",
+    sp.add_argument("action", choices=["validate", "index", "query", "evaluate", "explain", "sources",
                                        "check-myth", "contradictions", "stale", "pack"])
     sp.add_argument("value", nargs="?")
     sp = add("app", cmd_app, "safe application runner",
