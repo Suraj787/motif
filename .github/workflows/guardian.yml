@@ -64,7 +64,7 @@ jobs:
       # Sticky comment: creates the comment on first run, edits it thereafter.
       # Uses the default GITHUB_TOKEN scoped by the permissions block above.
       - name: Post / update Guardian PR comment
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: motif-guardian
           path: guardian-report.md
